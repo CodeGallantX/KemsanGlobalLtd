@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Home &HorizontalLine; Kemsan Global Ltd.</title>
+</head>
+<body class="font-poppins">
+
+  <!-- Header -->
+  <header id="header" class="bg-white w-full py-3 sm:px-2 md:px-4 lg:px-6 xl:px-[12rem] flex items-center shadow-md fixed z-50">
+    <a href="#"><img class="w-32 h-auto" src="/assets/logo_blue.jpg" alt="KEMSAN_logo"></a>
+    <nav class="flex items-center justify-between w-full">
+      <ul class="hidden xl:flex justify-center list-none flex-grow items-center">
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">Home</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">About</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">Properties</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">Blog</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">Contact</a></li>
+      </ul>
+      <button id="register-btn" class="hidden xl:block ml-auto w-28 md:w-32 h-10 md:h-12 text-[16px] md:text-[18px] font-medium text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all duration-300 ease-in-out"><a href="#">Register</a></button>
+      <button id="sidebarh" class="xl:hidden block text-4xl text-blue-500 ml-auto" onclick="showSideBar()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+  
+  <!-- Sidebar for small screens -->
+  <ul id="sidebar" class="fixed h-screen top-0 right-0 z-[999] bg-blue-800 flex-col items-start justify-start w-full sm:w-2/3 md:w-1/2 lg:hidden p-6 transform translate-x-full transition-transform duration-500 ease-in-out">
+    <li class="w-full flex justify-end mb-8" onclick="hideSideBar()">
+      <a href="#"><i class="fa-solid fa-xmark text-white text-3xl"></i></a>
+    </li>
+    <li><a class="block w-full py-2 text-white text-lg font-semibold hover:text-gray-300" href="#">Home</a></li>
+    <li><a class="block w-full py-2 text-white text-lg font-semibold hover:text-gray-300" href="#">About</a></li>
+    <li><a class="block w-full py-2 text-white text-lg font-semibold hover:text-gray-300" href="#">Properties</a></li>
+    <li><a class="block w-full py-2 text-white text-lg font-semibold hover:text-gray-300" href="#">Blog</a></li>
+    <li><a class="block w-full py-2 text-white text-lg font-semibold hover:text-gray-300" href="#">Contact</a></li>
+  </ul>
+  
+  <main class=" xl:pt-[6.5rem]">
+    <section class="relative w-full h-5/6 overflow-hidden">
+      
+      <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+        <div class="w-full flex-shrink-0">
+          <div class="relative w-full xl:h-[38rem] sm:h-[30rem] md:h-[30rem]">
+            <img class="w-full h-full object-cover" src="/assets/kemsan_building.JPG" alt="slide 1">
+            
+            <div class="absolute h-full inset-0 bg-gradient-to-r from-black via-transparent to-blue-600"></div>
+            
+            <div class="absolute inset-0 flex items-center justify-between px-48 ">
+              <div class="flex flex-col w-4/6">
+                <h2 class="lg:text-7xl md:4xl text-white font-serif font-bold opacity-100 transition-opacity duration-500 ease-in-out">Reinventing comfort for your satisfaction</h2>
+                <p class="text-xl mt-10 text-white font-sans opacity-100 transition-opacity duration-700 ease-in-out">We are a highly-reputable real estate company in Nigeria dedicated to helping as many people become landed property owners.</p>
+              </div>
+              <a class="flex flex-row items-center justify-center" href="#">
+                <div class="rounded-full w-36 h-36 bg-blue-600 blur-md"></div>
+                <i class="fa fa-play text-4xl text-white translate-x-[-90px]"></i>
+                </a>
+          </div>
+            
+          </div>
+        </div>
+        <div class="w-full flex-shrink-0">
+          <div class="relative w-full h-[38rem]">
+            <img class="w-full h-full object-cover" src="/assets/mansion_sleek.jpeg" alt="slide 2">
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-blue-600"></div>
+            
+            <div class="absolute inset-0 flex items-center justify-between px-48 ">
+              <div class="flex flex-col w-4/6">
+                <h2 class="text-7xl text-white font-serif font-bold opacity-100 transition-opacity duration-500 ease-in-out">Reinventing comfort for your satisfaction</h2>
+                <p class="text-xl mt-10 text-white font-sans opacity-100 transition-opacity duration-700 ease-in-out">We are a highly-reputable real estate company in Nigeria dedicated to helping as many people become landed property owners.</p>
+              </div>
+              <a class="flex flex-row items-center justify-center" href="#">
+                <div class="rounded-full w-36 h-36 bg-blue-600 blur-md"></div>
+                <i class="fa fa-play text-4xl text-white translate-x-[-90px]"></i>
+              </a>
+          </div>
+        </div>
+        </div>
+        <div class="w-full flex-shrink-0">
+          <div class="relative w-full h-[38rem]">
+            <img class="w-full h-full object-cover" src="/assets/duplex_2.jpeg" alt="slide 3">
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-blue-500"></div>
+            
+            <div class="absolute inset-0 flex items-center justify-between px-48 ">
+              <div class="flex flex-col w-4/6">
+                <h2 class="text-7xl text-white font-serif font-bold opacity-100 transition-opacity duration-500 ease-in-out">Reinventing comfort for your satisfaction</h2>
+                <p class="text-xl mt-10 text-white font-sans opacity-100 transition-opacity duration-700 ease-in-out">We are a highly-reputable real estate company in Nigeria dedicated to helping as many people become landed property owners.</p>
+              </div>
+              <a class="flex flex-row items-center justify-center" href="#">
+                <div class="rounded-full w-36 h-36 bg-blue-600 blur-md"></div>
+                <i class="fa fa-play text-4xl text-white translate-x-[-90px]"></i>
+              </a>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    
+      
+      <button id="prev" class="absolute top-1/2 left-6 transform -translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-3xl text-white">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button id="next" class="absolute top-1/2 right-6 transform -translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-3xl text-white">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    
+      
+      <div class="absolute bottom-2 left-0 right-0 flex justify-center space-x-2 p-2">
+        <button class="w-3 h-3 bg-gray-200 rounded-full" data-slide="0"></button>
+        <button class="w-3 h-3 bg-gray-200 rounded-full" data-slide="1"></button>
+        <button class="w-3 h-3 bg-gray-200 rounded-full" data-slide="2"></button>
+      </div>
+    </section>
+    <section class="flex flex-col xl:flex-row xl:px-[7.5rem] md:px-16 sm:px-10 py-28 xl:gap-44 sm:gap-10">
+      <div class="relative sm:h-[220px] h-[250px] xl:h-[600px] xl:w-4/6 md:w-full sm:w-full">
+        <div class="h-[500px] xl:h-[450px] md:h-[250px] sm:h-[200px] bg-blue-200 md:w-[300px] sm:w-[300px] xl:w-64 sm:translate-x-[-100px] md:translate-x-[-100px] xl:translate-x-[-20px]"></div>
+        <!-- Image for larger screens -->
+        <img class="h-[500px] xl:w-[400px] absolute top-12 left-10 lg:top-6 lg:left-10 object-cover shadow-sp hidden xl:block" src="/assets/interior-slim.jpg" alt="interior">
+        <!-- Image for smaller screens -->
+        <img class="h-[200px] md:w-[400px] sm:w-[400px] absolute top-5 left-1 sm:left-0 sm:top-9 object-cover shadow-sp xl:hidden" src="/assets/interior.jpg" alt="interior">
+      </div>
+      <div class="xl:pr-40 sm:pr-0 mt-10 xl:mt-0">
+        <h3 style="line-height: 3rem;" class="text-blue-500 font-bold mt-8">What We Do</h3>
+        <h2 style="line-height: 3rem;" class="xl:text-5xl md:text-4xl sm:text-4xl font-serif text-black font-bold">
+          Secure your property needs, with us <span class="text-blue-500">quality</span> is assured
+        </h2>
+        <p class="font-sans mt-6 text-base">
+          At Kemsan Acres Global Limited, we make land ownership and real estate development accessible and straightforward. We procure premium lands, develop residential and commercial properties, and offer bespoke architectural designs tailored to your needs. Our expert consultancy services guide you through property acquisition and investment, while our 24/7 customer support ensures a seamless experience from start to finish.
+        </p>
+        <button class="bg-blue-500 mt-7 px-12 py-4 rounded-lg text-base text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
+          Get Started
+        </button>
+      </div>
+    </section>
+    
+    <section class="bg-blue-700 px-8 xl:px-32 xl:pt-20 py-24 xl:py-32">
+      <h2 class="text-center text-3xl lg:text-5xl xl:text-6xl font-serif text-white font-bold lg:px-32 xl:px-44 mb-12">
+          Let's make it easy to get a property for you!
+      </h2>
+      <div class="flex flex-col items-center justify-center xl:flex-row gap-24">
+        <div class="xl:w-[28rem] xl:h-[26rem] rounded-lg bg-purple-800 px-8 pt-3 hidden xl:block">
+              <img class="object-cover h-28 w-96 mb-3 rounded" src="/assets/interior.jpg" alt="">
+              <div class="px-4">
+                <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
+                <p class="text-white mb-4">
+                    Finding your dream property has never been easier. Our team guides you through every step, ensuring you get the best deal possible with full transparency and zero stress.
+                </p>
+                <div class="xl:block hidden">
+                  <button class="font-semibold bg-white mt-2 px-10 py-3 rounded-lg text-base text-purple-900 hover:bg-purple-900 hover:text-white transition-all duration-300 ease-in-out">
+                    Properties
+                  </button>
+                </div>
+                <div class="flex items-center justify-center xl:hidden">
+                  <button class="font-semibold bg-white mt-2 px-20 py-3 rounded-lg text-base text-purple-900 hover:bg-purple-900 hover:text-white transition-all duration-300 ease-in-out">
+                    Properties
+                  </button>
+                </div>
+              </div>
+          </div>
+          <div class="sm:w-[18rem] sm:h-[27rem] md:w-[21rem] md:h-[26rem] lg:w-[21rem] lg:h-[26rem] rounded-lg border-white border-2 border-solid bg-purple-800 sm:px-5 px-8 pt-3 xl:hidden">
+              <img class="object-cover h-28 w-80 mb-3 rounded" src="/assets/interior.jpg" alt="">
+              <div class="px-4">
+                <h3 class="sm:text-xl text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
+                <p class="text-white mb-4">
+                    Finding your dream property has never been easier. Our team guides you through every step, ensuring you get the best deal possible with full transparency and zero stress.
+                </p>
+                <div class="flex items-center justify-center">
+                  <button class="font-semibold bg-white mt-2 px-20 py-3 rounded-lg text-base text-purple-900 hover:bg-purple-900 hover:text-white transition-all duration-300 ease-in-out">
+                    Properties
+                  </button>
+                </div>
+              </div>
+          </div>
+          <!-- <div class="w-80 h-80 xl:w-[28rem] xl:h-[26rem] rounded-lg bg-blue-500 px-10 pt-3 pb-3">
+              <img class="object-cover h-28 w-96 mb-3 rounded" src="/assets/mansion_sleek.jpeg" alt="">
+              <div class="px-4">
+                <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to sell a property.</h3>
+                <p class="text-white mb-2">
+                </p>
+                <button class="font-semibold bg-white mt-4 px-10 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out">
+                  Properties
+                </button>
+              </div>
+          </div> -->
+          
+          <div class="xl:w-[28rem] xl:h-[26rem] rounded-lg bg-blue-500 px-8 pt-3 hidden xl:block">
+            <img class="object-cover h-28 w-96 mb-3 rounded" src="/assets/interior.jpg" alt="">
+            <div class="px-4">
+              <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
+              <p class="text-white mb-4">
+                Selling your property is straightforward with us. We handle the entire process, from listing to closing, ensuring a smooth and profitable transaction.
+              </p>
+              <div class="xl:block hidden">
+                <button class="font-semibold bg-white mt-2 px-10 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out">
+                  Properties
+                </button>
+              </div>
+              <div class="flex items-center justify-center xl:hidden">
+                <button class="font-semibold bg-white mt-2 px-20 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300 ease-in-out">
+                  Properties
+                </button>
+              </div>
+            </div>
+        </div>
+        <div class="w-[21rem] h-[26rem] rounded-lg border-white border-2 border-solid bg-blue-500 px-8 pt-3 xl:hidden">
+            <img class="object-cover h-28 w-96 mb-3 rounded" src="/assets/interior.jpg" alt="">
+            <div class="px-4">
+              <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
+              <p class="text-white mb-4">
+                Selling your property is straightforward with us. We handle the entire process, from listing to closing, ensuring a smooth and profitable transaction.
+              </p>
+              <div class="flex items-center justify-center">
+                <button class="font-semibold bg-white mt-2 px-20 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out">
+                  Properties
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+  </section>
+  <section class="h-full w-full py-10">
+    <div class="flex flex-col xl:flex-row xl:gap-14 ">
+      <div>
+        <h3 style="line-height: 3rem;" class="text-blue-500 font-bold mt-8">What We Do</h3>
+        <h2 style="line-height: 3rem;" class="xl:text-5xl md:text-4xl sm:text-4xl font-serif text-black font-bold">
+          Secure your property needs, with us <span class="text-blue-500">standard</span>
+        </h2>
+        <p class="font-sans mt-6 text-base">
+          At Kemsan Acres Global Limited, we make land ownership and real estate development accessible and straightforward. We procure premium lands, develop residential and commercial properties, and offer bespoke architectural designs tailored to your needs. Our expert consultancy services guide you through property acquisition and investment, while our 24/7 customer support ensures a seamless experience from start to finish.
+        </p>
+      </div>
+      <div>
+        <button class="bg-blue-600 mt-7 px-12 py-4 rounded-lg text-base text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
+          View all properties
+        </button>
+      </div>
+    </div>
+  </section>
+    
+  </main>
+  <script src="./carousel.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+           
+    <!-- <section class="flex flex-col items-center px-4 md:px-8 lg:px-[7.5rem] py-16 md:py-24 lg:py-32">
+      <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-semibold mb-8 md:mb-12">Our Properties</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="relative w-full h-80 md:h-96 lg:h-[500px]">
+          <img class="absolute inset-0 w-full h-full object-cover shadow-md" src="/assets/property1.jpg" alt="property1">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h4 class="text-lg md:text-xl lg:text-2xl font-semibold">Luxurious Apartment</h4>
+            <p class="text-sm md:text-base lg:text-lg">Victoria Island, Lagos</p>
+          </div>
+        </div>
+
+        <div class="relative w-full h-80 md:h-96 lg:h-[500px]">
+          <img class="absolute inset-0 w-full h-full object-cover shadow-md" src="/assets/property2.jpg" alt="property2">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h4 class="text-lg md:text-xl lg:text-2xl font-semibold">Modern Office Space</h4>
+            <p class="text-sm md:text-base lg:text-lg">Ikeja, Lagos</p>
+          </div>
+        </div>
+
+        <div class="relative w-full h-80 md:h-96 lg:h-[500px]">
+          <img class="absolute inset-0 w-full h-full object-cover shadow-md" src="/assets/property3.jpg" alt="property3">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h4 class="text-lg md:text-xl lg:text-2xl font-semibold">Exclusive Villa</h4>
+            <p class="text-sm md:text-base lg:text-lg">Banana Island, Lagos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center px-4 md:px-8 lg:px-[7.5rem] py-16 md:py-24 lg:py-32 bg-gray-100">
+      <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-semibold mb-8 md:mb-12">Contact Us</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex flex-col items-start">
+          <h4 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">Office Location</h4>
+          <p class="text-sm md:text-base lg:text-lg text-gray-600 mt-2">1234 Real Estate Ave, Victoria Island, Lagos</p>
+        </div>
+        <div class="flex flex-col items-start">
+          <h4 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">Phone</h4>
+          <p class="text-sm md:text-base lg:text-lg text-gray-600 mt-2">+234 812 345 6789</p>
+        </div>
+        <div class="flex flex-col items-start">
+          <h4 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">Email</h4>
+          <p class="text-sm md:text-base lg:text-lg text-gray-600 mt-2">info@kemsanglobal.com</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-800 text-white px-4 md:px-8 lg:px-[7.5rem] py-8">
+    <div class="flex flex-col lg:flex-row justify-between items-center">
+      <p class="text-sm md:text-base lg:text-lg">© 2024 Kemsan Global Ltd. All rights reserved.</p>
+      <ul class="flex space-x-4 mt-4 lg:mt-0">
+        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-K6q5orQeCkPNh4pVCmvfvJ0KuoC2elvyMuSzoXgPfnONhzyi3xTVJqQ8ooO9uvB8+ftkCc1VyxN9PknPaYmvpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./main.js"></script>
+
+</body>
+</html> -->
