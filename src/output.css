@@ -678,6 +678,18 @@ video {
   left: 0.5rem;
 }
 
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-\[-45px\] {
+  bottom: -45px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -960,6 +972,14 @@ video {
   width: 21rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[27rem\] {
+  width: 27rem;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -995,6 +1015,16 @@ video {
 
 .translate-x-0 {
   --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-full {
+  --tw-translate-y: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1116,6 +1146,10 @@ video {
   border-width: 2px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1208,6 +1242,16 @@ video {
 .bg-purple-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1e40af\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1420,6 +1464,10 @@ video {
   text-align: center;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-sans {
   font-family: Figtree, sans-serif;
 }
@@ -1619,6 +1667,44 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.after\:h-\[4px\]::after {
+  content: var(--tw-content);
+  height: 4px;
+}
+
+.after\:h-0::after {
+  content: var(--tw-content);
+  height: 0px;
+}
+
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:bg-white::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:border-solid:hover {
+  border-style: solid;
+}
+
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -1654,6 +1740,11 @@ video {
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -1672,6 +1763,16 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.hover\:after\:h-\[4px\]:hover::after {
+  content: var(--tw-content);
+  height: 4px;
 }
 
 @media (min-width: 320px) {
@@ -2139,6 +2240,22 @@ video {
     width: 28rem;
   }
 
+  .xl\:w-\[30rem\] {
+    width: 30rem;
+  }
+
+  .xl\:w-\[32rem\] {
+    width: 32rem;
+  }
+
+  .xl\:w-\[31rem\] {
+    width: 31rem;
+  }
+
+  .xl\:w-\[30\.5rem\] {
+    width: 30.5rem;
+  }
+
   .xl\:translate-x-\[-20px\] {
     --tw-translate-x: -20px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2219,6 +2336,21 @@ video {
   .xl\:px-\[12rem\] {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .xl\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .xl\:pr-40 {
