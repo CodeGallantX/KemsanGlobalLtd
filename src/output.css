@@ -1902,6 +1902,14 @@ video {
     gap: 11rem;
   }
 
+  .xl\:gap-32 {
+    gap: 8rem;
+  }
+
+  .xl\:gap-36 {
+    gap: 9rem;
+  }
+
   .xl\:rounded-3xl {
     border-radius: 1.5rem;
   }
