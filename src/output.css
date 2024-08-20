@@ -722,6 +722,14 @@ video {
   left: 8rem;
 }
 
+.bottom-40 {
+  bottom: 10rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
 .z-50 {
   z-index: 50;
 }
