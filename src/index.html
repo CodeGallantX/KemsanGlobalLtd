@@ -76,11 +76,11 @@
             
             <div class="absolute inset-0 flex items-center justify-between px-20 xl:px-48 ">
               <div class="flex flex-col w-4/6">
-                <h2 class="xl:text-7xl text-white font-serif font-bold opacity-100 transition-opacity duration-500 ease-in-out">Reinventing comfort for your satisfaction</h2>
-                <p class="text-xl mt-10 text-white font-sans opacity-100 transition-opacity duration-700 ease-in-out">We are a highly-reputable real estate company in Nigeria dedicated to helping as many people become landed property owners.</p>
+                <h2 class="text-3xl xl:text-7xl text-white font-serif font-bold opacity-100 transition-opacity duration-500 ease-in-out">Reinventing comfort for your satisfaction</h2>
+                <p class="text-lg xl:text-xl mt-2 xl:mt-10 text-white font-sans opacity-100 transition-opacity duration-700 ease-in-out">We are a highly-reputable real estate company in Nigeria dedicated to helping as many people become landed property owners.</p>
               </div>
-              <a class="flex flex-row items-center justify-center" href="#">
-                <div class="rounded-full w-36 h-36 bg-blue-600 blur-md"></div>
+              <a class="flex flex-row xl:items-center xl:justify-center absolute bottom-0 " href="#">
+                <div class="rounded-full xl:w-36 xl:h-36 bg-blue-600 blur-md"></div>
                 <i class="fa fa-play text-4xl text-white translate-x-[-90px]"></i>
               </a>
           </div>
@@ -107,11 +107,18 @@
         </div>
       </div>
     
-      
-      <button id="prev" class="absolute bottom-4 left-2 xl:top-1/2 xl:left-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
+      <button id="prev" class="hidden xl:inline-block absolute top-1/2 left-6 transform -translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-3xl text-white">
         <i class="fa fa-chevron-left"></i>
       </button>
-      <button id="next" class="absolute bottom-4 left-16 xl:top-1/2 xl:right-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
+      <button id="next" class="hidden xl:inline-block absolute top-1/2 right-6 transform -translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-3xl text-white">
+        <i class="fa fa-chevron-right"></i>
+      </button>
+
+      
+      <button id="prev" class="xl:hidden absolute bottom-4 left-2 p-2 bg-gray-800 w-10 h-auto rounded-none text-white">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button id="next" class="xl:hidden absolute bottom-4 left-16 p-2 bg-gray-800 w-10 h-auto rounded-none text-white">
         <i class="fa fa-chevron-right"></i>
       </button>
     

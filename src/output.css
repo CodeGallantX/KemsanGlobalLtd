@@ -702,6 +702,10 @@ video {
   left: 4rem;
 }
 
+.bottom-1\/2 {
+  bottom: 50%;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -1455,6 +1459,10 @@ video {
 }
 
 @media (min-width: 320px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
   .sm\:left-0 {
     left: 0px;
   }
@@ -1535,6 +1543,10 @@ video {
 }
 
 @media (min-width: 425px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:h-12 {
     height: 3rem;
   }
@@ -1603,6 +1615,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:left-10 {
     left: 2.5rem;
   }
@@ -1657,6 +1673,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .xl\:static {
+    position: static;
+  }
+
+  .xl\:relative {
+    position: relative;
+  }
+
   .xl\:top-1\/2 {
     top: 50%;
   }
@@ -1673,8 +1697,16 @@ video {
     margin-top: 0px;
   }
 
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .xl\:block {
     display: block;
+  }
+
+  .xl\:inline-block {
+    display: inline-block;
   }
 
   .xl\:flex {
@@ -1697,6 +1729,10 @@ video {
     height: 600px;
   }
 
+  .xl\:h-36 {
+    height: 9rem;
+  }
+
   .xl\:w-4\/6 {
     width: 66.666667%;
   }
@@ -1715,6 +1751,10 @@ video {
 
   .xl\:w-\[400px\] {
     width: 400px;
+  }
+
+  .xl\:w-36 {
+    width: 9rem;
   }
 
   .xl\:-translate-y-5 {
@@ -1738,6 +1778,14 @@ video {
 
   .xl\:flex-row {
     flex-direction: row;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
   }
 
   .xl\:justify-between {
@@ -1828,5 +1876,10 @@ video {
   .xl\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
