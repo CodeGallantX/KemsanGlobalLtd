@@ -682,6 +682,14 @@ video {
   left: 2rem;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
 .z-50 {
   z-index: 50;
 }
