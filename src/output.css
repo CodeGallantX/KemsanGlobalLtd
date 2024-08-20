@@ -902,6 +902,10 @@ video {
   height: 450px;
 }
 
+.h-\[40rem\] {
+  height: 40rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
