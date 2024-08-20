@@ -730,6 +730,22 @@ video {
   bottom: 6rem;
 }
 
+.bottom-32 {
+  bottom: 8rem;
+}
+
+.bottom-28 {
+  bottom: 7rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.left-28 {
+  left: 7rem;
+}
+
 .z-50 {
   z-index: 50;
 }
