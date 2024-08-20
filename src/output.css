@@ -866,6 +866,10 @@ video {
   height: 40px;
 }
 
+.h-\[450px\] {
+  height: 450px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1721,6 +1725,10 @@ video {
     position: static;
   }
 
+  .xl\:absolute {
+    position: absolute;
+  }
+
   .xl\:relative {
     position: relative;
   }
@@ -1751,6 +1759,10 @@ video {
 
   .xl\:inline-block {
     display: inline-block;
+  }
+
+  .xl\:inline {
+    display: inline;
   }
 
   .xl\:flex {

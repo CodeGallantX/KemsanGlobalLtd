@@ -104,10 +104,10 @@
         </div>
       </div>
     
-      <button id="prev" class="absolute bottom-14 left-20 xl:inline-block xl:top-1/2 xl:left-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
+      <button id="prev" class="absolute bottom-14 left-20 xl:absolute xl:top-1/2 xl:left-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
         <i class="fa fa-chevron-left"></i>
       </button>
-      <button id="next" class="absolute bottom-14 left-32 xl:inline-block xl:top-1/2 xl:right-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
+      <button id="next" class="absolute bottom-14 left-32 xl:absolute xl:top-1/2 xl:right-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
         <i class="fa fa-chevron-right"></i>
       </button>
 
@@ -232,14 +232,14 @@
         </button>
       </div>
     </div>
-    <div id="propertiesSwiper" class="mt-12">
-      <div class="w-[300px] h-96 shadow-sm rounded relative">
+    <div id="box" class="mt-12">
+      <div id="slide-img" class="w-[300px] h-[450px] shadow-sm rounded relative">
         <img class="w-full h-full object-cover rounded box-border" src="/public/duplex.jpeg" alt="">
         <div class="absolute left-1/2 top-1/2 rounded -translate-x-1/2 -translate-y-1/2 w-full h-full bg-blue-500 opacity-60 flex justify-center items-center"></div>
-        <a class="w-[160px] h-[40px] flex justify-center items-center bg-white text-blue-500 font-bold font-sans shadow-md" href="#">Buy</a>
+        <a class="w-[160px] h-[40px] flex justify-center items-center bg-white text-blue-500 font-bold font-sans shadow-md rounded-md" href="#">Buy Now</a>
       </div>
-      <div class="w-[250px] flex justify-between items-center px-5 py-2 box-border">
-          <div>
+      <div id="detail-box" class="w-[250px] flex justify-between items-center px-5 py-2 box-border">
+          <div id="type" class="flex flex-col">
           <a class="font-serif font-bold mx-0 my-1 pr-2 text-blue-500" href="#">Imperial Estate</a>
           <span class="font-sans text-gray-800 opacity-50 ">35-42 Raleway Street, Whats Poppins Road</span>
           </div>
