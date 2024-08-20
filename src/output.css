@@ -1283,6 +1283,11 @@ video {
   color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1782,6 +1787,10 @@ video {
     display: block;
   }
 
+  .xl\:inline {
+    display: inline;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -1979,6 +1988,11 @@ video {
 
   .xl\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
