@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./slider.css">
   <link rel="shortcut icon" href="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" />
+    <script src="https://cdn.cdnhub.io/Swiper/11.0.5/swiper-bundle.min.js"></script>
   <title>Home &HorizontalLine; Kemsan Global Ltd.</title>
 </head>
 <body class="font-poppins">
@@ -181,17 +184,7 @@
                 </div>
               </div>
           </div>
-          <!-- <div class="w-80 h-80 xl:w-[28rem] xl:h-[26rem] rounded-lg bg-blue-500 px-10 pt-3 pb-3">
-              <img class="object-cover h-28 w-96 mb-3 rounded" src="/public/mansion_sleek.jpeg" alt="">
-              <div class="px-4">
-                <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to sell a property.</h3>
-                <p class="text-white mb-2">
-                </p>
-                <button class="font-semibold bg-white mt-4 px-10 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out">
-                  Properties
-                </button>
-              </div>
-          </div> -->
+          
           
           <div class="xl:w-[30.5rem] xl:h-[26rem] rounded-lg bg-blue-500 px-8 pt-3 hidden xl:block">
             <img class="object-cover h-28 w-[27rem] mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="">
@@ -245,82 +238,16 @@
         </button>
       </div>
     </div>
+    <div id="propertiesSwiper" class="mt-12">
+      <div class="w-[300px] h-96 shadow-sm rounded-lg">
+        <img class="w-[200px] h-80 object-cover rounded-lg" src="/public/duplex.jpeg" alt="">
+      </div>
+      <div class="">
+        
+      </div>
+    </div>
+ 
   </section>
-    
   </main>
-  <script src="./carousel.js"></script>
-  <script src="./main.js"></script>
 </body>
 </html>
-
-           
-    <!-- <section class="flex flex-col items-center px-4 md:px-8 lg:px-[7.5rem] py-16 md:py-24 lg:py-32">
-      <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-semibold mb-8 md:mb-12">Our Properties</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <div class="relative w-full h-80 md:h-96 lg:h-[500px]">
-          <img class="absolute inset-0 w-full h-full object-cover shadow-md" src="/public/property1.jpg" alt="property1">
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
-          <div class="absolute bottom-4 left-4 text-white">
-            <h4 class="text-lg md:text-xl lg:text-2xl font-semibold">Luxurious Apartment</h4>
-            <p class="text-sm md:text-base lg:text-lg">Victoria Island, Lagos</p>
-          </div>
-        </div>
-
-        <div class="relative w-full h-80 md:h-96 lg:h-[500px]">
-          <img class="absolute inset-0 w-full h-full object-cover shadow-md" src="/public/property2.jpg" alt="property2">
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
-          <div class="absolute bottom-4 left-4 text-white">
-            <h4 class="text-lg md:text-xl lg:text-2xl font-semibold">Modern Office Space</h4>
-            <p class="text-sm md:text-base lg:text-lg">Ikeja, Lagos</p>
-          </div>
-        </div>
-
-        <div class="relative w-full h-80 md:h-96 lg:h-[500px]">
-          <img class="absolute inset-0 w-full h-full object-cover shadow-md" src="/public/property3.jpg" alt="property3">
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
-          <div class="absolute bottom-4 left-4 text-white">
-            <h4 class="text-lg md:text-xl lg:text-2xl font-semibold">Exclusive Villa</h4>
-            <p class="text-sm md:text-base lg:text-lg">Banana Island, Lagos</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="flex flex-col items-center px-4 md:px-8 lg:px-[7.5rem] py-16 md:py-24 lg:py-32 bg-gray-100">
-      <h3 class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-semibold mb-8 md:mb-12">Contact Us</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="flex flex-col items-start">
-          <h4 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">Office Location</h4>
-          <p class="text-sm md:text-base lg:text-lg text-gray-600 mt-2">1234 Real Estate Ave, Victoria Island, Lagos</p>
-        </div>
-        <div class="flex flex-col items-start">
-          <h4 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">Phone</h4>
-          <p class="text-sm md:text-base lg:text-lg text-gray-600 mt-2">+234 812 345 6789</p>
-        </div>
-        <div class="flex flex-col items-start">
-          <h4 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">Email</h4>
-          <p class="text-sm md:text-base lg:text-lg text-gray-600 mt-2">info@kemsanglobal.com</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="bg-gray-800 text-white px-4 md:px-8 lg:px-[7.5rem] py-8">
-    <div class="flex flex-col lg:flex-row justify-between items-center">
-      <p class="text-sm md:text-base lg:text-lg">© 2024 Kemsan Global Ltd. All rights reserved.</p>
-      <ul class="flex space-x-4 mt-4 lg:mt-0">
-        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-twitter"></i></a></li>
-        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#" class="hover:text-gray-400"><i class="fa-brands fa-linkedin-in"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-K6q5orQeCkPNh4pVCmvfvJ0KuoC2elvyMuSzoXgPfnONhzyi3xTVJqQ8ooO9uvB8+ftkCc1VyxN9PknPaYmvpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./main.js"></script>
-
-</body>
-</html> -->

@@ -9,3 +9,15 @@ function hideSideBar() {
   sidebar.classList.remove('translate-y-0');
   sidebar.classList.add('-translate-y-full');
 }
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
