@@ -17,7 +17,6 @@
 </head>
 <body class="font-poppins">
 
-  <div data-aos="slide-down" data-aos-duration="1000">
   <!-- Header -->
   <header id="header" class="bg-white w-full py-3 px-10 xl:px-[12rem] flex items-center shadow-md fixed z-50">
     <a href="#"><img class="w-32 h-auto" src="https://ik.imagekit.io/mshcgnjju/Kemsan/logo_blue.jpg?updatedAt=1723998343606" alt="KEMSAN_logo"></a>
@@ -35,8 +34,7 @@
       </button>
     </nav>
   </header>
-</div>
-  
+
   <!-- Sidebar for small screens -->
   <ul id="sidebar" class="fixed px-8 py-4 h-full top-0 left-0 z-[999] bg-blue-800 flex-col items-start justify-start w-full sm:w-full md:w-full lg:w-full lg:flex-row lg:items-center xl:hidden p-6 transform transition-transform duration-500 ease-in-out -translate-y-full">
     <li class="w-full flex justify-end my-4 text-white" onclick="hideSideBar()">
@@ -118,12 +116,16 @@
         </div>  
       </div>
     
-      <button id="prev" class="absolute bottom-28 left-12 xl:absolute xl:top-1/2 xl:left-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
-        <i class="fa fa-chevron-left"></i>
-      </button>
-      <button id="next" class="absolute bottom-28 left-24 xl:absolute xl:top-1/2 xl:right-6 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-auto rounded-none xl:rounded-3xl text-white">
-        <i class="fa fa-chevron-right"></i>
-      </button>
+      <!-- Previous Button -->
+<button id="prev" class="absolute bottom-28 lg:left-16 md:left-16 sm:left-10 xl:absolute xl:top-1/2 xl:left-4 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-10 rounded-none xl:rounded-3xl text-white">
+  <i class="fa fa-chevron-left"></i>
+</button>
+
+<!-- Next Button -->
+<button id="next" class="absolute bottom-28 lg:left-28 md:left-28 sm:left-28 xl:absolute xl:top-1/2 xl:right-4 xl:transform xl:-translate-y-1/2 p-2 bg-gray-800 w-10 h-10 rounded-none xl:rounded-3xl text-white">
+  <i class="fa fa-chevron-right"></i>
+</button>
+
 
     
       <div class="absolute bottom-2 left-0 right-0 flex justify-center space-x-2 p-2">
@@ -151,7 +153,7 @@
         <p class="font-sans mt-6 text-base">
           At Kemsan Acres Global Limited, we make land ownership and real estate development accessible and straightforward. We procure premium lands, develop residential and commercial properties, and offer bespoke architectural designs tailored to your needs. Our expert consultancy services guide you through property acquisition and investment, while our 24/7 customer support ensures a seamless experience from start to finish.
         </p>
-        <div data-aos="slide-up" data-aos-easing="ease-in-out">
+        <div data-aos="fade-up" data-aos-easing="ease-in-out">
         <button class="bg-blue-500 mt-7 px-12 py-4 rounded-lg text-base text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
           Get Started
         </button>
