@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
   <title>Home &HorizontalLine; Kemsan Global Ltd.</title>
 </head>
 <body class="font-poppins">
@@ -124,13 +127,16 @@
       </div>
     </section>
     <section class="flex flex-col xl:flex-row xl:px-[7.5rem] md:px-16 sm:px-10 py-28 xl:gap-44 sm:gap-10">
-      <div class="relative sm:h-[220px] h-[250px] xl:h-[600px] xl:w-4/6 md:w-full sm:w-full">
+      <div data-aos="fade-right" data-aos-offset="200">
+      <div class="relative sm:h-[220px] h-[250px] xl:h-[600px] xl:w-full md:w-full sm:w-full">
         <div class="h-[500px] xl:h-[450px] md:h-[250px] sm:h-[200px] bg-blue-200 md:w-[300px] sm:w-[300px] xl:w-64 sm:translate-x-[-100px] md:translate-x-[-100px] xl:translate-x-[-20px]"></div>
         <!-- Image for larger screens -->
-        <img class="h-[500px] xl:w-[400px] absolute top-16 left-8 lg:top-6 lg:left-10 object-cover shadow-sp hidden xl:block" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior-slim.jpg?updatedAt=1723998341907" alt="interior">
+        <img class="h-[500px] xl:w-[500px] absolute top-16 left-8 lg:top-6 lg:left-10 object-cover shadow-sp hidden xl:block" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior-slim.jpg?updatedAt=1723998341907" alt="interior">
         <!-- Image for smaller screens -->
         <img class="h-[200px] md:w-[400px] sm:w-[400px] absolute top-5 left-1 sm:left-0 sm:top-9 object-cover shadow-sp xl:hidden" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="interior">
       </div>
+    </div>
+      <div data-aos="fade-left">
       <div class="xl:pr-40 sm:pr-0 mt-10 xl:mt-0">
         <h3 style="line-height: 3rem;" class="text-blue-500 font-bold mt-6 text-xl">What We Do</h3>
         <h2 style="line-height: 3rem;" class="xl:text-5xl md:text-4xl sm:text-4xl font-serif text-black font-bold">
@@ -142,6 +148,7 @@
         <button class="bg-blue-500 mt-7 px-12 py-4 rounded-lg text-base text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
           Get Started
         </button>
+      </div>
       </div>
     </section>
     
@@ -255,6 +262,10 @@
  
   </section>
   </main>
+  <script>
+    AOS.init();
+  </script>
+  
   <script src="./carousel.js"></script>
   <script src="./main.js"></script>
 </body>
