@@ -12,8 +12,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
-  <title>Home &HorizontalLine; Kemsan Global Ltd.</title>
+
+  <title>Home - Kemsan Global Ltd.</title>
 </head>
 <body class="font-poppins">
 
@@ -264,29 +267,92 @@
         </button>
       </div>
     </div>
-    <div id="box" class="mt-12">
-      <div id="slide-img" class="w-[300px] h-[450px] shadow-sm rounded relative">
-        <img class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/duplex.jpeg?updatedAt=1723998345027" alt="">
-        <div class="absolute left-1/2 top-1/2 rounded -translate-x-1/2 -translate-y-1/2 w-full h-full bg-blue-500 opacity-60 flex justify-center items-center"></div>
-        <a class="w-[160px] h-[40px] flex justify-center items-center bg-white text-blue-500 font-bold font-sans shadow-md rounded-md" href="#">Buy Now</a>
-      </div>
-      <div id="detail-box" class="w-[250px] flex justify-between items-center px-5 py-2 box-border">
-          <div id="type" class="flex flex-col">
-          <a class="font-serif font-bold mx-0 my-1 pr-2 text-blue-500" href="#">Imperial Estate</a>
-          <span class="font-sans text-gray-800 opacity-50 ">35-42 Raleway Street, Whats Poppins Road</span>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide mt-12 px-4 group box-border ">
+          <div class="w-[300px] h-[400px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
+            <img class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/6b60d622c1e33c00beca883c7873736d257f2d98-1080x611.jpg?updatedAt=1724189017770" alt="Imperial Estate">
+            <div class="absolute inset-0 flex justify-center items-center">
+              <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
+              <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
+                <a class="font-sans text-white text-3xl font-bold" href="#">₦ 6,600,000</a>
+                <span class="flex gap-[5px] font-serif text-lg text-gray-200 mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill translate-y-[5px]" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>Ketu, Epe, Lagos.
+                </span>
+              </div>
+            </div>
           </div>
-          <a class="font-serif text-gray-800 text-lg font-bold " href="#">NGN 17 000 000</a>
+          <div class="w-[300px] flex flex-col justify-between items-start px-5 py-2 gap-2 box-border border-gray-300 border-[1px] rounded-b border-solid">
+            <div class="flex flex-col">
+              <span class="font-sans text-blue-700 text-sm">DRY LAND</span>
+              <a class="font-semibold font-serif text-black text-xl hover:text-blue-600 duration-200 ease-in-out" href="#">Brookline Estate</a>
+            </div>
+            <hr class="bg-gray-300 w-full h-[1px]">
+            <ul class="group list-none flex gap-4">
+              <li><a href="#"><i class="fas fa-bath text-gray-400 hover:text-blue-700"></i></a> 04</li>
+              <li><a href="#"><i class="fas fa-gate text-gray-400 hover:text-blue-700"></i></a> 03</li>
+              <li><a href="#"><i class="fas fa-expand text-gray-400 hover:text-blue-700"></i></a> 600 sqm</li>
+            </ul>
+            <a href="#"><button class="bg-blue-500 mt-7 px-12 py-4 rounded-lg text-base text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
+              View
+            </button></a>
+          </div>
+        </div>
+        
+        
       </div>
       
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
- </div>
-  </section>
-  </main>
-  <script>
-    AOS.init();
-  </script>
-  
+</section>
+</main>
   <script src="./carousel.js"></script>
   <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+
+AOS.init()
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      }
+    });
+  });
+</script>
 </body>
 </html>
