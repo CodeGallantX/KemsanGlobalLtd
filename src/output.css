@@ -2014,6 +2014,21 @@ video {
     padding-right: 3.5rem;
   }
 
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .xl\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .xl\:pl-40 {
     padding-left: 10rem;
   }
