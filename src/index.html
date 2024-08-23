@@ -268,10 +268,11 @@
       </div>
     </div>
     </div>
+    <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <!-- Slide 1 -->
-        <div class="swiper-slide mt-12 px-4 group box-border ">
+        <div class="swiper-slide mt-12 px-4 group  ">
           <div class="w-[300px] h-[400px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
             <img class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/6b60d622c1e33c00beca883c7873736d257f2d98-1080x611.jpg?updatedAt=1724189017770" alt="Imperial Estate">
             <div class="absolute inset-0 flex justify-center items-center">
@@ -293,11 +294,11 @@
             </div>
             <hr class="bg-gray-300 w-full h-[1px]">
             <ul class="group list-none flex gap-4">
-              <li><a href="#"><i class="fas fa-bath text-gray-400 hover:text-blue-700"></i></a> 04</li>
-              <li><a href="#"><i class="fas fa-gate text-gray-400 hover:text-blue-700"></i></a> 03</li>
+              <!-- <li><a href="#"><i class="fas fa-bath text-gray-400 hover:text-blue-700"></i></a> 04</li>
+              <li><a href="#"><i class="fas fa-gate text-gray-400 hover:text-blue-700"></i></a> 03</li> -->
               <li><a href="#"><i class="fas fa-expand text-gray-400 hover:text-blue-700"></i></a> 600 sqm</li>
             </ul>
-            <a href="#"><button class="bg-blue-500 mt-7 px-12 py-4 rounded-lg text-base text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
+            <a href="#"><button class="bg-blue-500 mt-2 px-14 py-2 rounded-lg text-base text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
               View
             </button></a>
           </div>
@@ -306,12 +307,11 @@
         
       </div>
       
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
       
-      <!-- Add Navigation -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <i class="fa fa-chevron-left absolute left-0 text-2xl p-2 text-white bg-slate-800"></i>
+      <i class="fa fa-chevron-right absolute right-0 text-2xl p-2 text-white bg-slate-800"></i>
+    </div>
     </div>
 </section>
 </main>
@@ -322,36 +322,21 @@
 
 AOS.init()
 
-
   document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      grabCursor: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-      }
-    });
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  loop: true,
+  spaceBetween: 1, // Adjust spacing between slides if needed
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
+  navigation: {
+    nextEl: '.fa-chevron-left',
+    prevEl: '.fa-chevron-right',
+  },
+});
   });
 </script>
 </body>
