@@ -1,39 +1,11 @@
-.panorama-slider {
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .swiper {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .slide-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .swiper-pagination-bullet {
-    background: #007aff;
-  }
-
-  @media (max-width: 768px) {
-    .swiper-slide {
-      height: 50vh;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .swiper-slide {
-      height: 30vh;
-    }
-  }
+.swiper-button-next,
+        .swiper-button-prev {
+          width: 30px; /* Reduced width */
+          height: 30px; /* Reduced height */
+          background-size: 60%; /* Adjust icon size */
+        }
+      
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+          font-size: 16px; /* Adjust icon font size */
+        }
