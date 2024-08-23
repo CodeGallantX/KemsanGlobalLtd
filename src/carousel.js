@@ -25,7 +25,7 @@ function showSlide(index) {
   // Update indicators
   indicators.forEach((indicator, i) => {
     indicator.classList.toggle('bg-gray-100', i === index);
-    indicator.classList.toggle('w-6', i === index);
+    indicator.classList.toggle('w-4', i === index);
   });
 
   currentIndex = index;
