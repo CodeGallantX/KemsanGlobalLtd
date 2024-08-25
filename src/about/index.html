@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="overflow-x-hidden" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./slider.css"> -->
+  <link rel="shortcut icon" href="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+
+  <title>About - Kemsan Global Ltd.</title>
+</head>
+<body class="font-poppins overflow-x-hidden">
+
+  <!-- Header -->
+  <header id="header" class="bg-white w-full py-3 px-10 xl:px-[12rem] flex items-center shadow-md fixed z-50">
+    <a href="#"><img class="w-32 h-auto" src="https://ik.imagekit.io/mshcgnjju/Kemsan/logo_blue.jpg?updatedAt=1723998343606" alt="KEMSAN_logo"></a>
+    <nav class="flex items-center justify-between w-full">
+      <ul class="hidden xl:flex justify-center list-none flex-grow items-center">
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../">Home</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./">About</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">Properties</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">Blog</a></li>
+        <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="#">Contact</a></li>
+      </ul>
+      <button id="register-btn" class="hidden xl:block ml-auto w-28 md:w-32 h-10 md:h-12 text-[16px] md:text-[18px] font-medium text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all duration-300 ease-in-out"><a href="#">Register</a></button>
+      <button id="sidebarh" class="xl:hidden block text-4xl text-blue-800 ml-auto" onclick="showSideBar()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Sidebar for small screens -->
+  <ul id="sidebar" class="fixed px-8 py-4 h-full top-0 left-0 z-[999] bg-blue-800 flex-col items-start justify-start w-full sm:w-full md:w-full lg:w-full lg:flex-row lg:items-center xl:hidden p-6 transform transition-transform duration-500 ease-in-out -translate-y-full">
+    <li class="w-full flex justify-end my-4 text-white" onclick="hideSideBar()">
+        <a href="#"><i class="fa-solid fa-xmark text-4xl"></i></a>
+    </li>
+    <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200 border-solid border-b-2 border-gray-300 transtion-all duration-200 ease-linear" href="#">Home</a></li>
+    <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="#">About</a></li>
+    <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="#">Properties</a></li>
+    <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="#">Blog</a></li>
+    <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="#">Contact</a></li>
+</ul>
+
+<main>
+
+</main>
+  <script src="../carousel.js"></script>
+  <script src="../main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+
+AOS.init()
+</script>
+</body>
+</html>
