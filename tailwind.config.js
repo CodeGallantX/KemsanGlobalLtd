@@ -9,8 +9,8 @@ module.exports = {
       'xl': '1024px',
     },
     fontFamily: {
-      sans: ['Figtree', 'sans-serif'],
-      serif: ['Poppins', 'serif'],
+      sans: ['Ubuntu', 'sans-serif'],
+      serif: ['Raleway', 'serif'],
     },
     // colors: {
     //   'black': "#000",
