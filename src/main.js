@@ -13,24 +13,28 @@ function hideSideBar() {
 
 
 // Video Pop-up
-
 function showVideoPopup() {
   const videoPopup = document.getElementById('videoPopup');
-  const videoElement = videoPopup.querySelector('video');
-  const bodyElement = document.getElementsByTagName('body');
+  const iframeElement = videoPopup.querySelector('iframe');
+  const bodyElement = document.getElementsByTagName('body')[0];
 
-  videoElement.play();
+  // Add autoplay to the video by appending `&autoplay=1` to the src
+  const src = iframeElement.getAttribute('src');
+  iframeElement.setAttribute('src', src + '&autoplay=1');
+
   videoPopup.classList.remove('hidden');
   bodyElement.classList.add('overflow-y-hidden');
 }
 
 function hideVideoPopup() {
   const videoPopup = document.getElementById('videoPopup');
-  const videoElement = videoPopup.querySelector('video');
-  const bodyElement = document.getElementsByTagName('body');
+  const iframeElement = videoPopup.querySelector('iframe');
+  const bodyElement = document.getElementsByTagName('body')[0];
 
-  videoElement.pause();
-  videoElement.currentTime = 0;
+  // Remove autoplay by resetting the src to its original value
+  const src = iframeElement.getAttribute('src').replace('&autoplay=1', '');
+  iframeElement.setAttribute('src', src);
+
   videoPopup.classList.add('hidden');
-  bodyElement.classList.remove('overflow-hidden');
+  bodyElement.classList.remove('overflow-y-hidden');
 }
