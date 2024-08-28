@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="./slider.css"> -->
+  <link rel="stylesheet" href="./slider.css">
   <link rel="shortcut icon" href="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,10 +44,10 @@
 <!-- Meta Tags Generated with https://metatags.io -->
 
 </head>
-<body class="font-poppins overflow-x-hidden">
+<body class="font-sans overflow-x-hidden">
 
   <!-- Header -->
-  <header id="header" class="bg-white w-full py-3 px-10 xl:px-24 flex items-center shadow-md fixed z-50">
+  <header id="header" class="bg-white w-full py-3 px-10 xl:px-24 flex items-center shadow-md fixed z-10">
     <a href="#"><img class="w-24 h-auto" src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400https://ik.imagekit.io/mshcgnjju/Kemsan/logo_blue.jpg?updatedAt=1723998343606" alt="KEMSAN_logo"></a>
     <nav class="flex items-center justify-between w-full">
       <ul class="hidden xl:flex justify-center list-none flex-grow items-center">
@@ -57,7 +57,7 @@
         <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./blog/">Blog</a></li>
         <li><a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./contact/">Contact</a></li>
       </ul>
-      <button id="register-btn" class="hidden xl:block ml-auto w-auto h-auto px-4 py-2 text-[16px] md:text-[18px] font-medium text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all duration-300 ease-in-out"><a href="#">Book an inspection</a></button>
+      <button id="register-btn" class="hidden xl:block ml-auto w-auto h-auto px-4 py-2 text-[16px] md:text-[18px] font-medium text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all duration-300 ease-in-out"><a href="http://realease.hypersence.com.ng/">Book an inspection</a></button>
       <button id="sidebarh" class="xl:hidden block text-4xl text-blue-800 ml-auto" onclick="showSideBar()">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -74,7 +74,7 @@
     <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="./properties/">Properties</a></li>
     <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="./blog/">Blog</a></li>
     <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="./contact/">Contact</a></li>
-    <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="./book-an-inspection/">Book an Inspection</a></li>
+    <li><a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="https://realease.hypersence.com.ng/">Book an Inspection</a></li>
     
 </ul>
 
@@ -87,7 +87,7 @@
           <div class="relative w-full h-screen xl:h-[40rem]">
             <img loading="lazy"  class="w-full h-full object-cover" src="https://ik.imagekit.io/mshcgnjju/Kemsan/kemsan_building.JPG?updatedAt=1724004503875" alt="slide 1">
             <div class="absolute inset-0 bg-gradient-to-br from-black via-transparent to-blue-700"></div>
-            <div class="absolute inset-0 flex items-center justify-between container lg:px-16 md:px-12 sm:px-8 xl:px-24 ">
+            <div class="absolute inset-0 flex items-center justify-between container sm:mt-14 lg:px-16 md:px-12 sm:px-8 xl:px-24 ">
               <div class="flex flex-col w-full">
                 <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500">
                 <h2 class="sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-serif font-bold opacity-100 transition-opacity duration-500 ease-in-out">Modernizing <br> property acquisition <br> with ease</h2>
@@ -97,14 +97,14 @@
                 </div>
                 <div class="mt-10 flex flex-col xl:flex-row md:flex-row lg:flex-row gap-4" data-aos="fade-up" data-aos-delay="550" data-aos-duration="2000">
                   <button class="bg-blue-500 text-sm hover:bg-transparent md:px-3 lg:px-auto xl:px-7 py-3 hover:border-gray-50 hover:border-[1px] hover:border-solid border-transparent text-white font-sans rounded transition-all duration-300 ease-in-out xl:text-base">Own a Property</button>
-                  <button class="hover:bg-blue-500 text-sm bg-transparent md:px-3 lg:px-auto xl:px-7 py-3 border-gray-50 border-[1px] border-solid hover:border-transparent text-white font-sans rounded duration-300 ease-in-out xl:text-base">Explore Properties</button>
+                  <button class="sm:hidden bsm:hidden md:inline-block lg:inline-block xl:inline-block hover:bg-blue-500 text-sm bg-transparent md:px-3 lg:px-auto xl:px-7 py-3 border-gray-50 border-[1px] border-solid hover:border-transparent text-white font-sans rounded duration-300 ease-in-out xl:text-base">Explore Properties</button>
                 </div>
               </div>
-              <a class="hidden xl:flex lg:flex flex-row items-center xl:justify-center absolute bottom-64 right-[-200px]" href="#">
+              <a onclick="showVideoPopup()" class="hidden xl:flex lg:flex flex-row items-center xl:justify-center absolute bottom-64 right-[-200px]" href="#">
                 <div class="rounded-full w-20 xl:w-36 xl:h-36 bg-blue-600 blur-md border-gray-100 border-solid border-2"></div>
                 <i class="fa fa-play text-4xl text-white translate-x-[-90px]"></i>
               </a>
-               <a class="lg:hidden xl:hidden bg-[rgb(29, 78, 216)] backdrop-blur-md px-8 py-7  absolute sm:bottom-8 bottom-20 right-8 rounded-full" href="#">
+               <a onclick="showVideoPopup()" class="lg:hidden xl:hidden bg-[rgb(29, 78, 216)] backdrop-blur-md px-8 py-7  absolute sm:bottom-8 bottom-20 right-8 rounded-full" href="#">
                 <i class="fa fa-play sm:text-2xl text-4xl text-white"></i>
               </a>
           </div>
@@ -127,11 +127,11 @@
                   <button class="hover:bg-blue-500 text-sm bg-transparent md:px-3 lg:px-auto xl:px-7 py-3 border-gray-50 border-[1px] border-solid hover:border-transparent text-white font-sans rounded duration-300 ease-in-out xl:text-base">Explore Properties</button>
                 </div>
               </div>
-              <a class="hidden xl:flex lg:flex flex-row items-center xl:justify-center absolute bottom-64 right-[-200px]" href="#">
+              <a onclick="showVideoPopup()" class="hidden  xl:flex lg:flex flex-row items-center xl:justify-center absolute bottom-64 right-[-200px]" href="#">
                 <div class="rounded-full w-20 xl:w-36 xl:h-36 bg-blue-600 blur-md border-gray-100 border-solid border-2"></div>
                 <i class="fa fa-play text-4xl text-white translate-x-[-90px]"></i>
               </a>
-               <a class="lg:hidden xl:hidden bg-[rgb(29, 78, 216)] backdrop-blur-md px-8 py-7  absolute sm:bottom-8 bottom-20 right-8 rounded-full" href="#">
+               <a onclick="showVideoPopup()" class="lg:hidden xl:hidden bg-[rgb(29, 78, 216)] backdrop-blur-md px-8 py-7  absolute sm:bottom-8 bottom-20 right-8 rounded-full" href="#">
                 <i class="fa fa-play sm:text-2xl text-4xl text-white"></i>
               </a>
           </div>
@@ -154,11 +154,11 @@
                   <button class="hover:bg-blue-500 text-sm bg-transparent md:px-3 lg:px-auto xl:px-7 py-3 border-gray-50 border-[1px] border-solid hover:border-transparent text-white font-sans rounded duration-300 ease-in-out xl:text-base">Explore Properties</button>
                 </div>
               </div>
-              <a class="hidden xl:flex lg:flex flex-row items-center xl:justify-center absolute bottom-64 right-[-200px]" href="#">
+              <a onclick="showVideoPopup()" class="hidden xl:flex lg:flex flex-row items-center xl:justify-center absolute bottom-64 right-[-200px]" href="#">
                 <div class="rounded-full w-20 xl:w-36 xl:h-36 bg-blue-600 blur-md border-gray-100 border-solid border-2"></div>
                 <i class="fa fa-play text-4xl text-white translate-x-[-90px]"></i>
               </a>
-               <a class="lg:hidden xl:hidden bg-[rgb(29, 78, 216)] backdrop-blur-md px-8 py-7  absolute sm:bottom-8 bottom-20 right-8 rounded-full" href="#">
+               <a onclick="showVideoPopup()" class="lg:hidden xl:hidden bg-[rgb(29, 78, 216)] backdrop-blur-md px-8 py-7  absolute sm:bottom-8 bottom-20 right-8 rounded-full" href="#">
                 <i class="fa fa-play sm:text-2xl text-4xl text-white"></i>
               </a>
           </div>
@@ -170,21 +170,34 @@
 
 
       <!-- Previous Button -->
-<button id="prev" class="absolute bottom-28 sm:bottom-20 md:top-1/2 md:left-0 lg:top-1/2 lg:left-0 left-16 sm:left-8 xl:top-1/2 xl:left-0 p-2 bg-slate-800 xl:bg-transparent lg:bg-transparent md:bg-transparent w-10 h-10 rounded-none text-white">
-  <i class="fa fa-chevron-left"></i>
-</button>
+  <button id="prev" class="absolute bottom-28 sm:bottom-14 md:top-1/2 md:left-0 lg:top-1/2 lg:left-0 left-16 sm:left-8 xl:top-1/2 xl:left-0 p-2 bg-slate-800 xl:bg-transparent lg:bg-transparent md:bg-transparent w-10 h-10 rounded-none text-white">
+    <i class="fa fa-chevron-left"></i>
+  </button>
 
-<!-- Next Button -->
-<button id="next" class="absolute bottom-28 sm:bottom-20 md:top-1/2 md:right-0 lg:top-1/2 lg:right-0 sm:right-20 xl:top-1/2 xl:right-0  p-2 xl:bg-transparent lg:bg-transparent md:bg-transparent  bg-slate-800 w-10 h-10 rounded-none text-white">
-  <i class="fa fa-chevron-right"></i>
-</button>
+    <!-- Next Button -->
+  <button id="next" class="absolute bottom-28 sm:bottom-14 md:top-1/2 md:right-0 lg:top-1/2 lg:right-0 sm:right-44 xl:top-1/2 xl:right-0  p-2 xl:bg-transparent lg:bg-transparent md:bg-transparent  bg-slate-800 w-10 h-10 rounded-none text-white">
+    <i class="fa fa-chevron-right"></i>
+  </button>
 
-      <div class="absolute bottom-2 left-0 right-0 flex justify-center space-x-2 p-2">
+  <div class="absolute bottom-2 left-0 right-0 flex justify-center space-x-2 p-2">
         <button class="w-2 h-2  bg-gray-300 rounded-full" data-slide="0"></button>
         <button class="w-2 h-2  bg-gray-300 rounded-full" data-slide="1"></button>
         <button class="w-2 h-2  bg-gray-300 rounded-full" data-slide="2"></button>
       </div>
     </section>
+
+<!-- VIDEO POPUP  -->
+  <div id="videoPopup" class="hidden">
+    <div class="fixed inset-0 bg-black flex justify-center items-center z-50 p-0">
+      <img class="w-36 h-auto absolute left-4 top-4 grayscale" src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400https://ik.imagekit.io/mshcgnjju/Kemsan/logo_blue.jpg?updatedAt=1723998343606" alt="KEMSAN_logo">
+      <li class="w-full flex justify-end text-white right-8 top-2 absolute p-4" onclick="hideVideoPopup()">
+        <a href="#"><i class="fa-solid fa-xmark text-4xl"></i></a>
+    </li>
+      <video width="600px" height="auto" src="/public/3Whale_stuff.mp4" autoplay controls loop class="absolute"></video>
+    </div>
+  </div>
+<!-- VIDEO POPUP  -->
+     
     <section class="flex flex-col xl:flex-row xl:px-[7.5rem] md:px-16 sm:px-10 py-28 xl:gap-44 sm:gap-10">
       <div data-aos="fade-right" data-aos-delay="100"  data-aos-duration="1000">
       <div class="relative sm:h-[220px] h-[250px] xl:h-[600px] xl:w-full md:w-full sm:w-full">
@@ -212,7 +225,6 @@
       </div>
       </div>
     </section>
-    
     <section class="bg-blue-700 px-8 xl:px-32 xl:pt-20 py-24 xl:py-32">
       <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
       <h2 class="text-center text-3xl lg:text-5xl xl:text-6xl font-serif text-white font-bold lg:px-32 xl:px-44 mb-12">
@@ -222,7 +234,7 @@
       <div class="flex flex-col items-center justify-center xl:flex-row gap-16 xl:gap-36">
         <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <div class="xl:w-[30.5rem] xl:h-[26rem] rounded-lg bg-purple-800 px-8 pt-3 hidden xl:block">
-              <img loading="lazy"  loading="lazy" class="object-cover h-28 w-[27rem] mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="">
+              <img loading="lazy" class="object-cover h-32 w-[27rem] mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="">
               <div class="px-4">
                 <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
                 <p class="text-white mb-4">
@@ -243,7 +255,7 @@
           </div>
           <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div class="sm:w-[18rem] sm:h-[27rem] md:w-[21rem] md:h-[25rem] lg:w-[21rem] lg:h-[24rem] rounded-lg border-white border-2 border-solid bg-purple-800 sm:px-5 px-8 pt-3 xl:hidden">
-              <img loading="lazy"  loading="lazy"  class="object-cover h-28 w-80 mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="">
+              <img loading="lazy" class="object-cover h-32 w-80 mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="">
               <div class="px-4">
                 <h3 class="sm:text-xl text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
                 <p class="text-white mb-4">
@@ -260,7 +272,7 @@
           
           <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div class="xl:w-[30.5rem] xl:h-[26rem] rounded-lg bg-blue-500 px-8 pt-3 hidden xl:block">
-            <img loading="lazy"  loading="lazy"  class="object-cover h-28 w-[27rem] mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="">
+            <img loading="lazy" class="object-cover h-32 w-[27rem] mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="">
             <div class="px-4">
               <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to sell a property.</h3>
               <p class="text-white mb-4">
@@ -280,7 +292,7 @@
         </div>
         <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <div class="sm:w-[18rem] sm:h-[27rem] md:w-[21rem] md:h-[25rem] lg:w-[21rem] lg:h-[26rem] rounded-lg border-white border-2 border-solid bg-blue-500 sm:px-5 px-8 pt-3 xl:hidden">
-            <img loading="lazy"  loading="lazy"  class="object-cover h-28 w-96 mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="">
+            <img loading="lazy"  class="object-cover h-32 w-96 mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="">
             <div class="px-4">
               <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to sell a property.</h3>
               <p class="text-white mb-4">
@@ -320,9 +332,9 @@
       <div class="swiper-container px-10 xl:px-20 overflow-hidden">
         <div class="swiper-wrapper">
           <!-- Slide -->
-          <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
-            <div class="   w-[300px] h-[350px]   shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/8f4c2f776f22c5337d865591dcd95544a4df94d1-1080x810.jpg?updatedAt=1724189017905" alt="Imperial Estate">
+          <div class="swiper-slide mt-12 group box-border rounded-lg hover:shadow-2xl">  
+            <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
+              <img loading="lazy" class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/8f4c2f776f22c5337d865591dcd95544a4df94d1-1080x810.jpg?updatedAt=1724189017905" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -335,7 +347,7 @@
                 </div>
               </div>
             </div>
-            <div class="  w-[300px]   flex flex-col justify-between items-start px-4 py-3 gap-2 border-gray-300 border-[1px] border-solid rounded-b border-t-0">
+            <div class="w-[300px] flex flex-col justify-between items-start px-4 py-3 gap-2 border-gray-300 border-[1px] border-solid rounded-b border-t-0">
               <div class="flex flex-col">
                 <span class="font-sans text-blue-700 text-sm">DRY LAND</span>
                 <a class="font-semibold font-serif text-black text-xl hover:text-blue-600 duration-200 ease-in-out" href="#">Imperial Estate</a>
@@ -350,9 +362,9 @@
             </div>
           </div>
           <!-- Slide 1 -->
-          <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl"> 
-            <div class="   w-[300px] h-[350px]   shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/aras-court?updatedAt=1724455720848" alt="Ara's Court">
+          <div class="swiper-slide w-[300px] mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl"> 
+            <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/aras-court?updatedAt=1724455720848" alt="Ara's Court">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -382,7 +394,7 @@
           <!-- Slide 2 -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl"> 
             <div class=" w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/7c2a32ed2bcce6126550d12c41a00c77f90eeb33-780x1040.jpg?updatedAt=1724189017640" alt="Imperial Estate">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/7c2a32ed2bcce6126550d12c41a00c77f90eeb33-780x1040.jpg?updatedAt=1724189017640" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -412,7 +424,7 @@
           <!-- Slide 3 -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
             <div class=" w-[300px] h-[350px]  shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/2387c19e262d451acecf5e9cf30491afeec45d73-1080x810.jpg?updatedAt=1724189017711" alt="Imperial Estate">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/2387c19e262d451acecf5e9cf30491afeec45d73-1080x810.jpg?updatedAt=1724189017711" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -442,7 +454,7 @@
           <!-- Slide -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
             <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/504300600cccb2ffb5cb404d5edb753c80d25c54-1080x608.jpg?updatedAt=1724189017791" alt="Imperial Estate">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/504300600cccb2ffb5cb404d5edb753c80d25c54-1080x608.jpg?updatedAt=1724189017791" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -472,7 +484,7 @@
           <!-- Slide -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
             <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/spring-field?updatedAt=1724455722458" alt="spring-field">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/spring-field?updatedAt=1724455722458" alt="spring-field">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -502,7 +514,7 @@
           <!-- Slide -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
             <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/504300600cccb2ffb5cb404d5edb753c80d25c54-1080x608.jpg?updatedAt=1724189017791" alt="Imperial Estate">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/504300600cccb2ffb5cb404d5edb753c80d25c54-1080x608.jpg?updatedAt=1724189017791" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -532,7 +544,7 @@
           <!-- Slide -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
             <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/the-unicorn-estate" alt="Imperial Estate">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/the-unicorn-estate" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -562,7 +574,7 @@
           <!-- Slide -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
             <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Zinariya" alt="Imperial Estate">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Zinariya" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -592,7 +604,7 @@
           <!-- Slide -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
             <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Jade-estate?updatedAt=1724455724028" alt="Imperial Estate">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Jade-estate?updatedAt=1724455724028" alt="Imperial Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -621,8 +633,8 @@
           </div>
           <!-- Slide -->
           <div class="swiper-slide mt-12 mr-0 group box-border rounded-lg hover:shadow-2xl">  
-            <div class="w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
-              <img loading="lazy"  loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/emerald-estate?updatedAt=1724455718917" alt="Emerald Estate">
+            <div class="max-w-[300px] h-[350px] shadow-sm rounded relative cursor-pointer transition-all duration-300 ease-in-out">
+              <img loading="lazy"  class="w-full h-full object-cover rounded box-border" src="https://ik.imagekit.io/mshcgnjju/Kemsan/emerald-estate?updatedAt=1724455718917" alt="Emerald Estate">
               <div class="absolute inset-0 flex justify-center items-center">
                 <div class="group-hover:w-full group-hover:h-full group-hover:opacity-40 group-hover:shadow-md w-0 h-0 rounded bg-gray-900 opacity-0 transition-all duration-500 ease-in-out"></div>
                 <div class="absolute inset-0 flex flex-col justify-end items-start px-4 pb-2 text-left opacity-0 group-hover:opacity-100 transition-opacity delay-100 duration-700 ease-in-out">
@@ -649,9 +661,7 @@
               </button></a>
             </div>
           </div>
-          
-          <!-- Additional slides... -->
-          </div>
+        </div>
       
         
         <!-- <div class="swiper-pagination"></div> -->
@@ -677,37 +687,42 @@
   </div>
   
   <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-  <div id="testimonySlider" class="swiper-container container ">
+  <div id="testimonySlider" class="swiper-container container px-10 xl:px-52">
     <div class="swiper-wrapper">
       <div class="swiper-slide flex flex-row justify-center items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72">
-        <div>
-          <img loading="lazy"  class="rounded-full w-10 h-10 object-cover" src="/public/customer_2.jpg" alt="happy customer">
-        </div>
         <div class="flex flex-col">
           <div class="text-gray-600 text-sm">Each property reflects our commitment to excellence.</div>
           <span class="font-bold font-serif mt-2 text-gray-900">- Christopher Jaeger</span>
         </div>
-      </div>
-      <div class="swiper-slide flex flex-row items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72">
         <div>
           <img loading="lazy"  class="rounded-full w-10 h-10 object-cover" src="/public/customer_2.jpg" alt="happy customer">
         </div>
+      </div>
+      <div class="swiper-slide flex flex-row items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72">
         <div class="flex flex-col">
           <p class="text-gray-600 text-sm">A seamless experience from start to finish, with top-notch service.</p>
           <span class="font-bold font-serif mt-2 text-gray-900">- Emily Hart</span>
         </div>
-      </div>
-      <div class="swiper-slide flex flex-row items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72">
         <div>
           <img loading="lazy"  class="rounded-full w-10 h-10 object-cover" src="/public/customer_2.jpg" alt="happy customer">
         </div>
+      </div>
+      <div class="swiper-slide flex flex-row items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72">
         <div class="flex flex-col">
           <p class="text-gray-600 text-sm">A seamless experience from start to finish, with top-notch service.</p>
           <span class="font-bold font-serif mt-2 text-gray-900">- Emily Hart</span>
+        </div>
+        <div>
+          <img loading="lazy"  class="rounded-full w-10 h-10 object-cover" src="/public/customer_2.jpg" alt="happy customer">
         </div>
       </div>
     </div>
-  </div>
+      <div class="swiper-pagination"></div>
+      
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
 </div>
 </section>
 <section class="py-12 bg-gray-50">
@@ -792,8 +807,8 @@ AOS.init()
 
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4,
-        spaceBetween: 25, // Ensures sufficient space between slides
+        // slidesPerView: 4,
+        // spaceBetween: 25, // Ensures sufficient space between slides
         loop: true,
         grabCursor: true,
         pagination: {
@@ -805,21 +820,21 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            325: { // Small devices
+            320: { // Small devices
                 slidesPerView: 1,
-                spaceBetween: 15,
+                spaceBetween: 400,
             },
             425: { // Small to medium devices
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             768: { // Tablets
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 25,
             },
             1024: { // Desktop
                 slidesPerView: 4,
-                spaceBetween: 30,
+                spaceBetween: 25,
                 }
         },
     });
@@ -827,9 +842,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
         var swiper = new Swiper('#testimonySlider', {
-            slidesPerView: 2,
+            // slidesPerView: 2,
             spaceBetween: 30,
             loop: true,
+            grabCursor: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

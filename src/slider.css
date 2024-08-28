@@ -1,0 +1,7 @@
+.swiper-slide {
+    max-width: 300px;
+}
+
+.swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, -35px);
+}
