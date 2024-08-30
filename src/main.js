@@ -45,5 +45,5 @@ window.addEventListener('load', function() {
   preloader.style.opacity = '0';
   setTimeout(function() {
       preloader.style.display = 'none';
-  }, 2000); 
+  }, 750); 
 });
