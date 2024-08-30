@@ -18,7 +18,6 @@ function showVideoPopup() {
   const iframeElement = videoPopup.querySelector('iframe');
   const bodyElement = document.getElementsByTagName('body')[0];
 
-  // Add autoplay to the video by appending `&autoplay=1` to the src
   const src = iframeElement.getAttribute('src');
   iframeElement.setAttribute('src', src + '&autoplay=1');
 
@@ -31,10 +30,20 @@ function hideVideoPopup() {
   const iframeElement = videoPopup.querySelector('iframe');
   const bodyElement = document.getElementsByTagName('body')[0];
 
-  // Remove autoplay by resetting the src to its original value
   const src = iframeElement.getAttribute('src').replace('&autoplay=1', '');
   iframeElement.setAttribute('src', src);
 
   videoPopup.classList.add('hidden');
   bodyElement.classList.remove('overflow-y-hidden');
 }
+
+
+
+// Preloader
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  preloader.style.opacity = '0';
+  setTimeout(function() {
+      preloader.style.display = 'none';
+  }, 500); 
+});
