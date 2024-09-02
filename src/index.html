@@ -40,7 +40,7 @@
     <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body class="font-sans overflow-x-hidden">
-    <div id="preloader" class="w-full h-screen bg-gray-50 flex flex-row gap-6 justify-center items-center fixed inset-0 z-50">
+    <div id="preloader" class="w-full h-screen bg-gray-50 flex flex-row gap-6 justify-center items-center fixed inset-0 z-50 overflow-hidden">
       <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" data-aos-mirror="true">
         <img src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN Logo" class="w-32 h-32 mb-4 animate-pulse">
       </div>
@@ -314,42 +314,65 @@
           </div>
         </div>
         <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="container bg-blue-800 px-4 mx-auto">
-            <div class="relative">
-              <div class="absolute top-0 z-10 w-24 h-full md:w-40 lg:w-52 bg-gradient-to-r from-blue-800 to-transparent"></div>
-              <div class="relative w-full mx-auto mt-12 lg:mt-16 mb-4 lg:mb-10">
-                <div class="owl-carousel">
-                  <div class="flex justify-between space-x-4">
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Lagos" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Lagos</p>
+          <div class="relative overflow-hidden w-full h-72">
+            <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+                <!-- Slide 1 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative">
+                        <img src="assets/lagos.webp" alt="Lagos" class="w-full h-72 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                            <h2 class="text-white text-2xl font-bold">Lagos</h2>
+                        </div>
                     </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Abuja" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Abuja</p>
-                    </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Port Harcourt" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Port Harcourt</p>
-                    </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Ogun" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Ogun</p>
-                    </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Ibadan" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Ibadan</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <!-- Slide 2 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative">
+                        <img src="assets/abuja.webp" alt="Abuja" class="w-full h-72 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                            <h2 class="text-white text-2xl font-bold">Abuja</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative">
+                        <img src="assets/ibadan.webp" alt="Ibadan" class="w-full h-72 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                            <h2 class="text-white text-2xl font-bold">Ibadan</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative">
+                        <img src="assets/ogun.webp" alt="Ogun" class="w-full h-72 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                            <h2 class="text-white text-2xl font-bold">Ogun</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative">
+                        <img src="assets/ph.webp" alt="Port Harcourt" class="w-full h-72 object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                            <h2 class="text-white text-2xl font-bold">Port Harcourt</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+    
+            <!-- Slider Controls -->
+            <div class="absolute inset-0 flex items-center justify-between px-4">
+                <button id="prevButton" class="bg-black bg-opacity-50 text-white p-2">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="nextButton" class="bg-black bg-opacity-50 text-white p-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
         </div>
         <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div class="container bg-blue-800 px-4 mx-auto">
@@ -718,10 +741,23 @@
         </div>
         <div></div>
       </section>
-      <section class="flex flex-col items-center justify-center w-full py-8">
+      <section class="flex flex-col items-center justify-center w-full py-24">   
+        <h2 class="text-3xl font-serif font-bold text-blue-600">Kemsan in the media</h2>
+        <div class="container">
+            <div class="box-border flex-1">
+              <img class=" rounded-xl" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Ambassador.jpg?updatedAt=1725279664971" loading="lazy">
+              <div>
+                <img class="relative" loading="lazy" src="https://ik.imagekit.io/mshcgnjju/Kemsan/site-logo.svg?updatedAt=1725278378539">
+                <h3 class="text-2xl font-serif text-blue6-600">Be a Kemsan Ambassador</h3>
+                <a href="#">Read More </a>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="flex flex-col items-center justify-center w-full py-24">
         <h3 class="text-[#222] text-xl font-bold">VISIT US TODAY</h3>
-        <h2 class="text-3xl text-blue-700 font-serif">Kemsan Acres Global Limited, Oyo, Ibadan.</h2>
-        <iframe class="rounded-xl w-10/12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126606.8604039389!2d3.8744272!3d7.4137444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039939f0486d8db%3A0x1b756107b552d377!2sKemsan%20Acres%20Global%20Ltd%20Head%20Ofiice!5e0!3m2!1sen!2sng!4v1725136417283!5m2!1sen!2sng" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2 class="text-3xl text-blue-800 font-serif font-bold text-center w-1/6">Kemsan Building, beside Pemoda filling station Monatan, <br> Iwo road, Ibadan, Oyo State</h2>
+        <iframe class="rounded-2xl w-10/12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126606.8604039389!2d3.8744272!3d7.4137444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039939f0486d8db%3A0x1b756107b552d377!2sKemsan%20Acres%20Global%20Ltd%20Head%20Ofiice!5e0!3m2!1sen!2sng!4v1725136417283!5m2!1sen!2sng" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <footer class="flex flex-wrap gap-14 px-4 md:px-44 py-12 bg-white">
         <div class="flex flex-col w-full justify-start items-start md:w-72 mb-8 md:mb-0">

@@ -50,3 +50,33 @@ indicators.forEach(indicator => {
 
 // Initialize the first slide
 showSlide(currentIndex);
+
+
+
+
+
+// // Properties Slider
+// const slider = document.getElementById('slider');
+//         const slides = slider.children;
+//         const totalSlides = slides.length;
+//         let currentIndex = 0;
+//         const intervalTime = 5000;
+
+//         function showSlide(index) {
+//             slider.style.transform = `translateX(-${index * 100}%)`;
+//         }
+
+//         function nextSlide() {
+//             currentIndex = (currentIndex + 1) % totalSlides;
+//             showSlide(currentIndex);
+//         }
+
+//         function prevSlide() {
+//             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+//             showSlide(currentIndex);
+//         }
+
+//         document.getElementById('next').addEventListener('click', nextSlide);
+//         document.getElementById('prev').addEventListener('click', prevSlide);
+
+//         setInterval(nextSlide, intervalTime);
