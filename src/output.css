@@ -972,6 +972,10 @@ video {
   width: 2rem;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
