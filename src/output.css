@@ -968,6 +968,10 @@ video {
   width: 41.666667%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1878,6 +1882,16 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#EC712C\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(236 113 44 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover {
