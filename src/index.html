@@ -758,56 +758,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       AOS.init()
-      document.addEventListener('DOMContentLoaded', function() {
-        var swiper = new Swiper('.swiper-container', {
-          // slidesPerView: 4,
-          // spaceBetween: 25, // Ensures sufficient space between slides
-          loop: true,
-          grabCursor: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          breakpoints: {
-            320: { // Small devices
-              slidesPerView: 1,
-              spaceBetween: 400,
-            },
-            425: { // Small to medium devices
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: { // Tablets
-              slidesPerView: 2,
-              spaceBetween: 25,
-            },
-            1024: { // Desktop
-              slidesPerView: 4,
-              spaceBetween: 25,
-            }
-          },
-        });
-      });
-      document.addEventListener('DOMContentLoaded', function() {
-        var swiper = new Swiper('#testimonySlider', {
-          // slidesPerView: 2,
-          spaceBetween: 30,
-          loop: true,
-          grabCursor: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-btn-next',
-            prevEl: '.swiper-btn-prev',
-          },
-        });
-      });
+      $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
     </script>
   </body>
 </html>
