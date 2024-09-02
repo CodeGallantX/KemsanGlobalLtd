@@ -976,6 +976,10 @@ video {
   width: 66.666667%;
 }
 
+.w-9\/12 {
+  width: 75%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1123,6 +1127,10 @@ video {
 
 .gap-7 {
   gap: 1.75rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-y-8 {
