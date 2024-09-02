@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://kit.fontawesome.com/8b623391f3.js" crossorigin="anonymous"></script>
@@ -314,105 +316,10 @@
           </div>
         </div>
         <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="relative overflow-hidden w-full h-72">
-            <div id="slider" class="flex transition-transform duration-700 ease-in-out">
-                <!-- Slide 1 -->
-                <div class="w-full flex-shrink-0">
-                    <div class="relative">
-                        <img src="assets/lagos.webp" alt="Lagos" class="w-full h-72 object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                            <h2 class="text-white text-2xl font-bold">Lagos</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="w-full flex-shrink-0">
-                    <div class="relative">
-                        <img src="assets/abuja.webp" alt="Abuja" class="w-full h-72 object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                            <h2 class="text-white text-2xl font-bold">Abuja</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="w-full flex-shrink-0">
-                    <div class="relative">
-                        <img src="assets/ibadan.webp" alt="Ibadan" class="w-full h-72 object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                            <h2 class="text-white text-2xl font-bold">Ibadan</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 4 -->
-                <div class="w-full flex-shrink-0">
-                    <div class="relative">
-                        <img src="assets/ogun.webp" alt="Ogun" class="w-full h-72 object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                            <h2 class="text-white text-2xl font-bold">Ogun</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 5 -->
-                <div class="w-full flex-shrink-0">
-                    <div class="relative">
-                        <img src="assets/ph.webp" alt="Port Harcourt" class="w-full h-72 object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                            <h2 class="text-white text-2xl font-bold">Port Harcourt</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Slider Controls -->
-            <div class="absolute inset-0 flex items-center justify-between px-4">
-                <button id="prevButton" class="bg-black bg-opacity-50 text-white p-2">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button id="nextButton" class="bg-black bg-opacity-50 text-white p-2">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
-        </div>
-        <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="container bg-blue-800 px-4 mx-auto">
-            <div class="relative">
-              <div class="absolute top-0 z-10 w-24 h-full md:w-40 lg:w-52 bg-gradient-to-r from-blue-800 to-transparent"></div>
-              <div class="relative w-full mx-auto mt-12 lg:mt-16 mb-4 lg:mb-10">
-                <div class="owl-carousel">
-                  <div class="flex justify-between space-x-4">
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Lagos" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Lagos</p>
-                    </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Abuja" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Abuja</p>
-                    </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Port Harcourt" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Port Harcourt</p>
-                    </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Ogun" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Ogun</p>
-                    </div>
-                    <!-- Slide Item -->
-                    <div class="flex flex-col justify-center items-center bg-white rounded-3xl p-4 shadow-lg">
-                      <img class="w-full h-auto object-cover rounded-t-lg" src="/path-to-your-image.jpg" alt="Ibadan" />
-                      <p class="text-center text-sm lg:text-sm-15 text-gray-700 mt-2">Ibadan</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="owl-carousel">
+          
           </div>
         </div>
-                
       </section>
       <!-- <section class="py-12 bg-white"><div class="container mx-auto text-center"><div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"><h4 class="text-blue-500 text-lg font-bold mb-2">Testimonials</h4></div><div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"><h2 class="xl:text-5xl md:text-4xl sm:text-3xl font-serif text-black font-bold mb-4">Trust us with your property</h2><p class="font-sans text-base text-gray-700 max-w-3xl mx-auto mb-10">Discover our handpicked selection of premium properties that showcase the best in modern living and investment opportunities. Each property reflects our commitment to excellence, blending innovative design with prime locations.</p></div></div><div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"><div id="testimonySlider" class="swiper-container container px-10 xl:px-52"><div class="swiper-wrapper"><div class="swiper-slide flex flex-row justify-center items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72"><div class="flex flex-col"><div class="text-gray-600 text-sm">Each property reflects our commitment to excellence.</div><span class="font-bold font-serif mt-2 text-gray-900">- Christopher Jaeger</span></div><div><img loading="lazy"  class="rounded-full w-10 h-10 object-cover" src="/public/customer_2.jpg" alt="happy customer"></div></div><div class="swiper-slide flex flex-row items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72"><div class="flex flex-col"><p class="text-gray-600 text-sm">A seamless experience from start to finish, with top-notch service.</p><span class="font-bold font-serif mt-2 text-gray-900">- Emily Hart</span></div><div><img loading="lazy"  class="rounded-full w-10 h-10 object-cover" src="/public/customer_2.jpg" alt="happy customer"></div></div><div class="swiper-slide flex flex-row items-center gap-4 bg-gray-50 shadow-lg rounded-lg p-6 w-72 h-72"><div class="flex flex-col"><p class="text-gray-600 text-sm">A seamless experience from start to finish, with top-notch service.</p><span class="font-bold font-serif mt-2 text-gray-900">- Emily Hart</span></div><div><img loading="lazy"  class="rounded-full w-10 h-10 object-cover" src="/public/customer_2.jpg" alt="happy customer"></div></div></div><div class="swiper-pagination"></div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div></div></section> -->
       <section class="relative pt-24 lg:pt-28 pb-28 lg:pb-32 bg-blue-800">
@@ -743,7 +650,7 @@
       </section>
       <section class="flex flex-col items-center justify-center w-full py-24">
         <h2 class="text-3xl font-serif font-bold text-blue-600 mb-8">Kemsan in the Media</h2>
-        <div class="container flex justify-center px-0">
+        <div class="container flex justify-center mx-0">
             <div class="box-border flex-1 max-w-[320px] h-[450px] pb-8 rounded-lg bg-white overflow-hidden transition-shadow duration-300 hover:shadow-lg border-b-2 border-blue-800 border-solid">
                 <img class="w-full h-[60%] object-cover" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Ambassador.jpg?updatedAt=1725279664971" loading="lazy" alt="Kemsan Ambassador">
                 <div class="px-6 py-6 flex flex-col gap-5">
@@ -846,6 +753,8 @@
     </main>
     <script src="./carousel.js"></script>
     <script src="./main.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       AOS.init()
