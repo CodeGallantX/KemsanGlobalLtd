@@ -42,8 +42,15 @@ function hideVideoPopup() {
 // Preloader
 window.addEventListener('load', function() {
   const preloader = document.getElementById('preloader');
+  const content = document.getElementById('content');
+
   preloader.style.opacity = '0';
+
   setTimeout(function() {
       preloader.style.display = 'none';
-  }, 750); 
+      
+      content.style.display = 'block';
+      
+      document.body.style.overflow = 'auto';
+  }, 3500);
 });
