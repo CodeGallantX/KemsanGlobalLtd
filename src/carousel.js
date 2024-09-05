@@ -6,23 +6,22 @@ const nextButton = document.getElementById('next');
 const indicators = document.querySelectorAll('[data-slide]');
 
 let currentIndex = 0;
+let autoplayInterval;
+const autoplayDelay = 5000; 
 
 function showSlide(index) {
   carousel.style.transform = `translateX(-${index * 100}%)`;
 
-  // Animate text on the current slide
   const currentSlideText = slides[index].querySelector('h2');
   currentSlideText.classList.add('opacity-100');
 
-  // Reset text animation on all other slides
   Array.from(slides).forEach((slide, i) => {
     if (i !== index) {
       const slideText = slide.querySelector('h2');
-      slideText.classList.remove('opacity-100');
+      slideText.classList.remove('translate-x-full');
     }
   });
 
-  // Update indicators
   indicators.forEach((indicator, i) => {
     indicator.classList.toggle('bg-gray-100', i === index);
     indicator.classList.toggle('w-4', i === index);
@@ -31,31 +30,54 @@ function showSlide(index) {
   currentIndex = index;
 }
 
-prevButton.addEventListener('click', () => {
-  const nextIndex = (currentIndex - 1 + totalSlides) < 0 ? totalSlides - 1 : (currentIndex - 1 + totalSlides) % totalSlides;
+function nextSlide() {
+  const nextIndex = (currentIndex + 1) % totalSlides;
   showSlide(nextIndex);
+}
+
+function prevSlide() {
+  const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  showSlide(prevIndex);
+}
+
+// Autoplay function
+function startAutoplay() {
+  autoplayInterval = setInterval(nextSlide, autoplayDelay);
+}
+
+// Stop autoplay temporarily when interacting with the buttons
+function stopAutoplay() {
+  clearInterval(autoplayInterval);
+  startAutoplay();
+}
+
+prevButton.addEventListener('click', () => {
+  stopAutoplay();
+  prevSlide();
 });
 
 nextButton.addEventListener('click', () => {
-  const nextIndex = (currentIndex + 1) % totalSlides;
-  showSlide(nextIndex);
+  stopAutoplay();
+  nextSlide();
 });
 
 indicators.forEach(indicator => {
   indicator.addEventListener('click', () => {
+    stopAutoplay();
     const slideIndex = parseInt(indicator.dataset.slide);
     showSlide(slideIndex);
   });
 });
 
-// Initialize the first slide
 showSlide(currentIndex);
+startAutoplay();
 
 
 
 
+/*
 
-// // Properties Slider
+//  Properties Slider
 // const slider = document.getElementById('slider');
 //         const slides = slider.children;
 //         const totalSlides = slides.length;
@@ -80,3 +102,5 @@ showSlide(currentIndex);
 //         document.getElementById('prev').addEventListener('click', prevSlide);
 
 //         setInterval(nextSlide, intervalTime);
+
+*/
