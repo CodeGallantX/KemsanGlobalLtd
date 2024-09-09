@@ -699,6 +699,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -1129,6 +1134,26 @@ video {
   gap: 2rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-44 {
+  gap: 11rem;
+}
+
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -1493,6 +1518,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -1501,6 +1531,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .pb-16 {
@@ -2235,8 +2270,8 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2328,8 +2363,8 @@ video {
     grid-column: span 10 / span 10;
   }
 
-  .lg\:col-start-2 {
-    grid-column-start: 2;
+  .lg\:col-start-4 {
+    grid-column-start: 4;
   }
 
   .lg\:mt-0 {
@@ -2534,6 +2569,11 @@ video {
 
   .xl\:top-12 {
     top: 3rem;
+  }
+
+  .xl\:mx-32 {
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
 
   .xl\:mt-0 {
