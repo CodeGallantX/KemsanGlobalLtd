@@ -104,3 +104,122 @@ startAutoplay();
 //         setInterval(nextSlide, intervalTime);
 
 */
+
+
+
+/*
+// Advanced Properties Slider
+const items = document.querySelectorAll('.item input[type="radio"]');
+const contentDiv = document.querySelector('#city-content');
+const allContents = document.querySelectorAll('.content');
+
+items.forEach((item) => {
+  item.addEventListener('change', () => {
+    items.forEach(i => {
+      const label = i.nextElementSibling;
+      const content = document.querySelector(`.content_${i.value}`);
+
+      if (i.checked) {
+        // Scale the active thumbnail to be larger
+        label.parentElement.style.transform = 'scale(1.3)';
+
+        // Display corresponding content
+        allContents.forEach(c => c.classList.add('hidden'));
+        contentDiv.innerHTML = content.innerHTML;
+      } else {
+        // Scale inactive thumbnails smaller
+        label.parentElement.style.transform = 'scale(1)';
+      }
+    });
+
+    // Scroll to the active item
+    const offsetTop = item.parentElement.offsetTop;
+    const list = document.querySelector('ul.list');
+    list.scrollTo({
+      top: offsetTop - list.clientHeight / 2 + item.parentElement.clientHeight / 2,
+      behavior: 'smooth'
+    });
+  });
+});
+*/
+
+// const items = document.querySelectorAll('.item input[type="radio"]');
+// const contents = document.querySelectorAll('.content');
+// let activeContent = document.querySelector('.content.active');
+
+// items.forEach((item) => {
+//   item.addEventListener('change', () => {
+//     const contentId = `#content_${item.value}`;
+//     const newContent = document.querySelector(contentId);
+
+//     // Handle sliding out the previous content
+//     if (activeContent) {
+//       activeContent.classList.remove('active');
+//       activeContent.classList.add('exiting');
+//     }
+
+//     // Handle sliding in the new content
+//     newContent.classList.remove('exiting');
+//     newContent.classList.add('active');
+//     activeContent = newContent;
+
+//     // Scroll to the active thumbnail in the left zone
+//     item.scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'center'
+//     });
+//   });
+// });
+
+
+
+
+
+const items = document.querySelectorAll('.item input[type="radio"]');
+const contents = document.querySelectorAll('.content');
+const leftZone = document.getElementById('left-zone');
+
+// Function to reset all items and content display
+const resetItems = () => {
+  items.forEach((item, index) => {
+    const label = item.nextElementSibling;
+    const content = contents[index];
+    
+    // Reset scaling for all labels
+    label.parentElement.style.transform = 'scale(0.7)'; 
+    label.parentElement.style.transition = 'transform 0.5s ease';
+
+    // Reset content animation for all content boxes
+    content.style.animation = 'slideout 0.75s forwards';
+    content.style.opacity = 0;
+  });
+};
+
+// Function to scroll the selected item into view
+const scrollToMiddle = (element) => {
+  const offsetTop = element.offsetTop;
+  const containerHeight = leftZone.clientHeight;
+  const elementHeight = element.clientHeight;
+  const scrollPosition = offsetTop - (containerHeight / 2) + (elementHeight / 2);
+  leftZone.scrollTop = scrollPosition;
+};
+
+items.forEach((item, index) => {
+  item.addEventListener('change', () => {
+    resetItems(); // Reset all items first
+    
+    const label = item.nextElementSibling;
+    const content = contents[index];
+    
+    // Animate the clicked item to scale up
+    label.parentElement.style.transform = 'scale(1.3)'; // Scale active item
+    label.parentElement.style.transition = 'transform 0.5s ease';
+
+    // Animate the corresponding content
+    content.style.animation = 'slidein 0.75s forwards';
+    content.style.opacity = 1;
+
+    // Scroll to the middle of the clicked item
+    scrollToMiddle(label.parentElement);
+  });
+});
