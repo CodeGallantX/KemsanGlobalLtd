@@ -174,52 +174,16 @@ items.forEach((item) => {
 
 
 
-
 const items = document.querySelectorAll('.item input[type="radio"]');
-const contents = document.querySelectorAll('.content');
-const leftZone = document.getElementById('left-zone');
 
-// Function to reset all items and content display
-const resetItems = () => {
-  items.forEach((item, index) => {
-    const label = item.nextElementSibling;
-    const content = contents[index];
-    
-    // Reset scaling for all labels
-    label.parentElement.style.transform = 'scale(0.7)'; 
-    label.parentElement.style.transition = 'transform 0.5s ease';
-
-    // Reset content animation for all content boxes
-    content.style.animation = 'slideout 0.75s forwards';
-    content.style.opacity = 0;
-  });
-};
-
-// Function to scroll the selected item into view
-const scrollToMiddle = (element) => {
-  const offsetTop = element.offsetTop;
-  const containerHeight = leftZone.clientHeight;
-  const elementHeight = element.clientHeight;
-  const scrollPosition = offsetTop - (containerHeight / 2) + (elementHeight / 2);
-  leftZone.scrollTop = scrollPosition;
-};
-
-items.forEach((item, index) => {
-  item.addEventListener('change', () => {
-    resetItems(); // Reset all items first
-    
-    const label = item.nextElementSibling;
-    const content = contents[index];
-    
-    // Animate the clicked item to scale up
-    label.parentElement.style.transform = 'scale(1.3)'; // Scale active item
-    label.parentElement.style.transition = 'transform 0.5s ease';
-
-    // Animate the corresponding content
-    content.style.animation = 'slidein 0.75s forwards';
-    content.style.opacity = 1;
-
-    // Scroll to the middle of the clicked item
-    scrollToMiddle(label.parentElement);
+items.forEach(item => {
+  item.addEventListener('change', function() {
+    document.querySelectorAll('.content').forEach(content => {
+      content.style.display = 'none';
+    });
+    document.querySelector(`.content_${this.value}`).style.display = 'flex';
   });
 });
+
+// Initialize first content to show
+document.querySelector('.content_abuja').style.display = 'flex';

@@ -127,20 +127,34 @@
       </li>
     </ul>
     <main class="xl:pt-[6.5rem] lg:pt-[6.5rem] md:pt-[6.5rem] sm:pt-[6.5rem]">
-      <section class="bg-blue-800 h-[400px] w-full rounded-sm flex flex-col py-10 xl:py-14 justify-center items-center gap-8">
-        <h2 class="text-6xl text-white font-serif font-bold">About Us</h2>
-        <div>
-          <a href="../" class="text-gray-50 text-base p-1">
-            <i class="fa-solid fa-house"></i>
-            Home
-          </a>
-          <i class="fa-solid fa-chevron-right text-gray-50"></i>
-          <a href="#" class="p-1">
-            <i class="fa-solid fa-info text-gray-50"></i>
-            <span class="underline text-gray-50">About</span>
-          </a>
+      <section class="relative h-[400px] w-full rounded-sm">
+        <img loading="lazy" class="w-full h-full object-cover rounded-sm" src="https://ik.imagekit.io/mshcgnjju/Kemsan/banner-img.jpg?updatedAt=1725876949469" alt="Banner Image">
+        
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-blue-700 opacity-60 rounded-sm"></div>
+        
+        <!-- Content -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center gap-8">
+          <!-- Heading -->
+          <div>
+            <h2 class="text-6xl sm:text-6xl text-white font-serif font-bold">About Us</h2>
+          </div>
+          
+          <!-- Breadcrumb Navigation -->
+          <div class="flex items-center gap-2 text-white">
+            <a href="../" class="text-gray-50 text-lg p-1 hover:underline">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+            <i class="fa-solid fa-chevron-right text-gray-50"></i>
+            <a href="#" class="p-1 hover:underline text-lg">
+              <i class="fa-solid fa-info text-gray-50"></i>
+              <span class="text-gray-50">About</span>
+            </a>
+          </div>
         </div>
       </section>
+      
       <footer class="bg-[#f7f8ff] relative pt-24 pb-20 text-gray-700">
         <div class="xl:px-20 lg:px-8 mx-auto px-4">
             <div class="flex flex-wrap pb-16 lg:pb-24 border-b border-gray-300 gap-8 lg:gap-0">
