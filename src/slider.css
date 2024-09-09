@@ -113,14 +113,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   animation: slideout 0.75s forwards;
   opacity: 0;
-  }
-  
 }
 
 .content.active {
