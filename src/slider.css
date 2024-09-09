@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --menu-width: 350px;
   --scene-width: 1000px;
   --scene-height: 400px;
@@ -143,4 +143,4 @@ body {
 #right-zone {
   background: var(--white-color);
   flex-grow: 3;
-}
+} */

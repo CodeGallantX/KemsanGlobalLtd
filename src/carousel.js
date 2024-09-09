@@ -172,18 +172,3 @@ items.forEach((item) => {
 // });
 
 
-
-
-const items = document.querySelectorAll('.item input[type="radio"]');
-
-items.forEach(item => {
-  item.addEventListener('change', function() {
-    document.querySelectorAll('.content').forEach(content => {
-      content.style.display = 'none';
-    });
-    document.querySelector(`.content_${this.value}`).style.display = 'flex';
-  });
-});
-
-// Initialize first content to show
-document.querySelector('.content_abuja').style.display = 'flex';
