@@ -86,7 +86,7 @@
             <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../properties/">Properties</a>
           </li>
           <li>
-            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../blog/">Blog</a>
+            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline text-blue-600" href="../blog/">Blog</a>
           </li>
           <li>
             <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../contact/">Contact</a>
@@ -108,7 +108,7 @@
         </a>
       </li>
       <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200 border-solid border-b-2 border-gray-300 transtion-all duration-200 ease-linear" href="../">Home</a>
+        <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200 transtion-all duration-200 ease-linear" href="../">Home</a>
       </li>
       <li>
         <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="./">About</a>
@@ -117,7 +117,7 @@
         <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="../properties/">Properties</a>
       </li>
       <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="../blog/">Blog</a>
+        <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200 border-solid border-b-2 border-gray-300" href="../blog/">Blog</a>
       </li>
       <li>
         <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="../contact/">Contact</a>
@@ -127,18 +127,31 @@
       </li>
     </ul>
     <main class="xl:pt-[6.5rem] lg:pt-[6.5rem] md:pt-[6.5rem] sm:pt-[6.5rem]">
-      <section class="bg-blue-800 h-[200px] w-full rounded-sm flex flex-col py-10 xl:py-14 justify-between items-center">
-        <h2 class="text-4xl text-white font-serif font-bold">Blog</h2>
-        <div>
-          <a href="../" class="text-gray-50 text-base p-1">
-            <i class="fa-solid fa-house"></i>
-            Home
-          </a>
-          <i class="fa-solid fa-chevron-right text-gray-50"></i>
-          <a href="#" class="p-1">
-            <i class="fa-solid fa-info text-gray-50"></i>
-            <span class="underline text-gray-50">About</span>
-          </a>
+      <section class="relative h-[400px] w-full rounded-sm">
+        <img loading="lazy" class="w-full h-full object-cover rounded-sm" src="https://ik.imagekit.io/mshcgnjju/Kemsan/banner-img.jpg?updatedAt=1725876949469" alt="Banner Image">
+        
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-blue-700 opacity-60 rounded-sm"></div>
+        
+        <!-- Content -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center gap-8">
+          <!-- Heading -->
+          <div>
+            <h2 class="text-6xl sm:text-6xl text-white font-serif font-bold">About Us</h2>
+          </div>
+          
+          <!-- Breadcrumb Navigation -->
+          <div class="flex items-center gap-2 text-white">
+            <a href="../" class="text-gray-50 text-lg p-1 hover:underline">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+            <i class="fa-solid fa-chevron-right text-gray-50"></i>
+            <a href="#" class="p-1 hover:underline text-lg">
+              <i class="fa-solid fa-newspaper text-gray-50"></i>
+              <span class="text-gray-50">Blog</span>
+            </a>
+          </div>
         </div>
       </section>
       <footer class="bg-[#f7f8ff] relative pt-24 pb-20 text-gray-700">
@@ -177,8 +190,10 @@
                         <div>
                             <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Company</h3>
                             <ul class="space-y-4 text-base">
-                                <li><a class="hover:text-blue-600 transition" href="./">About</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="./blog/">Blog</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../about/">About</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../properties/">Properties</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="./">Blog</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../contact/">Contact</a></li>
                                 <li><a class="hover:text-blue-600 transition" href="./schedule-inspection/">Schedule Inspection</a></li>
                                 <li><a class="hover:text-blue-600 transition" href="./partner/">Become a Partner</a></li>
                             </ul>

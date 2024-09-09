@@ -80,10 +80,10 @@
             <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../">Home</a>
           </li>
           <li>
-            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./">About</a>
+            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../about/">About</a>
           </li>
           <li>
-            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../properties/">Properties</a>
+            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline text-blue-600" href="./">Properties</a>
           </li>
           <li>
             <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="../blog/">Blog</a>
@@ -127,33 +127,46 @@
       </li>
     </ul>
     <main class="xl:pt-[6.5rem] lg:pt-[6.5rem] md:pt-[6.5rem] sm:pt-[6.5rem]">
-      <section class="bg-blue-800 h-[200px] w-full rounded-sm flex flex-col py-10 xl:py-14 justify-between items-center">
-        <h2 class="text-4xl text-white font-serif font-bold">Properties </h2>
-        <div>
-          <a href="../" class="text-gray-50 text-base p-1"> 
-            <i class="fa-solid fa-house"></i>
-            Home
-          </a>
-          <i class="fa-solid fa-chevron-right text-gray-50"></i>
-          <a href="#" class="p-1">
-            <i class="bi bi-buildings text-gray-50"></i>
-            <span class="underline text-gray-50">Properties</span>
-          </a>
+      <section class="relative h-[400px] w-full rounded-sm">
+        <img loading="lazy" class="w-full h-full object-cover" src="https://ik.imagekit.io/mshcgnjju/Kemsan/duplex.jpg?updatedAt=1725628663063" alt="Banner Image">
+        
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-blue-700 opacity-60 rounded-sm"></div>
+        
+        <!-- Content -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center gap-8">
+          <!-- Heading -->
+          <div>
+            <h2 class="text-6xl sm:text-6xl text-white font-serif font-bold">Properties</h2>
+          </div>
+          
+          <!-- Breadcrumb Navigation -->
+          <div class="flex items-center gap-2 text-white">
+            <a href="../" class="text-gray-50 text-lg p-1 hover:underline">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+            <i class="fa-solid fa-chevron-right text-gray-50"></i>
+            <a href="#" class="p-1 hover:underline text-lg">
+              <i class="bi bi-buildings text-gray-50"></i>
+              <span class="text-gray-50">Properties</span>
+            </a>
+          </div>
         </div>
       </section>
       <section>
-        <div class="container relative -mt-16 z-10 mx-auto bg-gray-50 px-5 py-4 rounded-md">
+        <div class="sm:container md:container lg:container xl:w-10/12 relative -mt-16 z-10 mx-auto">
             <div class="grid grid-cols-1">
-                <form class="p-6 bg-whiterounded-xl shadow">
+                <form class="w-full h-32 bg-white rounded-xl shadow flex flex-row justify-center items-center">
                     <div class="registration-form text-dark text-start">
                         <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6">
                             
                             <!-- Search Input -->
                             <div>
                                 <label class="form-label font-medium text-slate-900 dark:text-white">Search: <span class="text-red-600">*</span></label>
-                                <div class="filter-search-form relative filter-border mt-2">
-                                    <i class="uil uil-search icons"></i>
-                                    <input name="name" type="text" id="job-keyword" class="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search your keywords">
+                                <div class="filter-search-form relative filter-border mt-2 flex flex-row">
+                                  <i class="fa-solid fa-magnifying-glass text-blue-600 mt-1"></i>
+                                    <input name="name" type="text" id="job-keyword" class="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search properties...">
                                 </div>
                             </div>
     
@@ -161,7 +174,7 @@
                             <div>
                                 <label for="buy-properties" class="form-label font-medium text-slate-900 dark:text-white text-serif">Select Categories:</label>
                                 <div class="filter-search-form relative filter-border mt-2">
-                                    <i class="uil uil-estate icons"></i>
+                                  <i class="fa-solid fa-house-chimney text-blue-600"></i>
                                     <select class="form-select z-2" id="choices-catagory-buy" name="choices-catagory">
                                         <option value="Land">Land</option>
                                         <option value="Apartment">Apartment</option>
@@ -173,7 +186,7 @@
                             <div>
                               <label for="buy-properties" class="form-label font-medium text-slate-900 dark:text-white text-serif">Select Location:</label>
                               <div class="filter-search-form relative filter-border mt-2">
-                                  <i class="uil uil-estate icons"></i>
+                                <i class="fa-solid fa-city text-blue-600 "></i>
                                   <select class="form-select z-2" id="choices-location-buy" name="choices-location">
                                       <option value="Abuja">Abuja</option>  
                                       <option value="Lagos">Lagos</option>
@@ -190,7 +203,7 @@
                             <div>
                                 <label for="buy-min-price" class="form-label font-medium text-slate-900 dark:text-white text-serif">Min Price:</label>
                                 <div class="filter-search-form relative filter-border mt-2">
-                                    <span class="text-blue-600 text-lg">N</span>
+                                    <span class="text-blue-600 text-lg">₦</span>
                                     <select class="form-select" id="choices-min-price-buy" name="choices-min-price">
                                         <option value="300000">300000</option>
                                         <option value="400000">400000</option>
@@ -207,8 +220,8 @@
                             <div>
                                 <label for="buy-max-price" class="form-label font-medium text-slate-900 dark:text-white text-serif">Max Price:</label>
                                 <div class="filter-search-form relative mt-2">
-                                  <span class="text-blue-600 text-lg">N</span>
-                                    <select class="form-select px-3 py-3" id="choices-max-price-buy" name="choices-max-price">
+                                  <span class="text-blue-600 text-lg">₦</span>
+                                    <select class="form-select" id="choices-max-price-buy" name="choices-max-price">
                                         <option value="500">500</option>
                                         <option value="1000">1000</option>
                                         <option value="2000">2000</option>

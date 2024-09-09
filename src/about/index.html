@@ -154,7 +154,56 @@
           </div>
         </div>
       </section>
+      <section class="px-2/4 py-24 w-full">
+        <div class="flex flex-col px-8 lg:flex-row xl:flex-row items-center justify-center gap-10">
+              <div class="relative">
+                <iframe src="https://www.youtube.com/embed/Yl07ltrMj8s?si=2rViL9B-BC-Qthp3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" class="rounded-xl shadow-md lg:h-[340px] lg:w-[490px] xl:h-[340px] xl:w-[600px]"></iframe>
+              </div>
+              <div class="flex flex-col gap-4 xl:w-full sm:w-3/4">
+                  <h4 class="mb-6 md:text-3xl text-2xl lg:leading-normal leading-normal font-serif font-bold">Efficiency. Transparency. <br> Control.</h4>
+                  <p class="text-slate-400 max-w-xl">Hously developed a platform for the Real Estate marketplace that allows buyers and sellers to easily execute a transaction on their own. The platform drives efficiency, cost transparency and control into the hands of the consumers. Hously is Real Estate Redefined.</p>
+                  
+                  <div class="mt-4">
+                      <a href="" class="btn bg-blue-600 hover:bg-blue-700 text-white rounded-md mt-3 px-8 py-4">Learn More </a>
+                  </div>
+              </div>
+      </div>
+      </section>
+      <section class="relative py-24 bg-[url('https://ik.imagekit.io/mshcgnjju/Kemsan/banner-img.jpg?updatedAt=1725876949469')] bg-no-repeat bg-center bg-fixed bg-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="px-8 relative">
+          <div class="grid lg:grid-cols-12 grid-cols-1 md:text-start text-center justify-center items-center">
+            <div class="lg:col-start-2 lg:col-span-10">
+              <div class="grid md:grid-cols-3 grid-cols-1 items-center">
       
+                <div class="counter-box text-center">
+                  <h1 class="text-white lg:text-5xl text-4xl font-semibold font-serif mb-2">
+                    <span class="count-digit" data-target="1548">0</span>+
+                  </h1>
+                  <h5 class="counter-head text-white text-lg font-medium font-serif">Properties Sold</h5>
+                </div>
+      
+                <div class="counter-box text-center">
+                  <h1 class="text-white lg:text-5xl text-4xl font-semibold font-serif mb-2">
+                    <span class="count-digit" data-target="25">0</span>+
+                  </h1>
+                  <h5 class="counter-head text-white text-lg font-medium font-serif">Awards Gained</h5>
+                </div>
+      
+                <div class="counter-box text-center">
+                  <h1 class="text-white lg:text-5xl text-4xl font-semibold font-serif mb-2">
+                    <span class="count-digit" data-target="9">0</span>+
+                  </h1>
+                  <h5 class="counter-head text-white text-lg font-medium font-serif">Years Experience</h5>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
       <footer class="bg-[#f7f8ff] relative pt-24 pb-20 text-gray-700">
         <div class="xl:px-20 lg:px-8 mx-auto px-4">
             <div class="flex flex-wrap pb-16 lg:pb-24 border-b border-gray-300 gap-8 lg:gap-0">
@@ -192,7 +241,9 @@
                             <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Company</h3>
                             <ul class="space-y-4 text-base">
                                 <li><a class="hover:text-blue-600 transition" href="./">About</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="./blog/">Blog</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../properties/">Properties</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../blog/">Blog</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../contact/">Contact</a></li>
                                 <li><a class="hover:text-blue-600 transition" href="./schedule-inspection/">Schedule Inspection</a></li>
                                 <li><a class="hover:text-blue-600 transition" href="./partner/">Become a Partner</a></li>
                             </ul>
@@ -219,9 +270,52 @@
     </main>
   </div>
     <script src=".././main.js"></script>
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
     <script>
       AOS.init()
+
+      // Function to animate the counter
+      // Function to check if element is visible in viewport
+  function visible(partial) {
+    var $t = partial,
+        $w = jQuery(window),
+        viewTop = $w.scrollTop(),
+        viewBottom = viewTop + $w.height(),
+        _top = $t.offset().top,
+        _bottom = _top + $t.height(),
+        compareTop = partial === true ? _bottom : _top,
+        compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
+  }
+
+  // Trigger counting animation when the section is in view
+  $(window).scroll(function() {
+    if (visible($('.count-digit'))) {
+      if ($('.count-digit').hasClass('counter-loaded')) return;
+      $('.count-digit').addClass('counter-loaded');
+
+      $('.count-digit').each(function () {
+        var $this = $(this);
+        var target = $this.data('target'); // Get the target number
+
+        jQuery({ Counter: 0 }).animate({ Counter: target }, {
+          duration: 5000,
+          easing: 'swing',
+          step: function () {
+            $this.text(Math.ceil(this.Counter));
+          }
+        });
+      });
+    }
+  });
+
+  // Trigger the scroll function on page load (for cases where the section is already in view)
+  $(document).ready(function() {
+    $(window).scroll();
+  });
     </script>
   </body>
 </html>

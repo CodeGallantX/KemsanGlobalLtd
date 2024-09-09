@@ -171,4 +171,4 @@ items.forEach((item) => {
 //   });
 // });
 
-
+ // Function to animate the counter
