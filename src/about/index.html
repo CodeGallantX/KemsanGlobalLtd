@@ -70,7 +70,7 @@
     
     <div id="content">
     <!-- Header -->
-    <header id="header" class="bg-white w-full py-3 px-10 xl:px-24 flex items-center shadow-md fixed z-10">
+    <header id="header" class="bg-white w-full py-3 px-10 xl:px-24 flex items-center shadow-md fixed z-50">
       <a href="#">
         <img class="w-24 h-auto" src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN_logo">
       </a>
@@ -160,117 +160,160 @@
           </div>
         </div>
       </section>
-      <section class="px-2/4 py-24 w-full">
-        <div class="flex flex-col px-8 lg:flex-row xl:flex-row items-center justify-center gap-10">
-            <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" class="relative">
-                <iframe src="https://www.youtube.com/embed/Yl07ltrMj8s?si=2rViL9B-BC-Qthp3" title="YouTube video player"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""
-                    class="rounded-xl shadow-md lg:h-[340px] lg:w-[490px] xl:h-[340px] xl:w-[600px]"></iframe>
-            </div>
-            <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
-                <div class="flex flex-col gap-2 xl:w-full sm:w-3/4">
-                    <h4 class="mb-6 md:text-3xl text-2xl lg:leading-normal leading-normal font-serif font-bold">Vision</h4>
-                    <p class="text-slate-400 max-w-xl">Our creed is to strive assiduously to become a body of leading professional realtors delivering a plethora of excellent products and services for our clients.</p>
-                    <div class="mt-4">
-                        <a href="" class="btn bg-blue-600 hover:bg-blue-700 text-white rounded-md mt-3 px-8 py-4">Learn More </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <section class="relative pb-28 lg:pb-36">
-      <div class="container px-4 mx-auto">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              
-              <!-- Vision Card -->
-              <div class="px-8 lg:px-12 py-16 lg:py-20 rounded-xl bg-blue-200">
-                  <p class="text-lg lg:text-base mb-4 lg:mb-6 text-gray-700 font-serif">OUR VISION</p>
-                  <p class="font-sans text-2xl md:text-2xl lg:text-3xl leading-8 lg:leading-10 text-primary pb-6 lg:pb-10">
-                      To be the best real estate company providing unmatched real estate solutions to people from all walks of life.
-                  </p>
-              </div>
-  
-              <!-- Mission Card -->
-              <div class="px-8 lg:px-12 py-16 lg:py-20 rounded-xl bg-yellow-200">
-                  <p class="font-serif text-lg lg:text-base mb-4 lg:mb-6 text-gray-700">OUR MISSION</p>
-                  <p class="font-sans text-2xl md:text-2xl lg:text-3xl leading-8 lg:leading-10 text-primary pb-6 lg:pb-10">
-                      To build strong, long term and proactive relationships with clients by creating exceptional real estate investments and delivering the best results.
-                  </p>
-              </div>
-  
+      <section class="py-32 w-full bg-gradient-to-t from-gray-50 to-white">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-16 xl:px-24">
+          <!-- Video Section -->
+          <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" class="z-20 w-full lg:w-auto">
+            <iframe class="rounded-xl shadow-xl w-full h-64 sm:h-72 md:h-80 lg:w-[500px] lg:h-[280px] xl:w-[600px] xl:h-[340px]" 
+                    src="https://www.youtube.com/embed/71dZVqu1RWA?si=Lh7ena0nwkeYgXi2" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
           </div>
-      </div>
-  </section>
+      
+          <!-- Text Section -->
+          <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500" class="w-full lg:w-auto">
+            <div class="flex flex-col gap-6 bg-white xl:bg-blue-50 rounded-lg shadow-lg p-8 xl:py-12 xl:px-16">
+              <h4 class="text-2xl md:text-4xl font-serif font-semibold text-gray-900 leading-tight mb-6">
+                Who We Are
+              </h4>
+              <p class="text-slate-700 text-lg leading-relaxed">
+                <strong>Kemsan Acres Global LTD</strong>, a reputable Nigerian real estate company, specializes in land procurement, real estate development, and architectural design. Registered with the Real Estate Developers Association of Nigeria, we aim to make property ownership accessible to all.
+              </p>
+              <p class="text-slate-700 text-lg leading-relaxed">
+                Founded in 2019 and headquartered in Ibadan, we operate across multiple states, including Lagos, Ogun, Ondo, Oyo, Ekiti, and FCT Abuja, with estates in each location.
+              </p>
+              <p class="text-slate-700 text-lg leading-relaxed">
+                Our team ensures you get the property you pay for through guided inspections and 24/7 customer support to address any concerns.
+              </p>
+              <div class="mt-8">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-10 rounded-full transition duration-300 ease-in-out">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative pb-28 lg:pb-36 bg-gray-50">
+        <div class="px-6 lg:px-12 xl:px-24 mx-auto">
+          <div class="flex flex-col lg:flex-row justify-between items-start gap-8">
+      
+            <!-- Vision Card -->
+            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500" class="relative flex flex-col lg:flex-row items-center lg:items-start px-8 lg:px-12 py-16 lg:py-20 rounded-xl bg-blue-100 shadow-lg w-full lg:w-1/2">
+              <!-- Image on the Left -->
+              <div class="absolute left-0 bottom-0 w-2/5 lg:w-5/12">
+                <img class="w-full h-auto" loading="lazy" src="https://ik.imagekit.io/mshcgnjju/Kemsan/about-why-side-img-removebg.png" alt="Our Vision - Kemsan">
+              </div>
+              
+              <!-- Text on the Right -->
+              <div class="ml-auto w-10/12 lg:w-3/4 pl-16 text-right">
+                <p class="text-xl lg:text-lg mb-4 lg:mb-6 text-gray-700 font-serif">OUR VISION</p>
+                <p class="font-sans text-lg lg:text-xl text-gray-800">
+                  Our creed is to strive assiduously to become a body of leading professional realtors delivering a plethora of excellent products and services for our clients.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Mission Card -->
+            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500" class="relative flex flex-col lg:flex-row items-center lg:items-start px-8 lg:px-12 py-16 lg:py-20 rounded-xl bg-yellow-100 shadow-lg w-full lg:w-1/2">
+              <!-- Text on the Left -->
+              <div class="w-9/12 lg:w-3/4 text-left mr-auto pr-6 lg:pr-10">
+                <p class="font-serif text-xl lg:text-lg mb-4 lg:mb-6 text-gray-700">OUR MISSION</p>
+                <p class="font-sans text-lg lg:text-xl text-gray-800">
+                  Our mission is to maximize the best of human capital, market expertise, and innovation in delivering exemplary services for quality home environments.
+                </p>
+              </div>
+              
+              <!-- Image on the Right -->
+              <div class="absolute right-0 bottom-0 w-2/5 lg:w-5/12">
+                <img class="w-full h-auto" loading="lazy" src="https://ik.imagekit.io/mshcgnjju/Kemsan/about-core-side-img-removebg.png" alt="Our Mission - Kemsan">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
   <section class="py-16 lg:py-24 bg-gray-50">
     <div class="text-center">
       <h2 class="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary-2">
         Our Core Values
       </h2>
     </div>
-    <div class="max-w-7xl mx-auto mt-14 lg:mt-20 px-0 lg:px-0">
+    <div class="max-w-7xl mx-auto mt-14 lg:mt-20 px-7 lg:px-7">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-8 lg:gap-y-20">
         
         <!-- Integrity -->
-        <div class="text-center mb-6 lg:mb-12">
-          <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-orange-100">
-            <i class="fa-solid fa-handshake text-3xl text-orange-700"></i>
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+          <div class="text-center mb-6 lg:mb-12">
+            <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-orange-100">
+              <i class="fa-solid fa-handshake text-3xl text-orange-700"></i>
+            </div>
+            <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Integrity</p>
+            <p class="text-base lg:text-lg text-gray-700">
+              We ensure truthfulness and honesty and maintain moral principles at all times.
+            </p>
           </div>
-          <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Integrity</p>
-          <p class="text-base lg:text-lg text-gray-700">
-            We ensure truthfulness and honesty and maintain moral principles at all times.
-          </p>
         </div>
   
         <!-- Professionalism -->
-        <div class="text-center mb-6 lg:mb-12">
-          <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-blue-100">
-            <i class="fa-solid fa-user-tie text-3xl text-blue-700"></i>
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+          <div class="text-center mb-6 lg:mb-12">
+            <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-blue-100">
+              <i class="fa-solid fa-user-tie text-3xl text-blue-700"></i>
+            </div>
+            <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Professionalism</p>
+            <p class="text-base lg:text-lg text-gray-700">
+              We ensure high standards to produce greater efficiency in our work and greater participation in our community.
+            </p>
           </div>
-          <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Professionalism</p>
-          <p class="text-base lg:text-lg text-gray-700">
-            We ensure high standards to produce greater efficiency in our work and greater participation in our community.
-          </p>
         </div>
   
         <!-- Innovation -->
-        <div class="text-center mb-6 lg:mb-12">
-          <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-green-100">
-            <i class="fa-solid fa-lightbulb text-3xl text-green-700"></i>
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+          <div class="text-center mb-6 lg:mb-12">
+            <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-green-100">
+              <i class="fa-solid fa-lightbulb text-3xl text-green-700"></i>
+            </div>
+            <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Innovation</p>
+            <p class="text-base lg:text-lg text-gray-700">
+              We strive for continuous improvement, redefining the standards of excellence in everything we do.
+            </p>
           </div>
-          <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Innovation</p>
-          <p class="text-base lg:text-lg text-gray-700">
-            We strive for continuous improvement, redefining the standards of excellence in everything we do.
-          </p>
         </div>
   
         <!-- Transparency -->
-        <div class="text-center mb-6 lg:mb-12">
-          <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-yellow-100">
-            <i class="fa-solid fa-magnifying-glass text-3xl text-yellow-700"></i>
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+          <div class="text-center mb-6 lg:mb-12">
+            <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-yellow-100">
+              <i class="fa-solid fa-magnifying-glass text-3xl text-yellow-700"></i>
+            </div>
+            <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Transparency</p>
+            <p class="text-base lg:text-lg text-gray-700">
+              We ensure openness, honest communication, and accountability in all our businesses.
+            </p>
           </div>
-          <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Transparency</p>
-          <p class="text-base lg:text-lg text-gray-700">
-            We ensure openness, honest communication, and accountability in all our businesses.
-          </p>
         </div>
   
         <!-- Customer-Centric -->
-        <div class="text-center mb-6 lg:mb-12">
-          <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-purple-100">
-            <i class="fa-solid fa-users text-3xl text-purple-700"></i>
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+          <div class="text-center mb-6 lg:mb-12">
+            <div class="w-20 h-20 rounded-2xl flex justify-center items-center mx-auto mb-4 lg:mb-6 bg-purple-100">
+              <i class="fa-solid fa-users text-3xl text-purple-700"></i>
+            </div>
+            <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Customer-Centric</p>
+            <p class="text-base lg:text-lg text-gray-700">
+              We create a culture that empowers employees to make the best decisions for both the customer and the company.
+            </p>
           </div>
-          <p class="font-serif text-lg md:text-xl lg:text-2xl font-bold text-primary-2 pb-4 lg:pb-6">Customer-Centric</p>
-          <p class="text-base lg:text-lg text-gray-700">
-            We create a culture that empowers employees to make the best decisions for both the customer and the company.
-          </p>
         </div>
       </div>
     </div>
   </section>
   
-  <section class="relative pt-10 pb-24 lg:pb-28 bg-orange-50">
-    <div class="container mx-auto">
+  <section class="relative pt-10 pb-24 lg:pb-28 bg-slate-50">
+    <div class="px-10 xl:px-24 mx-auto">
       <div class="w-full lg:w-5/12 mx-auto text-center">
         <h2 class="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-primary-2 pb-4 lg:pb-6">
           Meet our Team
@@ -280,10 +323,10 @@
         </p>
       </div>
   
-      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-8">
-        
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20 py-8">
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/DrAmbassadorOwoseni-7c1fa625.jpg?updatedAt=1724189403519" alt="Dr Ambassador Owoseni" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -305,14 +348,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
-            <p class="font-bold text-lg text-primary font-serif text-blue-600">Dr Ambassador Owoseni</p>
-            <p class="text-primary-2 text-sm text-gray-600">Founder, Managing Director</p>
+          <div class="px-0 py-6 text-left">
+            <p class="font-bold text-lg text-primary font-serif text-blue-600">Dr. Oluwaseun A. Owoseni</p>
+            <p class="text-primary-2 text-sm text-gray-600">CEO, Managing Director (Ambassador)</p>
           </div>
         </div>
         
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/EGUNJOBI%20OLUSHINA-min-7a413bc3.jpg?updatedAt=1724189402977" alt="Dr Ambassador Owoseni" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -334,14 +377,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Egunjobi Olushina</p>
             <p class="text-primary-2 text-sm text-gray-600">Branch Manager - Lagos</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Adegboyega%20Adewale-min-4d3a91ed.jpg?updatedAt=1724189402834" alt="Adegboyega Adewale - Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -363,14 +406,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Adegboyega Adewale</p>
             <p class="text-primary-2 text-sm text-gray-600">Branch Manager - Ado-Ekiti, Ekiti</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Afolayan%20Shola%20Timilehin-min%20(1)-d892ecd0.jpg?updatedAt=1724189402183" alt="Shola Afolayan - Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -392,14 +435,15 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Shola Afolayan</p>
             <p class="text-primary-2 text-sm text-gray-600">Branch Manager - Akure, Ondo</p>
           </div>
         </div>
-
+      </div>
+      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Patience%20Eseyin-Johnson-min-be52e65c.jpg?updatedAt=1724189402173" alt="Eseyin Johnson Patience - Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -421,14 +465,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Eseyin-Johnson Patience</p>
             <p class="text-primary-2 text-sm text-gray-600">Chief Operations Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Adenuga_%20Damilare%20Timilehin-min-cf5260f0.jpg?updatedAt=1724189402105" alt="Adenuga Damilare - Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -450,14 +494,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Adenuga T. Damilare</p>
             <p class="text-primary-2 text-sm text-gray-600">Business Sales Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Oyebanji%20Faith%20-min-31e201c1.jpg?updatedAt=1724189402198" alt="Oyebanji Faith" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -479,14 +523,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Oyebanji D. Faith</p>
             <p class="text-primary-2 text-sm text-gray-600">Business Sales Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Tosin%20ADEGOKE%20-min-728df357.jpg?updatedAt=1724189401953" alt="Adegoke Tosin - Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -508,14 +552,15 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Adegoke E. Tosin</p>
             <p class="text-primary-2 text-sm text-gray-600">Procurement Manager</p>
           </div>
         </div>
-
+      </div>
+      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/IJADELE%20Omotola%20-min-f06bc92d.jpg?updatedAt=1724189403336" alt="Ijadele Omotola" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -537,14 +582,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Ijadele R. Omotola</p>
             <p class="text-primary-2 text-sm text-gray-600">Accountant</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Ogunsanya%20Nurudeen%20%20(1)%20(1)-b0ade610.jpg?updatedAt=1724189406644" alt="Ogunsanya Nurudeen - Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -566,14 +611,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Ogunsanya Nurudeen</p>
             <p class="text-primary-2 text-sm text-gray-600">Project Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Wilson%20OYESOMI%20%20(2)-min-eff25e99.jpg?updatedAt=1724189407789" alt="Oyesomi Wilson- Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -595,14 +640,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Oyesomi A. Wilson</p>
             <p class="text-primary-2 text-sm text-gray-600">Site Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Adebamibola%20Aderonke-dc20098a.jpg?updatedAt=1724189408191" alt="Adebamibola Aderonke" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -624,14 +669,15 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Adebamibola Aderonke</p>
             <p class="text-primary-2 text-sm text-gray-600">Compliance Officer</p>
           </div>
         </div>
-
+      </div>
+      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Meekness%20Peter-Bamigbade-min-0062abe8.jpg?updatedAt=1724189408212" alt="Peters Meekness" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -653,14 +699,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Peters Meekness</p>
             <p class="text-primary-2 text-sm text-gray-600">Liaison Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Ameh%20Angela-min-493e4ef7.jpg?updatedAt=1724189408166" alt="Emeh Angela" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -682,14 +728,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Emeh U. Angela</p>
             <p class="text-primary-2 text-sm text-gray-600">Recovery Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Aderemi%20Temidayo%20-min-55a5e071.jpg?updatedAt=1724189408301" alt="Aderemi Temidayo" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -711,14 +757,14 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Aderemi R. Temidayo</p>
             <p class="text-primary-2 text-sm text-gray-600">Assistant Human Resources Manager</p>
           </div>
         </div>
 
         <!-- Team Card 1 -->
-        <div class="team-card box-border rounded-lg overflow-hidden group">
+        <div class="team-card box-border rounded-lg overflow-hidden group cursor-pointer">
           <div class="relative w-full h-64 overflow-hidden rounded-lg">
             <img class="object-cover w-full h-full transition-transform duration-300" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Samuel%20Nwobi-min-377b23de.jpg?updatedAt=1724189408522" alt="Samuel Nwobi - Kemsan" />
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -740,16 +786,64 @@
              
             </div>
           </div>
-          <div class="px-0 py-3 text-left">
+          <div class="px-0 py-6 text-left">
             <p class="font-bold text-lg text-primary font-serif text-blue-600">Nwobi Samuel</p>
             <p class="text-primary-2 text-sm text-gray-600">Asst. Branch Manager - Iwo-Road, Ibadan</p>
           </div>
         </div>
       </div>
+      </div>
     </div>
   </section>
+  <div data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1500">
+    <section class="relative bg-gradient-to-r from-blue-700 to-blue-900">
+      <div class="mx-auto px-10 xl:px-24 pt-40 pb-28 lg:pb-32">
+        <div class="flex flex-wrap justify-between items-center">
+          
+          <!-- Left Column: Heading and Description -->
+            <div class="w-full lg:w-5/12">
+              <h3 class="text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
+                Stay <span class="text-yellow-400">Updated</span> with Us!
+              </h3>
+              <p class="text-white text-base lg:text-lg mt-6 lg:mt-8 leading-relaxed">
+                Subscribe to our newsletter for the latest updates, exclusive offers, and expert insights delivered directly to your inbox.
+              </p>
+            </div>
+      
+          <!-- Right Column: Newsletter Form -->
+            <div class="w-full lg:w-6/12 mt-10 lg:mt-0">
+              <div class="bg-white p-8 lg:p-10 rounded-xl shadow-xl">
+                <h4 class="text-2xl font-semibold font-serif text-gray-900 mb-6">
+                  Join Our Mailing List
+                </h4>
+              
+                <form action="#" method="POST" class="space-y-6">
+                  
+                  <!-- Name Input -->
+                  <div>
+                    <label for="name" class="block text-base font-serif font-semibold text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
+                  </div>
+                  
+                  <!-- Email Input -->
+                  <div>
+                    <label for="email" class="block text-base font-serif font-semibold text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
+                  </div>
   
-  
+                  <!-- Submit Button -->
+                  <div class="text-center">
+                      <button type="submit" class="w-full lg:w-auto px-8 py-3 font-serif bg-yellow-400 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400">
+                        Subscribe Now
+                      </button>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   
       <section class="relative py-24 bg-[url('https://ik.imagekit.io/mshcgnjju/Kemsan/banner-img.jpg?updatedAt=1725876949469')] bg-no-repeat bg-center bg-fixed bg-cover">
         <div class="absolute inset-0 bg-black/60"></div>

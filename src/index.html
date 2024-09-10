@@ -97,7 +97,7 @@
         <button id="register-btn" class="hidden xl:block ml-auto w-auto h-auto px-4 py-2 text-[16px] md:text-[18px] font-medium text-white rounded-md bg-blue-500 hover:bg-blue-600 transition-all duration-300 ease-in-out">
           <a target="_blank" href="http://realease.hypersence.com.ng/">Book an inspection</a>
         </button>
-        <button id="sidebarh" class="xl:hidden block text-4xl text-blue-800 ml-auto" onclick="showSideBar()">
+        <button id="sidebarh" class="xl:hidden inline-block text-4xl text-blue-800 ml-auto" onclick="showSideBar()">
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
@@ -260,70 +260,50 @@
           </div>
         </div>
       </section>
-      <section class="bg-blue-700 px-8 xl:px-32 xl:pt-20 py-24 xl:py-32">
-        <div data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <h2 class="text-center text-3xl lg:text-5xl xl:text-6xl font-serif text-white font-bold lg:px-32 xl:px-44 mb-12"> Let's make it easy to get a property for you! </h2>
+      <section class="bg-gradient-to-tr from-blue-800 to-blue-500 px-8 md:px-16 lg:px-20 xl:px-24 py-20 xl:py-32">
+        <div class="text-center">
+          <h2 class="text-3xl lg:text-5xl xl:text-6xl font-serif text-white font-bold mb-12">
+            Let's make it easy to get a property for you!
+          </h2>
         </div>
-        <div class="flex flex-col items-center justify-center xl:flex-row gap-16 xl:gap-36">
+        <div class="container mx-auto flex flex-col items-center justify-center xl:flex-row gap-12 xl:gap-16">
+          <!-- Property Buying Section -->
           <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-            <div class="xl:w-[30.5rem] xl:h-[26rem] rounded-lg bg-purple-800 px-8 pt-3 hidden xl:block">
-              <img loading="lazy" class="object-cover h-32 w-[27rem] mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="">
-              <div class="px-4">
-                <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
-                <p class="text-white mb-4"> Finding your dream property has never been easier. Our team guides you through every step, ensuring you get the best deal possible with full transparency and zero stress. </p>
-                <div class="xl:block hidden">
-                  <button class="font-semibold bg-white mt-2 px-10 py-3 rounded-lg text-base text-purple-900 hover:bg-purple-900 hover:text-white transition-all duration-300 ease-in-out"> Properties </button>
-                </div>
-                <div class="flex items-center justify-center xl:hidden">
-                  <button class="font-semibold bg-white mt-2 px-20 py-3 rounded-lg text-base text-purple-900 hover:bg-purple-900 hover:text-white transition-all duration-300 ease-in-out"> Properties </button>
-                </div>
+            <div class="bg-purple-800 rounded-lg shadow-lg px-6 py-4 lg:px-8 lg:py-6">
+              <img loading="lazy" class="w-full h-40 object-cover rounded-md mb-4" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="Interior view">
+              <h3 class="text-xl lg:text-2xl font-serif text-white font-bold mb-3">You want to buy a property.</h3>
+              <p class="text-white mb-4">
+                Finding your dream property has never been easier. Our team guides you every step of the way, ensuring full transparency and zero stress.
+              </p>
+              <div class="text-left">
+                <button class="font-semibold bg-white text-purple-900 hover:bg-purple-900 hover:text-white px-10 py-3 rounded-lg transition-all duration-300 ease-in-out">
+                  View Properties
+                </button>
               </div>
             </div>
           </div>
-          <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-            <div class="sm:w-[18rem] sm:h-[27rem] md:w-[21rem] md:h-[25rem] lg:w-[21rem] lg:h-[24rem] rounded-lg border-white border-2 border-solid bg-purple-800 sm:px-5 px-8 pt-3 xl:hidden">
-              <img loading="lazy" class="object-cover h-32 w-80 mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/interior.jpg?updatedAt=1723998342952" alt="">
-              <div class="px-4">
-                <h3 class="sm:text-xl text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to buy a property.</h3>
-                <p class="text-white mb-4"> Finding your dream property has never been easier. Our team guides you through every step, ensuring you get the best deal possible with full transparency and zero stress. </p>
-                <div class="flex items-center justify-center">
-                  <button class="font-semibold bg-white mt-6 px-20 py-3 rounded-lg text-base text-purple-900 hover:bg-purple-900 hover:text-white transition-all duration-300 ease-in-out"> Properties </button>
-                </div>
-              </div>
-            </div>
-          </div>
+      
+          <!-- Property Selling Section -->
           <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-            <div class="xl:w-[30.5rem] xl:h-[26rem] rounded-lg bg-blue-500 px-8 pt-3 hidden xl:block">
-              <img loading="lazy" class="object-cover h-32 w-[27rem] mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="">
-              <div class="px-4">
-                <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to sell a property.</h3>
-                <p class="text-white mb-4"> Selling your property is straightforward with us. We handle the entire process, from listing to closing, ensuring a smooth and profitable transaction. </p>
-                <div class="xl:block hidden">
-                  <button class="font-semibold bg-white mt-2 px-10 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"> Properties </button>
-                </div>
-                <div class="flex items-center justify-center xl:hidden">
-                  <button class="font-semibold bg-white mt-2 px-20 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-500 hover:text-white transition-all duration-300 ease-in-out"> Properties </button>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-              <div class="sm:w-[18rem] sm:h-[27rem] md:w-[21rem] md:h-[25rem] lg:w-[21rem] lg:h-[26rem] rounded-lg border-white border-2 border-solid bg-blue-500 sm:px-5 px-8 pt-3 xl:hidden">
-                <img loading="lazy" class="object-cover h-32 w-96 mb-3 rounded" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="">
-                <div class="px-4">
-                  <h3 class="text-2xl xl:text-3xl font-serif text-white font-bold my-4">You want to sell a property.</h3>
-                  <p class="text-white mb-4"> Selling your property is straightforward with us. We handle the entire process, from listing to closing, ensuring a smooth and profitable transaction. </p>
-                  <div class="flex items-center justify-center">
-                    <button class="font-semibold bg-white mt-4 px-20 py-3 rounded-lg text-base text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"> Properties </button>
-                  </div>
-                </div>
+            <div class="bg-blue-500 rounded-lg shadow-lg px-6 py-4 lg:px-8 lg:py-6">
+              <img loading="lazy" class="w-full h-40 object-cover rounded-md mb-4" src="https://ik.imagekit.io/mshcgnjju/Kemsan/mansion_sleek.jpeg?updatedAt=1723998489028" alt="Mansion view">
+              <h3 class="text-xl lg:text-2xl font-serif text-white font-bold mb-3">You want to sell a property.</h3>
+              <p class="text-white mb-4">
+                Selling your property is seamless with us. We handle everything from listing to closing for a smooth, profitable transaction.
+              </p>
+              <div class="text-left">
+                <button class="font-semibold bg-white text-blue-600 hover:bg-blue-600 hover:text-white px-10 py-3 rounded-lg transition-all duration-300 ease-in-out">
+                  View Properties
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      
       <section class="h-full w-full py-14 bg-[#f7f8ff]">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="flex flex-col xl:flex-row justify-center items-start sm:px-7 md:pl-16 md:pr-8 lg:px-16 xl:justify-between xl:items-center xl:gap-24 align-middle xl:pl-40 xl:pr-52 ">
+          <div class="flex flex-col xl:flex-row justify-center items-start px-10 xl:px-24 xl:justify-between xl:items-center xl:gap-24 align-middle">
             <div class="sm:w-11/12 md:w-11/12 lg:w-10/12 xl:w-7/12">
               <h3 class="text-blue-500 font-bold text-xl mb-4">Our Featured Properties</h3>
               <h2 class="xl:text-6xl md:text-5xl sm:text-4xl font-serif text-black font-bold"> Be part of the innovative <span class="text-blue-500">standard</span>
@@ -336,7 +316,7 @@
           </div>
         </div>
         <div data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="owl-carousel flex flex-row gap-8 py-8">
+          <div class="owl-carousel flex flex-row gap-8 px-5 py-8">
             
             <a href="#" class="box-border mb-8 flex flex-col justify-center items-center bg-white w-64 rounded-lg hover:scale-105 shadow-md hover:shadow-lg transition-all duration-200 ease-in-out">
               <img class="rounded-t-lg w-[256px] h-[171px]" loading="lazy" src="https://ik.imagekit.io/mshcgnjju/Kemsan/abuja-city-gate.jpg?updatedAt=1725542296440" alt="Abuja City Gate">
@@ -374,7 +354,7 @@
         <div class="container mx-auto">
           <div class="w-11/12 md:w-8/12 lg:w-6/12 mx-auto text-center">
             <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
-              <h3 class="text-6xl md:text-3xl lg:text-4xl font-serif text-white font-bold">Real People, Real Testimonials</h3>
+              <h3 class="text-6xl md:text-2xl lg:text-4xl font-serif text-white font-bold">Real People, Real Testimonials</h3>
             </div>
             <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
               <p class="text-base lg:text-base pt-2 text-white">Take our word for it, our clients love our services as much as we do - here are a few of their wonderful thoughts about us</p>
@@ -676,12 +656,12 @@
           </div>
         </div>
       </section>
-      <section class="py-12 bg-gray-50">
+      <!-- <section class="py-12 bg-gray-50">
         <div class="container mx-auto text-center md:px-10 lg:px-10">
           <h2 class="xl:text-5xl md:text-4xl sm:text-3xl font-serif text-black font-bold mb-4">Secure your Property needs with us, <span class="text-blue-500">quality</span> is assured. </h2>
           <p class="font-sans text-base text-gray-700 max-w-3xl mx-auto mb-10">Discover our handpicked selection of premium properties that showcase the best in modern living and investment opportunities. Each property reflects our commitment to excellence, blending innovative design with prime locations.</p>
         </div>
-      </section>
+      </section> -->
       <section class="flex flex-col items-center justify-center w-full py-24 bg-gray-50">
         <div
           data-aos="zoom-in-up"
@@ -839,7 +819,55 @@
         </div>
       </section>
       
-    
+      <div data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1500">
+        <section class="relative bg-gradient-to-r from-blue-700 to-blue-900">
+          <div class="mx-auto px-10 xl:px-24 pt-40 pb-28 lg:pb-32">
+            <div class="flex flex-wrap justify-between items-center">
+              
+              <!-- Left Column: Heading and Description -->
+                <div class="w-full lg:w-5/12">
+                  <h3 class="text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
+                    Stay <span class="text-yellow-400">Updated</span> with Us!
+                  </h3>
+                  <p class="text-white text-base lg:text-lg mt-6 lg:mt-8 leading-relaxed">
+                    Subscribe to our newsletter for the latest updates, exclusive offers, and expert insights delivered directly to your inbox.
+                  </p>
+                </div>
+          
+              <!-- Right Column: Newsletter Form -->
+                <div class="w-full lg:w-6/12 mt-10 lg:mt-0">
+                  <div class="bg-white p-8 lg:p-10 rounded-xl shadow-xl">
+                    <h4 class="text-2xl font-semibold font-serif text-gray-900 mb-6">
+                      Join Our Mailing List
+                    </h4>
+                  
+                    <form action="#" method="POST" class="space-y-6">
+                      
+                      <!-- Name Input -->
+                      <div>
+                        <label for="name" class="block text-base font-serif font-semibold text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
+                      </div>
+                      
+                      <!-- Email Input -->
+                      <div>
+                        <label for="email" class="block text-base font-serif font-semibold text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
+                      </div>
+      
+                      <!-- Submit Button -->
+                      <div class="text-center">
+                          <button type="submit" class="w-full lg:w-auto px-8 py-3 font-serif bg-yellow-400 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400">
+                            Subscribe Now
+                          </button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     
       <section class="flex flex-col items-center justify-center gap-6 w-full py-24">
           <h3 class="text-[#222] text-xl font-bold">VISIT US TODAY</h3>
