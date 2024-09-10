@@ -155,95 +155,88 @@
         </div>
       </section>
       <section>
-        <div class="sm:container md:container lg:container xl:w-10/12 relative -mt-16 z-10 mx-auto">
+        <div class="container xl:w-10/12 relative -mt-16 z-10 mx-auto">
             <div class="grid grid-cols-1">
-                <form class="w-full h-32 bg-white rounded-xl shadow flex flex-row justify-center items-center">
-                    <div class="registration-form text-dark text-start">
-                        <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6">
-                            
+                <form class="w-full bg-gray-100 rounded-xl shadow flex flex-row justify-center items-center py-6 px-8">
+                    <div class="registration-form text-dark text-start w-full">
+                        <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-6">
+    
                             <!-- Search Input -->
-                            <div>
+                            <div class="flex flex-col">
                                 <label class="form-label font-medium text-slate-900 dark:text-white font-serif">Search: <span class="text-red-600">*</span></label>
-                                <div class="filter-search-form relative filter-border mt-2 flex flex-row">
-                                  <i class="fa-solid fa-magnifying-glass text-blue-600 mt-1"></i>
-                                    <input name="name" type="text" id="property-keyword" class="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search properties...">
+                                <div class="relative mt-2">
+                                    <i class="fa-solid fa-magnifying-glass text-blue-600 absolute top-1/2 left-3 transform -translate-y-1/2"></i>
+                                    <input name="name" type="text" id="property-keyword" class="form-input outline-none font-serif py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:border-blue-500 focus:ring focus:ring-blue-500 transition" placeholder="Search properties...">
                                 </div>
                             </div>
     
                             <!-- Select Categories -->
-                            <div>
+                            <div class="flex flex-col">
                                 <label for="buy-properties" class="form-label font-medium text-slate-900 dark:text-white font-serif">Select Categories:</label>
-                                <div class="filter-search-form relative filter-border mt-2">
-                                  <i class="fa-solid fa-house-chimney text-blue-600"></i>
-                                    <select class="form-select z-2" id="choices-catagory-buy" name="choices-catagory">
+                                <div class="relative mt-2">
+                                    <i class="fa-solid fa-house-chimney text-blue-600 absolute top-1/2 left-3 transform -translate-y-1/2"></i>
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-category-buy" name="choices-category">
                                         <option value="Land">Land</option>
                                         <option value="Apartment">Apartment</option>
                                     </select>
                                 </div>
                             </div>
-
+    
                             <!-- Select Location -->
-                            <div>
-                              <label for="buy-properties" class="form-label font-medium text-slate-900 dark:text-white font-serif">Select Location:</label>
-                              <div class="filter-search-form relative filter-border mt-2">
-                                <i class="fa-solid fa-city text-blue-600 "></i>
-                                  <select class="form-select z-2" id="choices-location-buy" name="choices-location">
-                                      <option value="Abuja">Abuja</option>  
-                                      <option value="Lagos">Lagos</option>
-                                      <option value="Oyo">Oyo</option>
-                                      <option value="Ogun">Ogun</option>
-                                      <option value="Ekiti">Ekiti</option>
-                                      <option value="Kwara">Kwara</option>
-                                      <option value="Ondo">Ondo</option>
-                                  </select>
-                              </div>
-                          </div>
+                            <div class="flex flex-col">
+                                <label for="buy-location" class="form-label font-medium text-slate-900 dark:text-white font-serif">Select Location:</label>
+                                <div class="relative mt-2">
+                                    <i class="fa-solid fa-city text-blue-600 absolute top-1/2 left-3 transform -translate-y-1/2"></i>
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-location-buy" name="choices-location">
+                                        <option value="Abuja">Abuja</option>
+                                        <option value="Lagos">Lagos</option>
+                                        <option value="Oyo">Oyo</option>
+                                        <option value="Ogun">Ogun</option>
+                                        <option value="Ekiti">Ekiti</option>
+                                        <option value="Kwara">Kwara</option>
+                                        <option value="Ondo">Ondo</option>
+                                    </select>
+                                </div>
+                            </div>
     
                             <!-- Min Price -->
-                            <div>
+                            <div class="flex flex-col">
                                 <label for="buy-min-price" class="form-label font-medium text-slate-900 dark:text-white font-serif">Min Price:</label>
-                                <div class="filter-search-form relative filter-border mt-2">
-                                    <span class="text-blue-600 text-lg">₦</span>
-                                    <select class="form-select" id="choices-min-price-buy" name="choices-min-price">
-                                        <option value="300000">300000</option>
-                                        <option value="400000">400000</option>
-                                        <option value="500000">500000</option>
-                                        <option value="3000">3000</option>
-                                        <option value="4000">4000</option>
-                                        <option value="5000">5000</option>
-                                        <option value="6000">6000</option>
+                                <div class="relative mt-2">
+                                    <span class="absolute top-1/2 left-3 transform -translate-y-1/2 text-blue-600">₦</span>
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-min-price-buy" name="choices-min-price">
+                                        <option value="300000">300,000</option>
+                                        <option value="400000">400,000</option>
+                                        <option value="500000">500,000</option>
                                     </select>
                                 </div>
                             </div>
     
                             <!-- Max Price -->
-                            <div>
+                            <div class="flex flex-col">
                                 <label for="buy-max-price" class="form-label font-medium text-slate-900 dark:text-white font-serif">Max Price:</label>
-                                <div class="filter-search-form relative mt-2">
-                                  <span class="text-blue-600 text-lg">₦</span>
-                                    <select class="form-select" id="choices-max-price-buy" name="choices-max-price">
+                                <div class="relative mt-2">
+                                    <span class="absolute top-1/2 left-3 transform -translate-y-1/2 text-blue-600">₦</span>
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-max-price-buy" name="choices-max-price">
                                         <option value="500">500</option>
-                                        <option value="1000">1000</option>
-                                        <option value="2000">2000</option>
-                                        <option value="3000">3000</option>
-                                        <option value="4000">4000</option>
-                                        <option value="5000">5000</option>
-                                        <option value="6000">6000</option>
+                                        <option value="1000">1,000</option>
+                                        <option value="2000">2,000</option>
                                     </select>
                                 </div>
                             </div>
     
                             <!-- Submit Button -->
-                            <div class="lg:mt-6">
-                                <input type="submit" id="search-buy" name="search" class="btn bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700 text-white searchbtn submit-btn w-full rounded mt-2 py-6" value="Search">
+                            <div class="flex items-end">
+                                <input type="submit" id="search-buy" name="search" class="btn bg-blue-600 hover:bg-blue-700 text-white text-lg font-serif w-full py-4 rounded focus:outline-none focus:ring focus:ring-blue-500 transition" value="Search">
                             </div>
     
-                        </div><!--end grid-->
-                    </div><!--end registration form-->
-                </form><!--end form-->
-            </div><!--end grid-->
-        </div><!--end container-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+    
     
       <footer class="bg-[#f7f8ff] relative pt-24 pb-20 text-gray-700">
         <div class="xl:px-20 lg:px-8 mx-auto px-4">
