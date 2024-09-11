@@ -158,16 +158,64 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Main Content -->
             <main class="md:col-span-3">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog Post Item -->
-                    <article class="bg-white p-8 box-border rounded-sm">
-                        <img src="https://via.placeholder.com/600x400" alt="Blog Post" class="w-full h-48 object-cover rounded-t-lg">
-                        <h2 class="text-2xl font-bold mt-4">Blog Post Title</h2>
-                        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget...</p>
-                        <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Read More</a>
-                    </article>
-                    <!-- Repeat Blog Post Item as needed -->
+              <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="relative">
+                    <img src="assets/images/blog/1.png" alt="Image not found!" class="w-full h-48 object-cover">
+                    <a href="#" class="absolute inset-0 flex items-center justify-center text-white text-3xl hover:bg-black/40 transition-colors duration-300">+</a>
+                  </div>
+                  <div class="p-4">
+                    <h5 class="text-lg font-semibold mb-3">
+                      <a href="#" class="text-gray-900 hover:text-blue-600 transition-colors duration-300">Our latest development projects by more efficie.</a>
+                    </h5>
+                    <p class="text-gray-700 mb-4">Nostra maecenas malesuada vel lobortis sociis mus aliquam tempor etiam ipsum pretium cursus nullam tortor.</p>
+                    <div class="text-xs text-gray-500 uppercase">
+                      <a href="#" class="hover:text-blue-600 transition-colors duration-300">By Robert Haven</a> | 
+                      <a href="#" class="hover:text-blue-600 transition-colors duration-300">Dec 25, 2019</a>
+                    </div>
+                  </div>
                 </div>
+              
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="relative">
+                    <img src="assets/images/blog/2.png" alt="Image not found!" class="w-full h-48 object-cover">
+                    <a href="#" class="absolute inset-0 flex items-center justify-center text-white text-3xl hover:bg-black/40 transition-colors duration-300">+</a>
+                  </div>
+                  <div class="p-4">
+                    <h5 class="text-lg font-semibold mb-3">
+                      <a href="#" class="text-gray-900 hover:text-blue-600 transition-colors duration-300">Cultivating market leadership from the inside.</a>
+                    </h5>
+                    <p class="text-gray-700 mb-4">Nostra maecenas malesuada vel lobortis sociis mus aliquam tempor etiam ipsum pretium cursus nullam tortor.</p>
+                    <div class="text-xs text-gray-500 uppercase">
+                      <a href="#" class="hover:text-blue-600 transition-colors duration-300">By Robert Haven</a> | 
+                      <a href="#" class="hover:text-blue-600 transition-colors duration-300">Dec 25, 2019</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="relative">
+                    <img src="assets/images/blog/3.png" alt="Image not found!" class="w-full h-48 object-cover">
+                    <a href="#" class="absolute inset-0 flex items-center justify-center text-white text-3xl hover:bg-black/40 transition-colors duration-300">+</a>
+                  </div>
+                  <div class="p-4">
+                    <h5 class="text-lg font-semibold mb-3">
+                      <a href="#" class="text-gray-900 hover:text-blue-600 transition-colors duration-300">We are the next generation of the advertising.</a>
+                    </h5>
+                    <p class="text-gray-700 mb-4">Nostra maecenas malesuada vel lobortis sociis mus aliquam tempor etiam ipsum pretium cursus nullam tortor.</p>
+                    <div class="text-xs text-gray-500 uppercase">
+                      <a href="#" class="hover:text-blue-600 transition-colors duration-300">By Robert Haven</a> | 
+                      <a href="#" class="hover:text-blue-600 transition-colors duration-300">Dec 25, 2019</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Add more posts as needed -->
+              </div>
+              
 
                 <!-- Pagination -->
                 <nav class="mt-8">
@@ -192,15 +240,14 @@
                     </form>
                 </div> -->
 
-                <div class="bg-white p-8 rounded-lg border border-gray-300 shadow-md mb-8">
+                <div style="width: 300px" class="bg-white p-8 rounded-lg border border-gray-700 mb-8">
                   <form role="search" method="GET" action="#" class="flex flex-col">
-                      <label for="search-input" class="text-lg font-semibold mb-4 font-serif">Search for:</label>
                       <input
                           type="search"
                           id="search-input"
                           name="blog"
                           placeholder="Search..."
-                          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          class="w-full p-3 border border-gray-300 rounded-md outline-none"
                       >
                       <input type="submit" class="hidden">
                   </form>
@@ -208,18 +255,18 @@
               
 
                 <!-- Categories -->
-                <div class="bg-white p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
-                    <h3 class="text-xl font-bold mb-4 font-serif">Categories</h3>
+                <div style="width: 300px" class="bg-white p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
+                    <h3 class="text-xl font-semibold mb-4 font-serif">Categories</h3>
                     <ul>
-                        <li><a href="#" class="text-blue-500 hover:underline">Real Estate</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Category 2</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Category 3</a></li>
+                        <li><a href="#" class="text-[#6d7175] py-3 font-light hover:text-blue-500 border-b-[1px] border-solid border-[#e1e1e1]">Real Estate</a></li>
+                        <li><a href="#" class="text-[#6d7175] py-3 font-light hover:text-blue-500 border-b-[1px] border-solid border-[#e1e1e1]">Category 2</a></li>
+                        <li><a href="#" class="text-[#6d7175] py-3 font-light hover:text-blue-500 border-b-[1px] border-solid border-[#e1e1e1]">Category 3</a></li>
                     </ul>
                 </div>
 
                 <!-- Recent Posts -->
-                <div class="bg-white p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
-                    <h3 class="text-xl font-bold mb-4 font-serif">Recent Posts</h3>
+                <div style="width: 300px" class="bg-white  p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
+                    <h3 class="text-xl font-semibold mb-4 font-serif">Recent Posts</h3>
                     <ul>
                         <li><a href="#" class="text-blue-500 hover:underline">Recent Post 1</a></li>
                         <li><a href="#" class="text-blue-500 hover:underline">Recent Post 2</a></li>
@@ -228,8 +275,8 @@
                 </div>
 
                 <!-- Recent Properties -->
-                <div class="bg-white p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
-                    <h3 class="text-xl font-bold mb-4 font-serif">Recent Properties</h3>
+                <div style="width: 300px" class="bg-white  p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
+                    <h3 class="text-xl font-semibold mb-4 font-serif">Recent Properties</h3>
                     <ul>
                         <li><a href="#" class="text-blue-500 hover:underline">Property 1</a></li>
                         <li><a href="#" class="text-blue-500 hover:underline">Property 2</a></li>
@@ -238,12 +285,12 @@
                 </div>
 
                 <!-- Tags -->
-                <div class="bg-white p-8 box-border rounded-sm">
+                <div style="width: 300px" class="bg-white  p-8 box-border rounded-sm">
                     <h3 class="text-xl font-bold mb-4 font-serif">Tags</h3>
                     <div class="flex flex-wrap gap-2">
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-300">Tag 1</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-300">Tag 2</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-300">Tag 3</a>
+                        <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Real Estate</a>
+                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-sm text-sm hover:bg-gray-300">Realtor</a>
+                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-sm text-sm hover:bg-gray-300">Sales</a>
                     </div>
                 </div>
             </aside>
