@@ -436,7 +436,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 img,
 video {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -3081,7 +3081,7 @@ video {
   }
 
   .lg\:w-auto {
-    width: auto;
+    /* width: auto; */
   }
 
   .lg\:w-full {
