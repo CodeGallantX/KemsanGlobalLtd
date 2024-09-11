@@ -242,11 +242,20 @@
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-2xl font-semibold  font-serif mb-4">Search Properties</h2>
                 <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <!-- Search Input -->
                     <div class="col-span-2">
-                        <input type="text" placeholder="Search properties..." class="w-full p-3 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                        <input 
+                         type="text"
+                         id="search"  
+                         list="property-suggestions"
+                         placeholder="Search properties..." 
+                         class="w-full p-3 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
                     </div>
-                    <!-- Filter Button -->
+                    <datalist id="property-suggestions">
+                      <option value="Shoreline Estate">
+                      <option value="Springfield Estate">                        
+                      <option value="Ara's Court">  
+                      <option value="Emerald Estate">
+                    </datalist>
                     <button class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Search</button>
                 </form>
             </div>
