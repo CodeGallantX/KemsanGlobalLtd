@@ -154,10 +154,10 @@
           </div>
         </div>
       </section>
-      <section class="block lg:hidden xl:hidden">
-        <div class="container xl:w-10/12 relative -mt-16 z-10 mx-auto">
+      <section class="block xl:hidden">
+        <div class="container relative -mt-16 z-10 mx-auto">
             <div class="grid grid-cols-1">
-                <form class="w-full bg-gray-100 rounded-xl shadow flex flex-row justify-center items-center py-6 px-8">
+                <form class="w-full bg-gray-100 rounded-xl shadow flex flex-row justify-center items-center py-6 px-8 lg:px-2 lg:py-2">
                     <div class="registration-form text-dark text-start w-full">
                         <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-6">
     
@@ -168,7 +168,7 @@
                                     <i class="fa-solid fa-magnifying-glass text-blue-600 absolute top-1/2 left-3 transform -translate-y-1/2"></i>
                                     <input 
                                     type="text" 
-                                    name="query"
+                                    name="property"
                                     list="property-suggestions"
                                     id="property-keyword" 
                                     class="form-input outline-none font-serif py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" 
@@ -198,7 +198,7 @@
                                 <label for="buy-properties" class="form-label font-medium text-slate-900 dark:text-white font-serif">Select Categories:</label>
                                 <div class="relative mt-2">
                                     <i class="fa-solid fa-house-chimney text-blue-600 absolute top-1/2 left-3 transform -translate-y-1/2"></i>
-                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-category-buy" name="choices-category">
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="category-buy" name="category">
                                         <option value="Land">Land</option>
                                         <option value="Apartment">Apartment</option>
                                     </select>
@@ -210,7 +210,7 @@
                                 <label for="buy-location" class="form-label font-medium text-slate-900 dark:text-white font-serif">Select Location:</label>
                                 <div class="relative mt-2">
                                     <i class="fa-solid fa-city text-blue-600 absolute top-1/2 left-3 transform -translate-y-1/2"></i>
-                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-location-buy" name="choices-location">
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="location-buy" name="location">
                                         <option value="Abuja">Abuja</option>
                                         <option value="Lagos">Lagos</option>
                                         <option value="Oyo">Oyo</option>
@@ -227,7 +227,7 @@
                                 <label for="buy-min-price" class="form-label font-medium text-slate-900 dark:text-white font-serif">Min Price:</label>
                                 <div class="relative mt-2">
                                     <span class="absolute top-1/2 left-3 transform -translate-y-1/2 text-blue-600">₦</span>
-                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-min-price-buy" name="choices-min-price">
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="min-price-buy" name="min-price">
                                         <option value="300000">300,000</option>
                                         <option value="400000">400,000</option>
                                         <option value="500000">500,000</option>
@@ -240,7 +240,7 @@
                                 <label for="buy-max-price" class="form-label font-medium text-slate-900 dark:text-white font-serif">Max Price:</label>
                                 <div class="relative mt-2">
                                     <span class="absolute top-1/2 left-3 transform -translate-y-1/2 text-blue-600">₦</span>
-                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="choices-max-price-buy" name="choices-max-price">
+                                    <select class="form-select py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" id="max-price-buy" name="max-price">
                                         <option value="500">500</option>
                                         <option value="1000">1,000</option>
                                         <option value="2000">2,000</option>
@@ -261,7 +261,7 @@
     </section>
     
     <!-- Search Area -->
-    <section class="py-8 hidden lg:block xl:block">
+    <section class="py-8 hidden xl:block">
       <div class="max-w-7xl mx-auto px-4">
           <div class="bg-white p-6 rounded-lg shadow-md">
               <h2 class="text-2xl font-semibold font-serif mb-4">Search Properties</h2>
@@ -271,7 +271,7 @@
                       <input 
                           type="text"
                           id="search"
-                          name="query"
+                          name="property"
                           list="property-suggestions"
                           placeholder="Search properties..." 
                           class="w-full p-3 border rounded-lg focus:ring-blue-500 focus:border-blue-500"

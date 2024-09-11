@@ -154,6 +154,109 @@
           </div>
         </div>
       </section>
+    <div class="container mx-auto py-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Main Content -->
+            <main class="md:col-span-3">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Post Item -->
+                    <article class="bg-white p-8 box-border rounded-sm">
+                        <img src="https://via.placeholder.com/600x400" alt="Blog Post" class="w-full h-48 object-cover rounded-t-lg">
+                        <h2 class="text-2xl font-bold mt-4">Blog Post Title</h2>
+                        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget...</p>
+                        <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Read More</a>
+                    </article>
+                    <!-- Repeat Blog Post Item as needed -->
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-8">
+                    <ul class="flex justify-center space-x-4">
+                        <li><a href="#" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Previous</a></li>
+                        <li><a href="#" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">1</a></li>
+                        <li><a href="#" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">2</a></li>
+                        <li><a href="#" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">3</a></li>
+                        <li><a href="#" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Next</a></li>
+                    </ul>
+                </nav>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="md:col-span-1">
+                <!-- Search Box -->
+                <!-- <div class="">
+                    <h3 class="">Search</h3>
+                    <form action="#" method="GET">
+                        <input type="text" placeholder="Search..." class="w-full px-4 py-2 border rounded-lg">
+                        <button type="submit" class="w-full mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Search</button>
+                    </form>
+                </div> -->
+
+                <div class="bg-white p-8 rounded-lg border border-gray-300 shadow-md mb-8">
+                  <form role="search" method="GET" action="#" class="flex flex-col">
+                      <label for="search-input" class="text-lg font-semibold mb-4 font-serif">Search for:</label>
+                      <input
+                          type="search"
+                          id="search-input"
+                          name="s"
+                          placeholder="Search..."
+                          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      >
+                      <input
+                          type="submit"
+                          value="Search"
+                          class="mt-4 w-full py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-200"
+                      >
+                  </form>
+              </div>
+              
+
+                <!-- Categories -->
+                <div class="bg-white p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
+                    <h3 class="text-xl font-bold mb-4 font-serif">Categories</h3>
+                    <ul>
+                        <li><a href="#" class="text-blue-500 hover:underline">Category 1</a></li>
+                        <li><a href="#" class="text-blue-500 hover:underline">Category 2</a></li>
+                        <li><a href="#" class="text-blue-500 hover:underline">Category 3</a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="bg-white p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
+                    <h3 class="text-xl font-bold mb-4 font-serif">Recent Posts</h3>
+                    <ul>
+                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 1</a></li>
+                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 2</a></li>
+                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 3</a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Properties -->
+                <div class="bg-white p-8 box-border rounded-sm border-[1px] border-solid border-gray-700 mb-8">
+                    <h3 class="text-xl font-bold mb-4 font-serif">Recent Properties</h3>
+                    <ul>
+                        <li><a href="#" class="text-blue-500 hover:underline">Property 1</a></li>
+                        <li><a href="#" class="text-blue-500 hover:underline">Property 2</a></li>
+                        <li><a href="#" class="text-blue-500 hover:underline">Property 3</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tags -->
+                <div class="bg-white p-8 box-border rounded-sm">
+                    <h3 class="text-xl font-bold mb-4 font-serif">Tags</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-300">Tag 1</a>
+                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-300">Tag 2</a>
+                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-300">Tag 3</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+
+
       <footer class="bg-[#f7f8ff] relative pt-24 pb-20 text-gray-700">
         <div class="xl:px-20 lg:px-8 mx-auto px-4">
             <div class="flex flex-wrap pb-16 lg:pb-24 border-b border-gray-300 gap-8 lg:gap-0">
@@ -182,9 +285,9 @@
                         <div>
                             <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Products</h3>
                             <ul class="space-y-4 text-base">
-                                <li><a class="hover:text-blue-600 transition" href="./buy-land/">Own Landed Properties</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="./buy-house/">Buy House</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="./build-home/">Build Your Home</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../buy-land/">Own Landed Properties</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../buy-house/">Buy House</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../build-home/">Build Your Home</a></li>
                             </ul>
                         </div>
                         <div>
@@ -194,14 +297,14 @@
                                 <li><a class="hover:text-blue-600 transition" href="../properties/">Properties</a></li>
                                 <li><a class="hover:text-blue-600 transition" href="./">Blog</a></li>
                                 <li><a class="hover:text-blue-600 transition" href="../contact/">Contact</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="./schedule-inspection/">Schedule Inspection</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="./partner/">Become a Partner</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../schedule-inspection/">Schedule Inspection</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../partner/">Become a Partner</a></li>
                             </ul>
                         </div>
                         <div>
                             <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Legal</h3>
                             <ul class="space-y-4 text-base">
-                                <li><a class="hover:text-blue-600 transition" href="./terms-and-condition.">Terms & Condition</a></li>
+                                <li><a class="hover:text-blue-600 transition" href="../terms-and-condition.">Terms & Condition</a></li>
                             </ul>
                         </div>
                     </div>
