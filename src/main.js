@@ -52,7 +52,7 @@ window.addEventListener('load', function() {
 
       // Show the modal after preloader finishes
       showModal(); // Call showModal() to display the video modal
-  }, 3500);
+  }, 3000);
 });
 
 // Function to show the video modal
