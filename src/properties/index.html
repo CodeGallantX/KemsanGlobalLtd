@@ -154,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="block lg:hidden xl:hidden">
         <div class="container xl:w-10/12 relative -mt-16 z-10 mx-auto">
             <div class="grid grid-cols-1">
                 <form class="w-full bg-gray-100 rounded-xl shadow flex flex-row justify-center items-center py-6 px-8">
@@ -166,7 +166,30 @@
                                 <label class="form-label font-medium text-slate-900 dark:text-white font-serif">Search: <span class="text-red-600">*</span></label>
                                 <div class="relative mt-2">
                                     <i class="fa-solid fa-magnifying-glass text-blue-600 absolute top-1/2 left-3 transform -translate-y-1/2"></i>
-                                    <input name="name" type="text" id="property-keyword" class="form-input outline-none font-serif py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" placeholder="Search properties...">
+                                    <input 
+                                    type="text" 
+                                    name="query"
+                                    list="property-suggestions"
+                                    id="property-keyword" 
+                                    class="form-input outline-none font-serif py-4 pl-10 pr-4 w-full border border-gray-300 rounded focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500 transition" 
+                                    placeholder="Search properties...">
+                                    <datalist id="property-sugg">
+                                      <option value="Shoreline Estate">Shoreline Estate</option>
+                                      <option value="The Capstone Estate">The Capstone Estate</option>
+                                      <option value="Springfield Homes">Springfield Homes</option>                   
+                                      <option value="Ara's Court">Ara's Court</option> 
+                                      <option value="Emerald Estate">Emerald Estate</option>
+                                      <option value="The Unicorn Estate">The Unicorn Estate</option>
+                                      <option value="Jade Estate">Jade Estate</option>
+                                      <option value="The Stallion Estate">The Stallion Estate</option>
+                                      <option value="Maverick Court and Gardens">Maverick Court and Gardens</option>
+                                      <option value="Semi-Detached 3-Bedroom">Semi-Detached 3-Bedroom</option>
+                                      <option value="Semi-Detached 2-Bedroom">Semi-Detached 2-Bedroom</option>
+                                      <option value="Brookline Estate">Brookline Estate</option>
+                                      <option value="The Republic">The Republic</option>
+                                      <option value="Peace Court">Peace Court</option>
+                                      <option value="Zinariya – The Gold City">Zinariya – The Gold City</option>
+                                  </datalist>
                                 </div>
                             </div>
     
@@ -236,111 +259,166 @@
             </div>
         </div>
     </section>
+    
     <!-- Search Area -->
-    <section class="py-8">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold  font-serif mb-4">Search Properties</h2>
-                <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="col-span-2">
-                        <input 
-                         type="text"
-                         id="search"  
-                         list="property-suggestions"
-                         placeholder="Search properties..." 
-                         class="w-full p-3 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <datalist id="property-suggestions">
-                      <option value="Shoreline Estate">
-                      <option value="Springfield Estate">                        
-                      <option value="Ara's Court">  
-                      <option value="Emerald Estate">
-                    </datalist>
-                    <button class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Search</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <section class="py-8 hidden lg:block xl:block">
+      <div class="max-w-7xl mx-auto px-4">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+              <h2 class="text-2xl font-semibold font-serif mb-4">Search Properties</h2>
+              <form action="/search" method="GET" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <!-- Search Input -->
+                  <div class="col-span-2">
+                      <input 
+                          type="text"
+                          id="search"
+                          name="query"
+                          list="property-suggestions"
+                          placeholder="Search properties..." 
+                          class="w-full p-3 border rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                      >
+                      <datalist id="property-suggestions">
+                          <option value="Shoreline Estate">Shoreline Estate</option>
+                          <option value="The Capstone Estate">The Capstone Estate</option>
+                          <option value="Springfield Homes">Springfield Homes</option>                   
+                          <option value="Ara's Court">Ara's Court</option> 
+                          <option value="Emerald Estate">Emerald Estate</option>
+                          <option value="The Unicorn Estate">The Unicorn Estate</option>
+                          <option value="Jade Estate">Jade Estate</option>
+                          <option value="The Stallion Estate">The Stallion Estate</option>
+                          <option value="Maverick Court and Gardens">Maverick Court and Gardens</option>
+                          <option value="Semi-Detached 3-Bedroom">Semi-Detached 3-Bedroom</option>
+                          <option value="Semi-Detached 2-Bedroom">Semi-Detached 2-Bedroom</option>
+                          <option value="Brookline Estate">Brookline Estate</option>
+                          <option value="The Republic">The Republic</option>
+                          <option value="Peace Court">Peace Court</option>
+                          <option value="Zinariya – The Gold City">Zinariya – The Gold City</option>
+                      </datalist>
+                  </div>
+  
+                  <!-- Submit Button -->
+                  <button type="submit" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Search</button>
+              </form>
+          </div>
+      </div>
+  </section>
+  
 
-    <section class="max-w-7xl mx-auto px-4">
+    <section class="max-w-7xl sm:hidden md:hidden lg:block xl:block mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <!-- Sidebar (Filters) -->
-            <aside class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold font-serif mb-4">Filters</h3>
-
-                <!-- Property Type Filter -->
-                <div class="mb-6">
-                    <h4 class="text-lg font-serif font-medium mb-2">Property Type</h4>
-                    <div class="space-y-2">
-                        <label class="block">
-                            <input type="checkbox" class="mr-2"> Residential
-                        </label>
-                        <label class="block">
-                            <input type="checkbox" class="mr-2"> Commercial
-                        </label>
-                        <label class="block">
-                            <input type="checkbox" class="mr-2"> Industrial
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Amenities Filter -->
-                <div class="mb-6">
-                    <h4 class="text-lg font-medium mb-2">Amenities</h4>
-                    <div class="space-y-2">
-                        <label class="block">
-                            <input type="checkbox" class="mr-2"> Pool
-                        </label>
-                        <label class="block">
-                            <input type="checkbox" class="mr-2"> Gym
-                        </label>
-                        <label class="block">
-                            <input type="checkbox" class="mr-2"> Garage
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Price Range Filter -->
-                <div class="mb-6">
-                    <h4 class="text-lg font-medium mb-2">Price Range</h4>
-                    <input type="range" min="100000" max="5000000" class="w-full">
-                    <div class="flex justify-between text-sm">
-                        <span>₦100000</span>
-                        <span>₦5M</span>
-                    </div>
-                </div>
-
-                <!-- Bed/Bath Filter -->
-                <div>
-                    <h4 class="text-lg font-medium mb-2">Beds/Baths</h4>
-                    <div class="grid grid-cols-2 gap-2">
-                        <div>
-                            <label for="beds" class="block">Beds</label>
-                            <select id="beds" class="w-full p-2 border rounded">
-                                <option>Any</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3+</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="baths" class="block">Baths</label>
-                            <select id="baths" class="w-full p-2 border rounded">
-                                <option>Any</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3+</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </aside>
+            <aside class="bg-white p-6 rounded-lg shadow-md"> 
+              <h3 class="text-2xl font-bold font-serif mb-4">Filters</h3>
+          
+              <form action="/search" method="GET" class="space-y-6">
+                  <!-- Property Type Filter -->
+                  <div class="mb-6">
+                      <h4 class="text-lg font-serif font-medium mb-2">Property Type</h4>
+                      <div class="space-y-2">
+                          <label class="block">
+                              <input type="checkbox" name="property_type" value="land" class="mr-2"> Land
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="property_type" value="apartment" class="mr-2"> Apartment
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="property_type" value="industrial" class="mr-2"> Industrial
+                          </label>
+                      </div>
+                  </div>
+          
+                  <!-- Location Filter -->
+                  <div class="mb-6">
+                      <h4 class="text-lg font-serif font-medium mb-2">Location</h4>
+                      <div class="space-y-2">
+                          <label class="block">
+                              <input type="checkbox" name="location" value="abuja" class="mr-2"> Abuja
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="location" value="lagos" class="mr-2"> Lagos
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="location" value="oyo" class="mr-2"> Oyo
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="location" value="ekiti" class="mr-2"> Ekiti
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="location" value="ogun" class="mr-2"> Ogun
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="location" value="kwara" class="mr-2"> Kwara
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="location" value="ondo" class="mr-2"> Ondo
+                          </label>
+                      </div>
+                  </div>
+          
+                  <!-- Area Filter -->
+                  <div class="mb-6">
+                      <h4 class="text-lg font-medium mb-2">Area</h4>
+                      <div class="space-y-2">
+                          <label class="block">
+                              <input type="checkbox" name="area" value="300sqft" class="mr-2"> 300sqft
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="area" value="450sqft" class="mr-2"> 450sqft
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="area" value="500sqft" class="mr-2"> 500sqft
+                          </label>
+                          <label class="block">
+                              <input type="checkbox" name="area" value="600sqft" class="mr-2"> 600sqft
+                          </label>
+                      </div>
+                  </div>
+          
+                  <!-- Price Range Filter -->
+                  <div class="mb-6">
+                      <h4 class="text-lg font-medium mb-2">Price Range</h4>
+                      <input type="range" name="price_range" min="100000" max="5000000" class="w-full">
+                      <div class="flex justify-between text-sm">
+                          <span>₦100000</span>
+                          <span>₦5M</span>
+                      </div>
+                  </div>
+          
+                  <!-- Bed/Bath Filter -->
+                  <div>
+                      <h4 class="text-lg font-medium mb-2">Beds/Baths</h4>
+                      <div class="grid grid-cols-2 gap-2">
+                          <div>
+                              <label for="beds" class="block">Beds</label>
+                              <select id="beds" name="beds" class="w-full p-2 border rounded">
+                                  <option value="">Any</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3+">3+</option>
+                              </select>
+                          </div>
+                          <div>
+                              <label for="baths" class="block">Baths</label>
+                              <select id="baths" name="baths" class="w-full p-2 border rounded">
+                                  <option value="">Any</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3+">3+</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <!-- Submit Button -->
+                  <button type="submit" class="mt-6 w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Apply Filters</button>
+              </form>
+          </aside>
+          
 
             <!-- Property Listings -->
             <div class="md:col-span-3">
                 <!-- Property Grid/List Tabs -->
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-semibold">Property Listings</h2>
+                    <h2 class="text-2xl font-semibold font-serif">Property Listings</h2>
                     <div>
                         <button class="p-2 bg-gray-200 rounded-l-md"><i class="fas fa-th-large"></i></button>
                         <button class="p-2 bg-gray-200 rounded-r-md"><i class="fas fa-list"></i></button>
@@ -353,7 +431,7 @@
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img src="https://via.placeholder.com/400x300" alt="Property Image" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold">Modern Family Home</h3>
+                            <h3 class="text-xl font-semibold font-serif">The Capstone Estate</h3>
                             <p class="text-gray-600">3 Beds | 2 Baths | 1500 sqft</p>
                             <p class="text-blue-600 font-bold mt-2">$400,000</p>
                             <div class="flex justify-between items-center mt-4">
@@ -372,7 +450,7 @@
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img src="https://via.placeholder.com/400x300" alt="Property Image" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold">Luxury Condo</h3>
+                            <h3 class="text-xl font-semibold">Springfield Homes</h3>
                             <p class="text-gray-600">2 Beds | 1 Bath | 1200 sqft</p>
                             <p class="text-blue-600 font-bold mt-2">$600,000</p>
                             <div class="flex justify-between items-center mt-4">
@@ -387,7 +465,7 @@
                         </div>
                     </div>
 
-                    <!-- Add more property cards as needed -->
+                    
                 </div>
             </div>
         </div>
