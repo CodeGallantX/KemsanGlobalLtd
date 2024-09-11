@@ -71,17 +71,23 @@
     </div>
 
     <!-- Video Modal -->
-    <div id="videoModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
-      <div class="relative bg-white p-8 rounded-lg w-full max-w-2xl">
-          <button id="closeModal" class="absolute top-4 right-3 text-gray-500 hover:text-gray-700">
-            <i class="bi bi-x text-4xl text-3xl"></i>
-          </button>
-          <h2 class="text-2xl font-bold mb-4 font-serif">Watch Our Video</h2>
-          <div class="aspect-w-16 aspect-h-9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/71dZVqu1RWA?si=Ac0lwmHp_QY61me-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-      </div>
+<div id="videoModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+  <div class="relative bg-white p-6 md:p-8 rounded-lg w-11/12 md:w-full max-w-2xl">
+    <!-- Close Button -->
+    <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
+      <i class="bi bi-x text-3xl"></i>
+    </button>
+    
+    <!-- Modal Title -->
+    <h2 class="text-xl md:text-2xl font-bold mb-4 font-serif">Watch Our Video</h2>
+    
+    <!-- Responsive Video Wrapper -->
+    <div class="relative" style="padding-top: 56.25%;">
+      <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/71dZVqu1RWA?si=Ac0lwmHp_QY61me-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
+</div>
+
     
     <div id="content">
     <!-- Header -->
