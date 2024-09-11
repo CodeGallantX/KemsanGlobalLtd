@@ -38,7 +38,6 @@ function hideVideoPopup() {
 }
 
 
-
 // Preloader
 window.addEventListener('load', function() {
   const preloader = document.getElementById('preloader');
@@ -48,9 +47,24 @@ window.addEventListener('load', function() {
 
   setTimeout(function() {
       preloader.style.display = 'none';
-      
       content.style.display = 'block';
-      
       document.body.style.overflow = 'auto';
+
+      // Show the modal after preloader finishes
+      showModal(); // Call showModal() to display the video modal
   }, 3500);
+});
+
+// Function to show the video modal
+function showModal() {
+  const modal = document.getElementById('videoModal');
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+}
+
+// Close modal button
+document.getElementById('closeModal').addEventListener('click', function () {
+  const modal = document.getElementById('videoModal');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
 });

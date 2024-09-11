@@ -107,68 +107,68 @@ startAutoplay();
 
 
 
-/*
-// Advanced Properties Slider
-const items = document.querySelectorAll('.item input[type="radio"]');
-const contentDiv = document.querySelector('#city-content');
-const allContents = document.querySelectorAll('.content');
-
-items.forEach((item) => {
-  item.addEventListener('change', () => {
-    items.forEach(i => {
-      const label = i.nextElementSibling;
-      const content = document.querySelector(`.content_${i.value}`);
-
-      if (i.checked) {
-        // Scale the active thumbnail to be larger
-        label.parentElement.style.transform = 'scale(1.3)';
-
-        // Display corresponding content
-        allContents.forEach(c => c.classList.add('hidden'));
-        contentDiv.innerHTML = content.innerHTML;
-      } else {
-        // Scale inactive thumbnails smaller
-        label.parentElement.style.transform = 'scale(1)';
-      }
-    });
-
-    // Scroll to the active item
-    const offsetTop = item.parentElement.offsetTop;
-    const list = document.querySelector('ul.list');
-    list.scrollTo({
-      top: offsetTop - list.clientHeight / 2 + item.parentElement.clientHeight / 2,
-      behavior: 'smooth'
-    });
-  });
-});
-*/
-
+// /*
+// // Advanced Properties Slider
 // const items = document.querySelectorAll('.item input[type="radio"]');
-// const contents = document.querySelectorAll('.content');
-// let activeContent = document.querySelector('.content.active');
+// const contentDiv = document.querySelector('#city-content');
+// const allContents = document.querySelectorAll('.content');
 
 // items.forEach((item) => {
 //   item.addEventListener('change', () => {
-//     const contentId = `#content_${item.value}`;
-//     const newContent = document.querySelector(contentId);
+//     items.forEach(i => {
+//       const label = i.nextElementSibling;
+//       const content = document.querySelector(`.content_${i.value}`);
 
-//     // Handle sliding out the previous content
-//     if (activeContent) {
-//       activeContent.classList.remove('active');
-//       activeContent.classList.add('exiting');
-//     }
+//       if (i.checked) {
+//         // Scale the active thumbnail to be larger
+//         label.parentElement.style.transform = 'scale(1.3)';
 
-//     // Handle sliding in the new content
-//     newContent.classList.remove('exiting');
-//     newContent.classList.add('active');
-//     activeContent = newContent;
+//         // Display corresponding content
+//         allContents.forEach(c => c.classList.add('hidden'));
+//         contentDiv.innerHTML = content.innerHTML;
+//       } else {
+//         // Scale inactive thumbnails smaller
+//         label.parentElement.style.transform = 'scale(1)';
+//       }
+//     });
 
-//     // Scroll to the active thumbnail in the left zone
-//     item.scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'center'
+//     // Scroll to the active item
+//     const offsetTop = item.parentElement.offsetTop;
+//     const list = document.querySelector('ul.list');
+//     list.scrollTo({
+//       top: offsetTop - list.clientHeight / 2 + item.parentElement.clientHeight / 2,
+//       behavior: 'smooth'
 //     });
 //   });
 // });
+// */
 
- // Function to animate the counter
+// // const items = document.querySelectorAll('.item input[type="radio"]');
+// // const contents = document.querySelectorAll('.content');
+// // let activeContent = document.querySelector('.content.active');
+
+// // items.forEach((item) => {
+// //   item.addEventListener('change', () => {
+// //     const contentId = `#content_${item.value}`;
+// //     const newContent = document.querySelector(contentId);
+
+// //     // Handle sliding out the previous content
+// //     if (activeContent) {
+// //       activeContent.classList.remove('active');
+// //       activeContent.classList.add('exiting');
+// //     }
+
+// //     // Handle sliding in the new content
+// //     newContent.classList.remove('exiting');
+// //     newContent.classList.add('active');
+// //     activeContent = newContent;
+
+// //     // Scroll to the active thumbnail in the left zone
+// //     item.scrollIntoView({
+// //       behavior: 'smooth',
+// //       block: 'center'
+// //     });
+// //   });
+// // });
+
+//  // Function to animate the counter

@@ -42,33 +42,46 @@
   </head>
   <body class="font-sans overflow-x-hidden">
     <div id="preloader" class="w-full h-screen bg-gray-50 flex xl:flex-row flex-col gap-6 justify-center items-center fixed inset-0 z-50 overflow-hidden">
-      <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" data-aos-mirror="true">
-        <img src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN Logo" class="w-32 h-32 mb-4">
-      </div>
-      <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
-        <h1 class="text-2xl font-bold text-gray-800 font-serif">The <span class="text-4xl">#1</span> Real Estate <br>Company in Nigeria </h1>
-      </div>
-
-      <div class="absolute xl:flex xl:flex-row xl:justify-between xl:items-center hidden opacity-10">
         <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" data-aos-mirror="true">
-          <img src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN Logo" class="w-[40rem] h-auto mb-4 mr-10 animate-pulse">
+            <img src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN Logo" class="w-32 h-32 mb-4">
         </div>
-        <h1 style="font-size: 5rem;" class="font-bold text-gray-800 font-serif">
-        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
-          The
+        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
+            <h1 class="text-2xl font-bold text-gray-800 font-serif">The <span class="text-4xl">#1</span> Real Estate <br>Company in Nigeria </h1>
         </div>
-        <div data-aos="fade-left" data-aos-delay="1000" data-aos-duration="500">
-          <span class="text-7xl">#1</span>
+
+        <div class="absolute xl:flex xl:flex-row xl:justify-between xl:items-center hidden opacity-10">
+            <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500" data-aos-mirror="true">
+                <img src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN Logo" class="w-[40rem] h-auto mb-4 mr-10 animate-pulse">
+            </div>
+            <h1 style="font-size: 5rem;" class="font-bold text-gray-800 font-serif">
+                <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
+                    The
+                </div>
+                <div data-aos="fade-left" data-aos-delay="1000" data-aos-duration="500">
+                    <span class="text-7xl">#1</span>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="1600" data-aos-duration="500">
+                    Real Estate 
+                </div>
+                <div data-aos="fade-left" data-aos-delay="2000" data-aos-duration="500">
+                    Company in Nigeria
+                </div>
+            </h1>
         </div>
-        <div data-aos="fade-left" data-aos-delay="1600" data-aos-duration="500">
-          Real Estate 
-        </div>
-        <div data-aos="fade-left" data-aos-delay="2000" data-aos-duration="500">
-          Company in Nigeria
-        </div>
-       </h1>
-      </div>
     </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50">
+      <div class="relative bg-white p-8 rounded-lg w-full max-w-2xl">
+          <button id="closeModal" class="absolute top-4 right-3 text-gray-500 hover:text-gray-700">
+            <i class="fa-solid fa-xmark text-3xl"></i>
+          </button>
+          <h2 class="text-2xl font-bold mb-4 font-serif">Watch Our Video</h2>
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/71dZVqu1RWA?si=Ac0lwmHp_QY61me-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </div>
+  </div>
     
     <div id="content">
     <!-- Header -->
@@ -229,13 +242,13 @@
       </section>
       <!-- VIDEO POPUP  -->
       <div id="videoPopup" class="hidden fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-40">
-        <div class="relative w-11/12 max-w-4xl bg-black rounded-lg overflow-hidden p-4 xl:h-[400px]">
+        <div class="relative max-w-3xl bg-black rounded-lg overflow-hidden p-4 xl:h-[400px]">
           <li class="w-full flex justify-end text-white p-4 absolute top-0 right-0" onclick="hideVideoPopup()">
             <a href="#">
               <i class="fa-solid fa-xmark text-4xl"></i>
             </a>
           </li>
-          <iframe class="aspect-video xl:h-[400px]" width="100%" height="315" src="https://www.youtube.com/embed/yfF5Pc4NxIA?si=IIqddG993Ie4o3FL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/71dZVqu1RWA?si=Ac0lwmHp_QY61me-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
       <!-- VIDEO POPUP  -->
@@ -352,310 +365,88 @@
       </section>
       <section class="relative pt-24 lg:pt-28 pb-28 lg:pb-32 bg-blue-800">
         <div class="container mx-auto">
+          <!-- Heading Section -->
           <div class="w-11/12 md:w-8/12 lg:w-6/12 mx-auto text-center">
             <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
-              <h3 class="text-6xl md:text-2xl lg:text-4xl font-serif text-white font-bold">Real People, Real Testimonials</h3>
+              <h3 class="text-4xl md:text-5xl lg:text-6xl font-serif text-white font-bold">Real People, Real Testimonials</h3>
             </div>
             <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
-              <p class="text-base lg:text-base pt-2 text-white">Take our word for it, our clients love our services as much as we do - here are a few of their wonderful thoughts about us</p>
+              <p class="text-base lg:text-lg pt-2 text-white">Take our word for it, our clients love our services as much as we do - here are a few of their wonderful thoughts about us</p>
             </div>
           </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16 mt-16 lg:mt-20 w-11/12 lg:w-10/12 mx-auto">
+      
+          <!-- Testimonials Section -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 lg:mt-20 w-11/12 lg:w-10/12 mx-auto">
+            <!-- Testimonial 1 -->
             <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
-              <div class="bg-gray-50 p-[30px] lg:py-10 lg:px-10 rounded-2xl w-[400px] h-[250px]">
-                <p class="text-base lg:text-sm-15">I have had several bad experiences whenever I intend buying a piece. Doing business with Kemsan Acres Global Limited is an amazing exprience. </p>
-                <div class="mt-6 lg:mt-8 flex flex-wrap items-center">
-                  <div class="">
-                    <span class="box-border inline-block overflow-hidden w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 relative max-w-full">
-                      <span class="box-border block w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 max-w-full">
-                        <img class="block max-w-full w-auto h-auto bg-none opacity-100 border-0 m-0 p-0" alt="" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+">
-                      </span>
-                      <img alt="Avatar" src="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482" decoding="async" data-nimg="intrinsic" class=" rounded-full absolute  top-0 left-0 bottom-0 right-0 box-border p-0 border-none m-auto block w-0 height-0 min-w-full max-w-full min-h-full max-h-full" srcset="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 1x, https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 2x">
-                      <noscript>
-                        <img alt="Avatar" srcSet="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482 1x, https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482 2x" src="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482
-                      </noscript>
-                    </span>
+              <div class="bg-gray-50 p-6 lg:py-10 lg:px-10 rounded-2xl">
+                <p class="text-base lg:text-lg">I have had several bad experiences whenever I intend buying a piece. Doing business with Kemsan Acres Global Limited is an amazing experience.</p>
+                <div class="mt-6 lg:mt-8 flex items-center">
+                  <div class="w-12 h-12 relative">
+                    <img alt="Avatar" src="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482" class="rounded-full w-full h-full object-cover">
                   </div>
-                  <div class="ml-4 mb-2">
-                    <p class="text-primary-2 font-serif font-bold text-sm-15 lg:text-base">Babatunde</p>
+                  <div class="ml-4">
+                    <p class="text-primary-2 font-serif font-bold text-sm-15 lg:text-lg">Babatunde</p>
                     <div class="flex pt-1 space-x-1">
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <!-- Star Icons -->
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+      
+            <!-- Testimonial 2 -->
             <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
-              <div class="bg-gray-50 p-[30px] lg:py-10  lg:px-10 rounded-2xl w-[400px] h-[250px]">
-                <p class="text-base lg:text-sm-15"> Dukiya Investments is beyond a property selling company. They make you see estate as an asset . I was convinced to buy more than I initially intended. </p>
-                <div class="mt-6 lg:mt-8 flex flex-wrap items-center">
-                  <div class="">
-                    <span class="box-border inline-block overflow-hidden;w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 relative max-w-full">
-                      <span class="box-border block w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 max-w-full">
-                        <img class="rounded-full block max-w-full;w-auto h-auto bg-none opacity-100 border-0 m-0 p-0" alt="" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+">
-                      </span>
-                      <img alt="Avatar" src="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482" decoding="async" data-nimg="intrinsic" class="absolute rounded-full top-0 left-0 bottom-0 right-0 ;box-border p-0 border-none m-auto block  w-0 h-0 min-w-full max-w-full min-h-full max-h-full " srcset="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482 1x, https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482 2x">
-                      <noscript>
-                        <img alt="Avatar" srcSet="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482 1x, https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482 2x" src="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482" decoding="async" data-nimg="intrinsic" class="absolute rounded-full top-0 left-0 bottom-0 right-0 ;box-border p-0 border-none m-auto block  w-0 h-0 min-w-full max-w-full min-h-full max-h-full " loading="lazy" />
-                      </noscript>
-                    </span>
+              <div class="bg-gray-50 p-6 lg:py-10 lg:px-10 rounded-2xl">
+                <p class="text-base lg:text-lg">Dukiya Investments is beyond a property-selling company. They make you see estate as an asset. I was convinced to buy more than I initially intended.</p>
+                <div class="mt-6 lg:mt-8 flex items-center">
+                  <div class="w-12 h-12 relative">
+                    <img alt="Avatar" src="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482" class="rounded-full w-full h-full object-cover">
                   </div>
-                  <div class="ml-4 mb-2">
-                    <p class="text-primary-2 font-serif font-bold text-sm-15 lg:text-base">Chief Durosanya</p>
+                  <div class="ml-4">
+                    <p class="text-primary-2 font-serif font-bold text-sm-15 lg:text-lg">Chief Durosanya</p>
                     <div class="flex pt-1 space-x-1">
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <!-- Star Icons -->
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="#EC712C" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 9.97449L2.68 12.113L3.53 7.81866L0.32 4.84599L4.67 4.33033L6.5 0.354492L8.33 4.33033L12.68 4.84599L9.47 7.81866L10.32 12.113L6.5 9.97449Z"/>
                       </svg>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
-              <div class="bg-gray-50 p-[30px] lg:py-10 lg:px-10 rounded-2xl w-[400px] h-[250px]">
-                <p class="text lg:text-sm-15"> Dukiya Investments operates with excellence in dealing with people, they are my constant go-to company for my real estate investments. </p>
-                <div class="mt-6 lg:mt-8 flex flex-wrap items-center">
-                  <div class="">
-                    <span class="box-border inline-block overflow-hidden;w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 relative max-w-full">
-                      <span class="box-border block w-auto h-auto bg-none opacity-10  border-0 m-0 p-0 max-w-full">
-                        <img class="rounded-full block max-w-full;w-auto h-auto bg-none opacity-100 border-0 m-0 p-0" alt="" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+">
-                      </span>
-                      <img alt="Avatar" src="https://ik.imagekit.io/mshcgnjju/Kemsan/customer_2.jpg?updatedAt=1725408498482" decoding="async" data-nimg="intrinsic" class="absolute rounded-full top-0 left-0 bottom-0 right-0 box-border p-0 border-none m-auto block  w-0 h-0 min-w-full max-w-full min-h-full max-h-full " srcset="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 1x, https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 2x">
-                      <noscript>
-                        <img alt="Avatar" srcSet="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 1x, https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 2x" src="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991" decoding="async" data-nimg="intrinsic" class="absolute rounded-full top-0 left-0 bottom-0 right-0 box-border p-0 border-none m-auto block  w-0 h-0 min-w-full max-w-full min-h-full max-h-full " loading="lazy" />
-                      </noscript>
-                    </span>
-                  </div>
-                  <div class="ml-4 mb-2">
-                    <p class="text-primary-2 font-serif font-bold text-sm-15 lg:text-base">Taiwo Bankole</p>
-                    <div class="flex pt-1 space-x-1">
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
-              <div class="bg-gray-50 p-[30px] lg:py-10 lg:px-10 rounded-2xl w-[400px] h-[250px]">
-                <p class="text lg:text-sm-15"> I recently worked with Dukiya when I was searching for a property to buy in Lagos. Their team was highly responsive and provided great suggestions for properties based on request. </p>
-                <div class="mt-6 lg:mt-8 flex flex-wrap items-center">
-                  <div class="">
-                    <span class="box-border inline-block overflow-hidden w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 relative max-w-full">
-                      <span class="box-border block w-auto h-auto bg-none opacity-100 border-0 m-0 p-0 max-w-full">
-                        <img class="block max-w-full rounded-full w-auto h-auto bg-none opacity-100 border-0 m-0 p-0" alt="" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+">
-                      </span>
-                      <img alt="Avatar" src="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991" decoding="async" data-nimg="intrinsic" class="absolute rounded-full top-0 left-0 bottom-0 right-0 ;box-border p-0 border-none m-auto block  w-0 h-0 min-w-full max-w-full min-h-full max-h-full " srcset="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 1x, https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 2x">
-                      <noscript>
-                        <img alt="Avatar" srcSet="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 1x, https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991 2x" src="https://ik.imagekit.io/mshcgnjju/team9.png?updatedAt=1710713969991" decoding="async" data-nimg="intrinsic" class="absolute  top-0 left-0 bottom-0 right-0 ;box-border p-0 border-none m-auto block  w-0 h-0 min-w-full max-w-full min-h-full max-h-full " loading="lazy" />
-                      </noscript>
-                    </span>
-                  </div>
-                  <div class="ml-4 mb-2">
-                    <p class="text-primary-2 font-serif font-bold text-sm-15 lg:text-base">Charles</p>
-                    <div class="flex pt-1 space-x-1">
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_95_63)">
-                          <path d="M6.49994 9.97449L2.67957 12.113L3.53269 7.81866L0.317902 4.84599L4.66586 4.33033L6.49994 0.354492L8.33403 4.33033L12.682 4.84599L9.46719 7.81866L10.3203 12.113L6.49994 9.97449Z" fill="#EC712C"></path>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_95_63">
-                            <rect width="13" height="13" fill="white" transform="translate(-6.10352e-05 0.0834961)"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      
           </div>
         </div>
       </section>
+      
       <!-- <section class="py-12 bg-gray-50">
         <div class="container mx-auto text-center md:px-10 lg:px-10">
           <h2 class="xl:text-5xl md:text-4xl sm:text-3xl font-serif text-black font-bold mb-4">Secure your Property needs with us, <span class="text-blue-500">quality</span> is assured. </h2>
