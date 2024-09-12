@@ -38,6 +38,32 @@ function hideVideoPopup() {
 }
 
 
+// Video Pop-Up - KEMSAN HEIGHTS
+function showVideoPopupKH() {
+  const videoPopup = document.getElementById('videoPopupKH');
+  const iframeElement = videoPopup.querySelector('iframe');
+  const bodyElement = document.getElementsByTagName('body')[0];
+
+  const src = iframeElement.getAttribute('src');
+  iframeElement.setAttribute('src', src + '&autoplay=1');
+
+  videoPopup.classList.remove('hidden');
+  bodyElement.classList.add('overflow-y-hidden');
+}
+
+function hideVideoPopupKH() {
+  const videoPopup = document.getElementById('videoPopupKH');
+  const iframeElement = videoPopup.querySelector('iframe');
+  const bodyElement = document.getElementsByTagName('body')[0];
+
+  const src = iframeElement.getAttribute('src').replace('&autoplay=1', '');
+  iframeElement.setAttribute('src', src);
+
+  videoPopup.classList.add('hidden');
+  bodyElement.classList.remove('overflow-y-hidden');
+}
+
+
 // Preloader
 window.addEventListener('load', function() {
   const preloader = document.getElementById('preloader');
