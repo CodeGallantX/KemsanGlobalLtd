@@ -65,6 +65,11 @@ function showModal() {
 // Close modal button
 document.getElementById('closeModal').addEventListener('click', function () {
   const modal = document.getElementById('videoModal');
+  const iframe = modal.querySelector('iframe');
+
+  // Stop the video by resetting the iframe src
+  iframe.src = iframe.src;
+
   modal.classList.add('hidden');
   modal.classList.remove('flex');
 });

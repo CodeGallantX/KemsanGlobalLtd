@@ -1,0 +1,17 @@
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .dot.active {
+    opacity: 1;
+  }
