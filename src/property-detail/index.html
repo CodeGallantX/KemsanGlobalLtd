@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="overflow-x-hidden" lang="en">
+<html class="overflow-x-hidden scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -161,9 +161,7 @@
   <div class="flex justify-between items-center">
     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary-2">The Stanford</h2>
     <div class="flex flex-row space-x-1 mt-2">
-      <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- SVG content -->
-      </svg>
+      <i class="fa-solid fa-location-dot"></i>
       <p class="text-xs md:text-sm lg:text-base text-primary">Ikate, Lagos</p>
     </div>
   </div>
@@ -178,14 +176,10 @@
     <!-- Navigation buttons -->
     <div class="flex justify-between w-11/12 mx-auto mt-4">
       <button type="button" role="presentation" class="owl-prev">
-        <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- SVG content -->
-        </svg>
+        <i class="fa-solid fa-arrow-left"></i>
       </button>
       <button type="button" role="presentation" class="owl-next">
-        <svg width="44" height="43" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- SVG content -->
-        </svg>
+        <i class="fa-solid fa-arrow-right"></i>
       </button>
     </div>
     <!-- Dots -->
@@ -202,9 +196,7 @@
         <a class="pl-3 lg:pl-4 pr-4 lg:pr-5 pt-3 pb-3 bg-gray-100 rounded-lg text-primary-2 font-semibold text-sm lg:text-base flex flex-row items-center w-full justify-center hover:bg-gray-200 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1d2ANSMEyL_y4xFPSar0XLJNasn-D9Shr/view?usp=sharing">
           Download Brochure
           <span class="pl-5">
-            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- SVG content -->
-            </svg>
+            <i class="fa-solid fa-file-arrow-down"></i>
           </span>
         </a>
       </div>
@@ -214,9 +206,7 @@
         <a class="pl-3 lg:pl-4 pr-4 lg:pr-5 pt-3 pb-3 bg-gray-100 rounded-lg text-primary-2 font-semibold text-sm lg:text-base flex flex-row items-center w-full lg:w-auto justify-center hover:bg-gray-200 transition" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1tjL_H_3RN7_GfZ2Lp3wkU_6h7qlP52Rx/view?usp=sharing">
           Purchase
           <span class="pl-5">
-            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- SVG content -->
-            </svg>
+            <i class="fa-solid fa-cart-shopping"></i>
           </span>
         </a>
       </div>
@@ -231,12 +221,12 @@
         <p class="text-xs md:text-sm lg:text-base text-white font-semibold">N68,000,000 <span class="text-xs lg:text-sm font-light">/ 1 BedroomSQM</span></p>
       </div>
       <div class="pr-8">
-        <button class="focus:outline-none text-primary-2 flex text-xs lg:text-sm space-x-2">
-          <p class="underline font-semibold">View Payment Plan</p>
-          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- SVG content -->
-          </svg>
-        </button>
+        <a href="#features">
+          <button class="focus:outline-none text-primary-2 flex text-xs lg:text-sm space-x-2">
+            <p class="underline font-semibold">View Payment Plan</p>
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </a>
       </div>
     </div>
 
@@ -264,7 +254,7 @@
       </div>
 
       <!-- Features -->
-      <div class="pt-10 mb-12">
+      <div id="features" class="pt-10 mb-12">
         <h4 class="text-base lg:text-lg font-semibold pb-6">Features</h4>
         <div class="flex flex-wrap flex-row">
           <div class="w-6/12 md:w-4/12 lg:w-3/12 flex flex-row space-x-2 items-center text-sm mb-6 lg:mb-8">
@@ -298,6 +288,29 @@
           </div>
           <!-- Add more payment plans -->
         </div>
+        <!-- Call-to-Action buttons -->
+  <div class="flex flex-wrap md:items-start md:justify-between mt-10 lg:mt-16">
+    <div class="w-full md:w-8/12 md:flex flex-row md:space-x-4">
+      <div class="relative flex group">
+        <a class="pl-3 lg:pl-4 pr-4 lg:pr-5 pt-3 pb-3 bg-blue-200 text-blue-700 rounded-lg text-primary-2 font-semibold text-sm lg:text-base flex flex-row items-center w-full justify-center" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1d2ANSMEyL_y4xFPSar0XLJNasn-D9Shr/view?usp=sharing">
+          Download Brochure
+          <span class="pl-5 group-hover:translate-x-8 transition">
+            <i class="fa-solid fa-file-arrow-down"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="w-full flex-1 md:flex justify-end mt-4 md:mt-0">
+      <div class="relative flex group">
+        <a class="group-hover:-translate-x-8 transition pl-3 lg:pl-4 pr-4 lg:pr-5 pt-3 pb-3 bg-blue-700 text-blue-50 rounded-lg text-primary-2 font-semibold text-sm lg:text-base flex flex-row items-center w-full lg:w-auto justify-center group" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1tjL_H_3RN7_GfZ2Lp3wkU_6h7qlP52Rx/view?usp=sharing">
+          Purchase
+          <span class="pl-5">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>gray
       </div>
     </div>
   </div>
