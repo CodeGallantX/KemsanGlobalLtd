@@ -160,7 +160,7 @@
     <section class="px-10 xl:px-20">
       <div class="mt-12 lg:mt-16 pt-12 pb-16 rounded-bl-2xl rounded-br-2xl bg-[#F7F8FF] text-[#1D2542]">
         <h1 class="space-y-5">The Capstone Estate</h1>
-        <div class="owl-carousel">
+        <div class="owl-carousel w-2/3 max-h-[500px]">
           <div>
             <img src="https://cdn.sanity.io/images/b85empyy/production/2387c19e262d451acecf5e9cf30491afeec45d73-1080x810.jpg" alt="">
           </div>
@@ -170,6 +170,10 @@
           <div>
             <img src="https://cdn.sanity.io/images/b85empyy/production/8f4c2f776f22c5337d865591dcd95544a4df94d1-1080x810.jpg" alt="">
           </div>
+          <div class="owl-nav">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+        </div>
         </div>
         <div class="flex justify-between items-center">
           <div class="rounded-tr-full rounded-br-full py-2 pl-2 pr-6 lg:pr-8 bg-gradient-to-r from-[#002278] to-[#0749EA]">
@@ -348,8 +352,32 @@
       AOS.init()
 
       $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+    $(".owl-carousel").owlCarousel({
+      // loop: true,
+      margin: 10,
+      navigation: true,
+      // autoplay: true,
+      // autoplayTimeout: 3000,
+      items: 1
+      // responsive: {
+      //   0: {
+      //     items: 1
+      //   },
+      //   420: {
+      //     items: 2,
+      //     margin: 10
+      //   },
+
+      //   768: {
+      //     items: 3
+      //   },
+
+      //   1200: {
+      //     items: 1
+      //   }
+      // }
+    });
+  });
     </script>
   </body>
 </html>
