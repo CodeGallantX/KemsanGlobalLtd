@@ -126,29 +126,24 @@
         <a class="nav-link block w-full my-2 text-white text-2xl font-semibold hover:text-gray-200" href="../schedule-inspection/">Book an Inspection</a>
       </li>
     </ul>
-    <main class="xl:pt-[6.5rem] lg:pt-[6.5rem] md:pt-[6.5rem] sm:pt-[6.5rem]">
+    <main class="pt-[6.5rem]">
+      <!-- Banner Section -->
       <section class="relative h-[400px] w-full rounded-sm">
         <img loading="lazy" class="w-full h-full object-cover rounded-sm" src="https://ik.imagekit.io/mshcgnjju/Kemsan/Lunch.jpg?updatedAt=1725279665664" alt="Blog Post Banner Image">
-        
-        <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-black/40 rounded-sm"></div>
-        
-        <!-- Content -->
         <div class="absolute inset-0 flex flex-col justify-center items-center gap-8">
-          <!-- Heading -->
-          <div>
-            <h2 class="text-6xl sm:text-6xl text-white font-serif font-bold">Subsidy Cut Will Increase Housing Shortage</h2>
-          </div>
+          <h2 class="text-4xl sm:text-6xl text-white font-serif font-bold text-center">Subsidy Cut Will Increase Housing Shortage</h2>
         </div>
       </section>
-      <div class="pt-0">
-        <div class="px-10 xl:px-24">
-          <div class="grid grid-cols-2">
+    
+      <!-- Blog Content -->
+      <div class="pt-8">
+        <div class="px-4 xl:px-24">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Main Content -->
-            <div class="w-full xl:w-2/3 xl:order-1">
-              <div class="bg-white p-6 border border-gray-300 rounded-lg shadow-md mb-8">
-                <!-- Post Title and Meta -->
-                <div class="mb-4">
+            <div class="md:col-span-2">
+              <article class="bg-white p-6 border border-gray-300 rounded-lg shadow-md">
+                <header class="mb-4">
                   <h2 class="text-2xl font-bold mb-2">Why is there no “Magic Pill” for Hair Growth?</h2>
                   <div class="text-sm text-gray-500">
                     <span>by <a href="#" class="text-blue-500 hover:underline">John Doe</a></span>
@@ -157,213 +152,163 @@
                     <span class="mx-2">|</span>
                     <span><i class="fa fa-comments"></i> 0 Comments</span>
                   </div>
+                </header>
+                <div class="text-lg leading-relaxed mb-4">
+                  <p class="mb-4">Vivamus eu sapien at nulla tincidunt vulputate...</p>
+                  <p class="mb-4">Praesent sed magna quis ipsum cursus tristique eget at sem...</p>
                 </div>
-                <!-- Post Content -->
-                <div class="text-lg leading-relaxed">
-                  <p class="mb-4">Vivamus eu sapien at nulla tincidunt vulputate. Sed vulputate ligula sit amet dolor malesuada, et venenatis purus vehicula. Donec nec nunc sed sem ullamcorper auctor. Nullam varius felis sit amet sem venenatis vestibulum. Aliquam erat volutpat. Cras ultricies nunc ut sapien consectetur, ut posuere orci tempor.</p>
-                  <p class="mb-4">Praesent sed magna quis ipsum cursus tristique eget at sem. Maecenas nec mi ut justo pharetra accumsan. Suspendisse potenti. Nulla facilisi. Donec tincidunt orci et augue vehicula, a tincidunt dolor hendrerit. Sed pharetra libero sit amet tellus vulputate, ac bibendum neque rhoncus.</p>
-                  <p class="mb-4">Nulla facilisi. Curabitur ut leo vel dui tincidunt euismod non eget ante. Etiam feugiat nisl vel auctor eleifend. Nulla facilisi. Pellentesque sagittis sapien id libero congue, a dignissim neque tincidunt. Duis ac massa et eros elementum tincidunt ut ac eros.</p>
-                  <p class="mb-4">Aenean facilisis, sapien at venenatis tincidunt, justo purus cursus dolor, et tempus erat arcu ac dui. Vestibulum finibus neque in tincidunt luctus. Vestibulum vulputate neque eu magna tempor, ac rhoncus justo bibendum. Curabitur non urna id dolor gravida viverra.</p>
-                </div>
-                <!-- Post Tags -->
-                <div class="mt-6">
+                <footer>
                   <span class="text-lg font-semibold">Tags:</span>
                   <a href="#" class="text-blue-500 hover:underline ml-2">general</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">video</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">media</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">web</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">parallax</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">ecommerce</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">t-shirt</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">women</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">trade</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">animation</a>
-                  <a href="#" class="text-blue-500 hover:underline ml-2">theme</a>
-                </div>
-              </div>
+                </footer>
+              </article>
             </div>
-            <!-- Sidebar -->
+    
             <!-- Sidebar -->
             <aside class="md:col-span-1">
-                <!-- Search Box -->
-                <div style="width: 300px" class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
-                  <form role="search" method="GET" action="#" class="flex flex-col">
-                      <input
-                          type="search"
-                          id="search-input"
-                          name="blog"
-                          placeholder="Search..."
-                          class="w-full p-3 border border-gray-300 text-gray-600 rounded-md outline-none"
-                      >
-                      <input type="submit" class="hidden">
-                  </form>
+              <!-- Search Box -->
+              <div class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
+                <form method="GET" action="#" class="flex flex-col">
+                  <input type="search" placeholder="Search..." class="w-full p-3 border border-gray-300 text-gray-600 rounded-md outline-none">
+                  <input type="submit" class="hidden">
+                </form>
               </div>
-              
-
-                <!-- Categories -->
-                <div style="width: 300px;" class="bg-white p-6 box-border rounded-sm border border-solid border-gray-300 mb-8">
-                    <h3 class="text-xl font-semibold mb-4 font-serif">Categories</h3>
-                    <ul>
-                        <li><a href="#" style="color: #6d7175;" class="py-3 font-serif font-light hover:text-blue-500 border-b border-solid border-[#e1e1e1]">Real Estate</a></li>
-                        <li><a href="#" style="color: #6d7175;" class="py-3 font-serif font-light hover:text-blue-500 border-b border-solid border-[#e1e1e1]">Category 2</a></li>
-                        <li><a href="#" style="color: #6d7175;" class="py-3 font-serif font-light hover:text-blue-500 border-b border-solid border-[#e1e1e1]">Category 3</a></li>
-                    </ul>
-                </div>
-
-                <!-- Recent Posts -->
-                <div style="width: 300px" class="bg-white  p-6 box-border rounded-sm border border-solid border-gray-300 mb-8">
-                    <h3 class="text-xl font-semibold mb-4 font-serif">Recent Posts</h3>
-                    <ul>
-                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 1</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 2</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 3</a></li>
-                    </ul>
-                </div>
-
-                <!-- Recent Properties -->
-                <div style="width: 300px" class="bg-white  p-6 box-border rounded-sm border border-solid border-gray-300 mb-8">
-                    <h3 class="text-xl font-semibold mb-4 font-serif">Recent Properties</h3>
-                    <ul>
-                        <li><a href="#" class="text-blue-500 hover:underline">Property 1</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Property 2</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Property 3</a></li>
-                    </ul>
-                </div>
-
-                <!-- Tags -->
-                <div style="width: 300px" class="bg-white  p-6 box-border rounded-sm">
-                    <h3 class="text-xl font-bold mb-4 font-serif">Tags</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Real Estate</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-sm text-sm hover:bg-gray-300">Realtor</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-sm text-sm hover:bg-gray-300">Security</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-sm text-sm hover:bg-gray-300">Investment</a>
-                    </div>
-                </div>
+    
+              <!-- Categories -->
+              <div class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
+                <h3 class="text-xl font-semibold mb-4">Categories</h3>
+                <ul>
+                  <li><a href="#" class="text-gray-600 hover:text-blue-500 block border-b py-2">Real Estate</a></li>
+                  <li><a href="#" class="text-gray-600 hover:text-blue-500 block border-b py-2">Category 2</a></li>
+                </ul>
+              </div>
+    
+              <!-- Recent Posts -->
+              <div class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
+                <h3 class="text-xl font-semibold mb-4">Recent Posts</h3>
+                <ul>
+                  <li><a href="#" class="text-blue-500 hover:underline">Recent Post 1</a></li>
+                </ul>
+              </div>
             </aside>
-            
           </div>
         </div>
       </div>
-      
-
-
-
-    <div data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1500">
-      <section class="relative bg-gradient-to-r from-blue-700 to-blue-900">
-        <div class="mx-auto px-10 xl:px-24 pt-40 pb-28 lg:pb-32">
-          <div class="flex flex-wrap justify-between items-center">
-            
-            <!-- Left Column: Heading and Description -->
-              <div class="w-full lg:w-5/12">
-                <h3 class="text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
-                  Stay <span class="text-yellow-400">Updated</span> with Us!
-                </h3>
-                <p class="text-white text-base lg:text-lg mt-6 lg:mt-8 leading-relaxed">
-                  Subscribe to our newsletter for the latest updates, exclusive offers, and expert insights delivered directly to your inbox.
-                </p>
-              </div>
-        
-            <!-- Right Column: Newsletter Form -->
-              <div class="w-full lg:w-6/12 mt-10 lg:mt-0">
-                <div class="bg-white p-8 lg:p-10 rounded-xl shadow-xl">
-                  <h4 class="text-2xl font-semibold font-serif text-gray-900 mb-6">
-                    Join Our Mailing List
-                  </h4>
-                
-                  <form action="#" method="POST" class="space-y-6">
-                    
-                    <!-- Name Input -->
-                    <div>
-                      <label for="name" class="block text-base font-serif font-semibold text-gray-700">Your Name</label>
-                      <input type="text" id="name" name="name" placeholder="Enter your full name" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
-                    </div>
-                    
-                    <!-- Email Input -->
-                    <div>
-                      <label for="email" class="block text-base font-serif font-semibold text-gray-700">Email Address</label>
-                      <input type="email" id="email" name="email" placeholder="Enter your email address" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
-                    </div>
     
-                    <!-- Submit Button -->
-                    <div class="text-center">
-                        <button type="submit" class="w-full lg:w-auto px-8 py-3 font-serif bg-yellow-400 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400">
-                          Subscribe Now
-                        </button>
-                    </div>
-                  </form>
+      <!-- Newsletter Section -->
+      <div data-aos="zoom-out" data-aos-delay="50" data-aos-duration="1500">
+        <section class="relative bg-gradient-to-r from-blue-700 to-blue-900">
+          <div class="mx-auto px-10 xl:px-24 pt-40 pb-28 lg:pb-32">
+            <div class="flex flex-wrap justify-between items-center">
+              
+              <!-- Left Column: Heading and Description -->
+                <div class="w-full lg:w-5/12">
+                  <h3 class="text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
+                    Stay <span class="text-yellow-400">Updated</span> with Us!
+                  </h3>
+                  <p class="text-white text-base lg:text-lg mt-6 lg:mt-8 leading-relaxed">
+                    Subscribe to our newsletter for the latest updates, exclusive offers, and expert insights delivered directly to your inbox.
+                  </p>
                 </div>
+          
+              <!-- Right Column: Newsletter Form -->
+                <div class="w-full lg:w-6/12 mt-10 lg:mt-0">
+                  <div class="bg-white p-8 lg:p-10 rounded-xl shadow-xl">
+                    <h4 class="text-2xl font-semibold font-serif text-gray-900 mb-6">
+                      Join Our Mailing List
+                    </h4>
+                  
+                    <form action="#" method="POST" class="space-y-6">
+                      
+                      <!-- Name Input -->
+                      <div>
+                        <label for="name" class="block text-base font-serif font-semibold text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
+                      </div>
+                      
+                      <!-- Email Input -->
+                      <div>
+                        <label for="email" class="block text-base font-serif font-semibold text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" class="mt-2 px-4 py-3 w-full border border-gray-300 rounded-lg shadow-sm focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 ease-in-out">
+                      </div>
+      
+                      <!-- Submit Button -->
+                      <div class="text-center">
+                          <button type="submit" class="w-full lg:w-auto px-8 py-3 font-serif bg-yellow-400 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400">
+                            Subscribe Now
+                          </button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-
-
-      <footer class="bg-[#f7f8ff] relative pt-24 pb-20 text-gray-700">
-        <div class="xl:px-20 lg:px-8 mx-auto px-4">
-            <div class="flex flex-wrap pb-16 lg:pb-24 border-b border-gray-300 gap-8 lg:gap-0">
-                <div class="w-3/4 lg:w-4/12">
-                    <img class="w-28 h-auto mb-4" src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN_logo">
-                    <div class="flex flex-col gap-3">
-                        <address class="not-italic text-base leading-6 flex items-left space-x-2 w-4/6">Kemsan Building, Adjacent Pemoda filling station Monatan, Iwo road, Ibadan, Oyo</address>
-                        <div class="flex space-x-4">
-                            <a href="https://web.facebook.com/kemsan.acres" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
-                                <i class="fa-brands fa-square-facebook text-2xl"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/kemsan-acres-global-ltd" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
-                                <i class="fa-brands fa-linkedin text-2xl"></i>
-                            </a>
-                            <a href="https://www.instagram.com/kemsan_acres" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
-                                <i class="fa-brands fa-square-instagram text-2xl"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@kemsanacres" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
-                                <i class="fa-brands fa-youtube text-2xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full lg:w-8/12 pt-8 lg:pt-0">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div>
-                            <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Products</h3>
-                            <ul class="space-y-4 text-base">
-                                <li><a class="hover:text-blue-600 transition" href="#">Own Landed Properties</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="#">Buy House</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="../../build-home/">Build Your Home</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Company</h3>
-                            <ul class="space-y-4 text-base">
-                                <li><a class="hover:text-blue-600 transition" href="../../about/">About</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="../../properties/">Properties</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="../">Blog</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="../../contact/">Contact</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="../../schedule-inspection/">Schedule Inspection</a></li>
-                                <li><a class="hover:text-blue-600 transition" href="../../partner/">Become a Partner</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Legal</h3>
-                            <ul class="space-y-4 text-base">
-                                <li><a class="hover:text-blue-600 transition" href="../terms-and-condition.">Terms & Condition</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col lg:flex-row justify-between items-center pt-6 text-sm text-gray-600">
-                <p>© 2024 Kemsan Acres Global Limited</p>
-                <div class="flex space-x-3 mt-4 lg:mt-0">
-                    <a href="../../privacy/" class="hover:text-blue-600 transition">Privacy</a>
-                    <span>·</span>
-                    <a href="../../terms/" class="hover:text-blue-600 transition">Terms</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </section>
+      </div>
     </main>
+    <footer class="bg-[#f7f8ff] relative pt-24 pb-20 text-gray-700">
+      <div class="xl:px-20 lg:px-8 mx-auto px-4">
+          <div class="flex flex-wrap pb-16 lg:pb-24 border-b border-gray-300 gap-8 lg:gap-0">
+              <div class="w-3/4 lg:w-4/12">
+                  <img class="w-28 h-auto mb-4" src="https://ik.imagekit.io/mshcgnjju/Kemsan/favicon.ico?updatedAt=1723998347400" alt="KEMSAN_logo">
+                  <div class="flex flex-col gap-3">
+                      <address class="not-italic text-base leading-6 flex items-left space-x-2 w-4/6">Kemsan Building, Adjacent Pemoda filling station Monatan, Iwo road, Ibadan, Oyo</address>
+                      <div class="flex space-x-4">
+                          <a href="https://web.facebook.com/kemsan.acres" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
+                              <i class="fa-brands fa-square-facebook text-2xl"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/company/kemsan-acres-global-ltd" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
+                              <i class="fa-brands fa-linkedin text-2xl"></i>
+                          </a>
+                          <a href="https://www.instagram.com/kemsan_acres" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
+                              <i class="fa-brands fa-square-instagram text-2xl"></i>
+                          </a>
+                          <a href="https://www.youtube.com/@kemsanacres" class="text-blue-800 hover:text-blue-600 transition-transform transform hover:scale-110">
+                              <i class="fa-brands fa-youtube text-2xl"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="w-full lg:w-8/12 pt-8 lg:pt-0">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                      <div>
+                          <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Products</h3>
+                          <ul class="space-y-4 text-base">
+                              <li><a class="hover:text-blue-600 transition" href="#">Own Landed Properties</a></li>
+                              <li><a class="hover:text-blue-600 transition" href="#">Buy House</a></li>
+                              <li><a class="hover:text-blue-600 transition" href="../../build-home/">Build Your Home</a></li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Company</h3>
+                          <ul class="space-y-4 text-base">
+                              <li><a class="hover:text-blue-600 transition" href="../about/">About</a></li>
+                              <li><a class="hover:text-blue-600 transition" href="../properties/">Properties</a></li>
+                              <li><a class="hover:text-blue-600 transition" href="../blog/">Blog</a></li>
+                              <li><a class="hover:text-blue-600 transition" href="../schedule-inspection/">Schedule Inspection</a></li>
+                              <li><a class="hover:text-blue-600 transition" href="../partner/">Become a Partner</a></li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h3 class="text-lg lg:text-lg font-bold font-serif text-blue-800 mb-4">Legal</h3>
+                          <ul class="space-y-4 text-base">
+                              <li><a class="hover:text-blue-600 transition" href="../terms-and-condition.">Terms & Condition</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between items-center pt-6 text-sm text-gray-600">
+              <p>© 2024 Kemsan Acres Global Limited</p>
+              <div class="flex space-x-3 mt-4 lg:mt-0">
+                  <a href="../privacy/" class="hover:text-blue-600 transition">Privacy</a>
+                  <span>·</span>
+                  <a href="../terms/" class="hover:text-blue-600 transition">Terms</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+    
   </div>
     <script src="../../main.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
