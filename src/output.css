@@ -1059,6 +1059,18 @@ video {
   width: 100%;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
 .min-w-\[300px\] {
   min-width: 300px;
 }
