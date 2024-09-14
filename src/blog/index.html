@@ -242,63 +242,78 @@
             </main>
 
             <!-- Sidebar -->
-            <aside class="md:col-span-1 pl-16">
-                <!-- Search Box -->
-                <div style="width: 300px" class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
-                  <form role="search" method="GET" action="#" class="flex flex-col">
-                      <input
-                          type="search"
-                          id="search-input"
-                          name="blog"
-                          placeholder="Search..."
-                          class="w-full p-3 border border-gray-300 text-gray-600 rounded-md outline-none"
-                      >
-                      <input type="submit" class="hidden">
-                  </form>
+          <!-- Sidebar -->
+          <aside class="md:col-span-1">
+            <!-- Search Box -->
+            <div class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
+              <form method="GET" action="#" class="flex flex-col">
+                <input type="search" placeholder="Search..." class="w-full p-3 border border-gray-300 text-gray-600 rounded-md outline-none">
+                <input type="submit" class="hidden">
+              </form>
+            </div>
+  
+            <!-- Categories -->
+            <div class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
+              <h3 class="text-xl font-semibold mb-4">Categories</h3>
+              <ul>
+                <li><a href="#" class="text-gray-600 hover:text-blue-500 block border-b py-2">Real Estate</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-blue-500 block border-b py-2">Home Improvement</a></li>
+              </ul>
+            </div>
+  
+            <!-- Recent Posts -->
+            <div class="bg-white p-6 rounded-lg border border-gray-300 mb-8">
+              <h3 class="text-xl font-semibold mb-4">Recent Posts</h3>
+              <ul>
+                <li class="text-gray-600 hover:text-blue-500 block border-b py-2">
+                  <a href="#">Realtors should vet their clients</a>
+                  <div class="text-sm text-gray-500">
+                    <span>by <a href="#" class="text-blue-700 hover:underline">Tijani Kolawole</a></span>
+                    <span class="mx-2">|</span>
+                    <span>July 23, 2023</span>
+                    <span class="mx-2">|</span>
+                    <span>90 Reads</span>
+                  </div>
+                </li>
+                <li  class="text-gray-600 hover:text-blue-500 block border-b py-2">
+                  <a href="#">Fuel subsidy might cause issues</a>
+                  <div class="text-sm text-gray-500">
+                    <span>by <a href="#" class="text-blue-700 hover:underline">Cynthia Nwosu</a></span>
+                    <span class="mx-2">|</span>
+                    <span>August 16, 2024</span>
+                    <span class="mx-2">|</span>
+                    <span>78 Reads</span>
+                  </div>
+                </li>
+                <li class="text-gray-600 hover:text-blue-700 block border-b py-2">
+                  <a href="#" class="">Kemsan arrives in Ilorin</a>
+                  <div class="text-sm text-gray-500">
+                  <span>by <a href="#" class="text-blue-700 hover:underline">Musa Darko</a></span>
+                  <span class="mx-2">|</span>
+                  <span>May 30, 2022</span>
+                  <span class="mx-2">|</span>
+                  <span>106 Reads</span>
+                </div>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Tags -->
+            <div class="bg-white  p-6 box-border rounded-sm border border-gray-300 mb-8">
+              <h3 class="text-xl font-bold mb-4 font-serif">Tags</h3>
+              <div class="flex  flex-row flex-wrap gap-2">
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Commercial Real Estate</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Land Titles</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Ondo</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Taxation</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Property Management</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Real Estate Agent</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Abuja</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Ibadan</a>
+                <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Lagos</a>
               </div>
-              
-
-                <!-- Categories -->
-                <div style="width: 300px;" class="bg-white p-6 box-border rounded-sm border border-solid border-gray-300 mb-8">
-                    <h3 class="text-xl font-semibold mb-4 font-serif">Categories</h3>
-                    <ul>
-                        <li><a href="#" style="color: #6d7175;" class="py-3 font-serif font-light hover:text-blue-500 border-b border-solid border-[#e1e1e1]">Real Estate</a></li>
-                        <li><a href="#" style="color: #6d7175;" class="py-3 font-serif font-light hover:text-blue-500 border-b border-solid border-[#e1e1e1]">Category 2</a></li>
-                        <li><a href="#" style="color: #6d7175;" class="py-3 font-serif font-light hover:text-blue-500 border-b border-solid border-[#e1e1e1]">Category 3</a></li>
-                    </ul>
-                </div>
-
-                <!-- Recent Posts -->
-                <div style="width: 300px" class="bg-white  p-6 box-border rounded-sm border border-solid border-gray-300 mb-8">
-                    <h3 class="text-xl font-semibold mb-4 font-serif">Recent Posts</h3>
-                    <ul>
-                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 1</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 2</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Recent Post 3</a></li>
-                    </ul>
-                </div>
-
-                <!-- Recent Properties -->
-                <div style="width: 300px" class="bg-white  p-6 box-border rounded-sm border border-solid border-gray-300 mb-8">
-                    <h3 class="text-xl font-semibold mb-4 font-serif">Recent Properties</h3>
-                    <ul>
-                        <li><a href="#" class="text-blue-500 hover:underline">Property 1</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Property 2</a></li>
-                        <li><a href="#" class="text-blue-500 hover:underline">Property 3</a></li>
-                    </ul>
-                </div>
-
-                <!-- Tags -->
-                <div style="width: 300px" class="bg-white  p-6 box-border rounded-sm">
-                    <h3 class="text-xl font-bold mb-4 font-serif">Tags</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <a href="#" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-sm text-sm hover:bg-gray-300">Real Estate</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-sm text-sm hover:bg-gray-300">Realtor</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-sm text-sm hover:bg-gray-300">Security</a>
-                        <a href="#" class="bg-gray-200 text-gray-700 px-3 py-2 rounded-sm text-sm hover:bg-gray-300">Investment</a>
-                    </div>
-                </div>
-            </aside>
+            </div>
+          </aside>
 
             
         </div>
