@@ -99,3 +99,15 @@ document.getElementById('closeModal').addEventListener('click', function () {
   modal.classList.add('hidden');
   modal.classList.remove('flex');
 });
+
+
+
+// Dropdown for mobile navbar
+function toggleDropdown(dropdownId) {
+  var dropdown = document.getElementById(dropdownId);
+  if (dropdown.classList.contains('hidden')) {
+    dropdown.classList.remove('hidden');
+  } else {
+    dropdown.classList.add('hidden');
+  }
+}

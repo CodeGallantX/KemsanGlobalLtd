@@ -101,14 +101,37 @@
           <li>
             <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline text-blue-600" href="#">Home</a>
           </li>
-          <li>
-            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./about/">About</a>
+          <!-- About Us Dropdown -->
+          <li class="relative group">
+            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600 cursor-pointer flex flex-row items-center justify-center gap-1">
+              <span>About Us</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" stroke="currentColor" stroke-width="1"/>
+              </svg>
+              
+            </a>
+            <ul class="absolute opacity-0 group-hover:opacity-100 bg-white shadow-lg p-2 mt-1 transition-all duration-300 ease-in-out">
+              <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./about/">About Us</a></li>
+              <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./board/">Board of Directors</a></li>
+              <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./management/">Management</a></li>
+              <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./awards/">Awards</a></li>
+            </ul>
           </li>
           <li>
             <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./properties/">Properties</a>
           </li>
-          <li>
-            <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./blog/">Blog</a>
+          <!-- Media Dropdown -->
+          <li class="relative group">
+            <a class="px-4 py-2 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600 cursor-pointer flex flex-row gap-1 items-center justify-center">
+              <span>Media</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </a>
+            <ul class="absolute opacity-0 group-hover:opacity-100 bg-white shadow-lg p-2 transition-all duration-300 ease-in-out">
+              <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./blog/">Blog</a></li>
+              <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./gallery/">Gallery</a></li>
+            </ul>
           </li>
           <li>
             <a class="px-4 text-[16px] md:text-[18px] font-semibold no-underline hover:text-blue-600" href="./contact/">Contact</a>
@@ -123,31 +146,58 @@
       </nav>
     </header>
     <!-- Sidebar for small screens -->
-    <ul id="sidebar" class="fixed px-8 py-4 h-full top-0 left-0 z-[999] bg-blue-800 flex-col items-start justify-start w-full sm:w-full md:w-full lg:w-full lg:flex-row lg:items-center xl:hidden p-6 transform transition-transform duration-500 ease-in-out -translate-y-full">
-      <li class="w-full flex justify-end my-4 text-white" onclick="hideSideBar()">
-        <a href="#">
-          <i class="fa-solid fa-xmark text-4xl"></i>
-        </a>
-      </li>
-      <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl  hover:text-gray-200 border-solid border-b-2 border-gray-300 transtion-all duration-200" href="#">Home</a>
-      </li>
-      <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl  hover:border-b-2 border-solid border-gray-300 transtion-all duration-200" href="./about/">About</a>
-      </li>
-      <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl  hover:border-b-2 border-solid border-gray-300 transtion-all duration-200" href="./properties/">Properties</a>
-      </li>
-      <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl  hover:border-b-2 border-solid border-gray-300 transtion-all duration-200" href="./blog/">Blog</a>
-      </li>
-      <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl  hover:border-b-2 border-solid border-gray-300 transtion-all duration-200" href="./contact/">Contact</a>
-      </li>
-      <li>
-        <a class="nav-link block w-full my-2 text-white text-2xl  hover:border-b-2 border-solid border-gray-300 transtion-all duration-200" href="./schedule-inspection/">Book an Inspection</a>
-      </li>
+<ul id="sidebar" class="fixed px-8 py-4 h-full top-0 left-0 z-[999] bg-blue-800 flex-col items-start justify-start w-full lg:flex-row lg:items-center xl:hidden p-6 transform transition-transform duration-500 ease-in-out -translate-y-full">
+  <li class="w-full flex justify-end my-4 text-white" onclick="hideSideBar()">
+    <a href="#">
+      <i class="fa-solid fa-xmark text-4xl"></i>
+    </a>
+  </li>
+  <li>
+    <a class="nav-link block w-full my-2 text-white text-2xl hover:text-gray-200" href="#">Home</a>
+  </li>
+  
+  <!-- About Us Dropdown -->
+  <li class="relative">
+    <a class="nav-link block w-full py-2 text-white text-2xl cursor-pointer hover:text-gray-200 flex flex-row gap-1 items-center justify-start" onclick="toggleDropdown('aboutDropdown')">
+      <span>About Us</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </a>
+    <ul id="aboutDropdown" class="pl-4 hidden">
+      <li><a class="block py-2 text-white hover:text-gray-200" href="./about/">About Us</a></li>
+      <li><a class="block py-2 text-white hover:text-gray-200" href="./board/">Board of Directors</a></li>
+      <li><a class="block py-2 text-white hover:text-gray-200" href="./management/">Management</a></li>
+      <li><a class="block py-2 text-white hover:text-gray-200" href="./awards/">Awards</a></li>
     </ul>
+  </li>
+  
+  <li>
+    <a class="nav-link block w-full my-2 text-white text-2xl hover:text-gray-200" href="./properties/">Properties</a>
+  </li>
+
+  <!-- Media Dropdown -->
+  <li class="relative">
+    <a class="nav-link block w-full py-2 text-white text-2xl cursor-pointer hover:text-gray-200 flex flex-row gap-1 items-center justify-start" onclick="toggleDropdown('mediaDropdown')">
+      <span>Media</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </a>
+    <ul id="mediaDropdown" class="pl-4 hidden">
+      <li><a class="block py-2 text-white hover:text-gray-200" href="./blog/">Blog</a></li>
+      <li><a class="block py-2 text-white hover:text-gray-200" href="./gallery/">Gallery</a></li>
+    </ul>
+  </li>
+
+  <li>
+    <a class="nav-link block w-full my-2 text-white text-2xl hover:text-gray-200" href="./contact/">Contact</a>
+  </li>
+  <li>
+    <a class="nav-link block w-full my-2 text-white text-2xl hover:text-gray-200" href="./schedule-inspection/">Book an Inspection</a>
+  </li>
+</ul>
+
     <main class="xl:pt-[6.5rem]">
       <section class="relative w-full h-5/6 overflow-hidden">
         <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
