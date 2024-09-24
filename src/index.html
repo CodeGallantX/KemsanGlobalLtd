@@ -110,7 +110,7 @@
               </svg>
               
             </a>
-            <ul class="absolute opacity-0 group-hover:opacity-100 bg-white shadow-lg p-2 mt-1 transition-all duration-300 ease-in-out">
+            <ul class="absolute opacity-0 group-hover:opacity-100 bg-white shadow-lg mt-1 transition-all duration-300 ease-in-out">
               <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./about/">About Us</a></li>
               <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./board/">Board of Directors</a></li>
               <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./management/">Management</a></li>
@@ -128,7 +128,7 @@
                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" stroke="currentColor" stroke-width="1"/>
               </svg>
             </a>
-            <ul class="absolute opacity-0 group-hover:opacity-100 bg-white shadow-lg p-2 transition-all duration-300 ease-in-out">
+            <ul class="absolute opacity-0 group-hover:opacity-100 bg-white shadow-lg transition-all duration-300 ease-in-out">
               <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./blog/">Blog</a></li>
               <li><a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="./gallery/">Gallery</a></li>
             </ul>
@@ -145,7 +145,7 @@
         </button>
       </nav>
     </header>
-    <!-- Sidebar for small screens -->
+<!-- Sidebar for small screens -->
 <ul id="sidebar" class="fixed px-8 py-4 h-full top-0 left-0 z-[999] bg-blue-800 flex-col items-start justify-start w-full lg:flex-row lg:items-center xl:hidden p-6 transform transition-transform duration-500 ease-in-out -translate-y-full">
   <li class="w-full flex justify-end my-4 text-white" onclick="hideSideBar()">
     <a href="#">
@@ -158,13 +158,13 @@
   
   <!-- About Us Dropdown -->
   <li class="relative">
-    <a class="nav-link block w-full py-2 text-white text-2xl cursor-pointer hover:text-gray-200 flex flex-row gap-1 items-center justify-start" onclick="toggleDropdown('aboutDropdown')">
+    <a class="nav-link block w-full py-2 text-white text-2xl cursor-pointer hover:text-gray-200 flex flex-row gap-1 items-center justify-start" onclick="toggleDropdown('aboutDropdown', this)">
       <span>About Us</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down dropdownIcon" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" stroke="currentColor" stroke-width="1"/>
       </svg>
     </a>
-    <ul id="aboutDropdown" class="pl-4 hidden">
+    <ul id="aboutDropdown" class="pl-4 hidden text-lg">
       <li><a class="block py-2 text-white hover:text-gray-200" href="./about/">About Us</a></li>
       <li><a class="block py-2 text-white hover:text-gray-200" href="./board/">Board of Directors</a></li>
       <li><a class="block py-2 text-white hover:text-gray-200" href="./management/">Management</a></li>
@@ -178,13 +178,13 @@
 
   <!-- Media Dropdown -->
   <li class="relative">
-    <a class="nav-link block w-full py-2 text-white text-2xl cursor-pointer hover:text-gray-200 flex flex-row gap-1 items-center justify-start" onclick="toggleDropdown('mediaDropdown')">
+    <a class="nav-link block w-full py-2 text-white text-2xl cursor-pointer hover:text-gray-200 flex flex-row gap-1 items-center justify-start" onclick="toggleDropdown('mediaDropdown', this)">
       <span>Media</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down dropdownIcon" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" stroke="currentColor" stroke-width="1"/>
       </svg>
     </a>
-    <ul id="mediaDropdown" class="pl-4 hidden">
+    <ul id="mediaDropdown" class="pl-4 hidden text-lg">
       <li><a class="block py-2 text-white hover:text-gray-200" href="./blog/">Blog</a></li>
       <li><a class="block py-2 text-white hover:text-gray-200" href="./gallery/">Gallery</a></li>
     </ul>

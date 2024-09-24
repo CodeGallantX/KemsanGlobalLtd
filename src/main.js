@@ -101,13 +101,19 @@ document.getElementById('closeModal').addEventListener('click', function () {
 });
 
 
-
 // Dropdown for mobile navbar
-function toggleDropdown(dropdownId) {
-  var dropdown = document.getElementById(dropdownId);
-  if (dropdown.classList.contains('hidden')) {
-    dropdown.classList.remove('hidden');
+function toggleDropdown(dropdownId, element) {
+  let dropdown = document.getElementById(dropdownId);
+  let icon = element.querySelector('.dropdownIcon');
+  
+  // Toggle dropdown visibility
+  dropdown.classList.toggle('hidden');
+  
+  // Toggle icon rotation
+  if (icon.style.transform === 'rotate(180deg)') {
+    icon.style.transform = 'rotate(0deg)';
   } else {
-    dropdown.classList.add('hidden');
+    icon.style.transform = 'rotate(180deg)';
   }
 }
+
